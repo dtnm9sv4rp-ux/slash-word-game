@@ -4,7 +4,7 @@
  */
 var CONFIG = {
   /* ===== Canvas ===== */
-  CANVAS_BG_COLOR: '#F5F0E8',
+  CANVAS_BG_COLOR: '#CFCCC5',
 
   /* ===== Bamboo 竹子 ===== */
   BAMBOO_SEGMENTS_MIN: 3,          // 每根竹子最少竹节数
@@ -118,6 +118,6 @@ var CONFIG = {
     inkBlack: '#1a1a1a',
     inkGray: '#4a4a4a',
     gold: '#8B7500',
-    paperWhite: '#F5F0E8'
+    paperWhite: '#CFCCC5'
   }
 };

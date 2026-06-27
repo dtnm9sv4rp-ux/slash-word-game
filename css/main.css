@@ -1,8 +1,8 @@
 /* ===== CSS Variables ===== */
 :root {
   /* Ink-wash palette */
-  --color-paper: #F5F0E8;
-  --color-paper-dark: #E8E0D0;
+  --color-paper: #CFCCC5;
+  --color-paper-dark: #BFBBB3;
   --color-ink: #1a1a1a;
   --color-ink-light: #4a4a4a;
   --color-ink-faded: #8a8a8a;
