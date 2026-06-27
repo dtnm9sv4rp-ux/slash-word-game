@@ -236,15 +236,59 @@ var Renderer = (function() {
     ctx.save();
     ctx.lineCap = 'round';
     ctx.lineJoin = 'round';
+
+    // 逐段绘制，越新的部分越亮越宽
     for (var i = 1; i < trail.length; i++) {
-      var t = i / trail.length;
+      var t = i / trail.length;       // 0(旧)→1(新)
+      var x1 = trail[i-1].x, y1 = trail[i-1].y;
+      var x2 = trail[i].x,   y2 = trail[i].y;
+
+      // 第1层 — 水墨外晕 (最宽，最有"墨意")
       ctx.beginPath();
-      ctx.moveTo(trail[i-1].x, trail[i-1].y);
-      ctx.lineTo(trail[i].x, trail[i].y);
-      ctx.strokeStyle = 'rgba(26,26,26,' + (t * 0.5) + ')';
-      ctx.lineWidth = Utils.lerp(CONFIG.TRAIL_LINE_WIDTH_MIN, CONFIG.TRAIL_LINE_WIDTH_MAX, t);
+      ctx.moveTo(x1, y1);
+      ctx.lineTo(x2, y2);
+      ctx.strokeStyle = 'rgba(30,30,30,' + (t * 0.15) + ')';
+      ctx.lineWidth = Utils.lerp(18, 28, t);
+      ctx.stroke();
+
+      // 第2层 — 墨色笔触 (刀光主体)
+      ctx.beginPath();
+      ctx.moveTo(x1, y1);
+      ctx.lineTo(x2, y2);
+      ctx.strokeStyle = 'rgba(40,40,40,' + (t * 0.3) + ')';
+      ctx.lineWidth = Utils.lerp(8, 16, t);
+      ctx.stroke();
+
+      // 第3层 — 刃口白光 (刀刃的"亮线")
+      ctx.beginPath();
+      ctx.moveTo(x1, y1);
+      ctx.lineTo(x2, y2);
+      ctx.strokeStyle = 'rgba(220,220,220,' + (t * 0.7) + ')';
+      ctx.lineWidth = Utils.lerp(2, 6, t);
+      ctx.stroke();
+
+      // 第4层 — 刀锋银线 (最细最亮的核心)
+      ctx.beginPath();
+      ctx.moveTo(x1, y1);
+      ctx.lineTo(x2, y2);
+      ctx.strokeStyle = 'rgba(255,255,255,' + (t * 0.95) + ')';
+      ctx.lineWidth = Utils.lerp(0.5, 2, t);
       ctx.stroke();
     }
+
+    // 刀光尖端 — 最新的点有高亮光斑
+    if (trail.length > 0) {
+      var tip = trail[trail.length - 1];
+      var glowGrad = ctx.createRadialGradient(tip.x, tip.y, 0, tip.x, tip.y, 14);
+      glowGrad.addColorStop(0, 'rgba(255,255,255,0.8)');
+      glowGrad.addColorStop(0.4, 'rgba(200,200,200,0.3)');
+      glowGrad.addColorStop(1, 'rgba(255,255,255,0)');
+      ctx.fillStyle = glowGrad;
+      ctx.beginPath();
+      ctx.arc(tip.x, tip.y, 14, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
     ctx.restore();
   }
 
@@ -255,10 +299,12 @@ var Renderer = (function() {
       var alpha = p.life / p.maxLife;
       ctx.save();
       ctx.globalAlpha = alpha;
-      ctx.fillStyle = p.color;
+
       if (p.type === 'slash') {
+        // 竹屑碎片 — 细长菱形
         ctx.translate(p.x, p.y);
         ctx.rotate(p.rotation || 0);
+        ctx.fillStyle = p.color;
         ctx.beginPath();
         ctx.moveTo(0, -p.size);
         ctx.lineTo(p.size*0.5, 0);
@@ -268,10 +314,22 @@ var Renderer = (function() {
         ctx.fill();
       } else if (p.type === 'spark') {
         // 金属碰撞火花
+        ctx.fillStyle = p.color;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI*2);
         ctx.fill();
+      } else if (p.type === 'trail') {
+        // 刀光拖尾 — 带光晕微光点
+        var glow = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.size*2);
+        glow.addColorStop(0, 'rgba(255,255,255,' + alpha + ')');
+        glow.addColorStop(0.5, 'rgba(200,200,220,' + (alpha*0.4) + ')');
+        glow.addColorStop(1, 'rgba(255,255,255,0)');
+        ctx.fillStyle = glow;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size*2, 0, Math.PI*2);
+        ctx.fill();
       } else {
+        ctx.fillStyle = p.color;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI*2);
         ctx.fill();

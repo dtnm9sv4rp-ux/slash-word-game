@@ -75,6 +75,8 @@ var GameLoop = (function() {
     // 命中冷却
     if (gs.hitCooldown > 0) gs.hitCooldown -= dt;
     InputSystem.fadeTrail(dt);
+    // 刀光拖尾粒子
+    spawnTrailSparks(dt);
     checkSlashCollisions();
     updateParticles(dt);
     updateHUD();
@@ -333,6 +335,42 @@ var GameLoop = (function() {
   /* ================================================================
    * Particles
    * ================================================================ */
+
+  /**
+   * 刀光拖尾火花 — 沿轨迹持续生成
+   */
+  function spawnTrailSparks(dt) {
+    if (!InputSystem.getIsMouseDown()) return;
+    var trail = InputSystem.getTrail();
+    if (trail.length < 2) return;
+
+    // 在轨迹末端生成火花
+    var tip = trail[trail.length - 1];
+    var prev = trail[trail.length - 2];
+    var angle = Math.atan2(tip.y - prev.y, tip.x - prev.x);
+
+    // 每次 spawn 1-2 个火花
+    var count = Utils.randomInt(1, 2);
+    for (var i = 0; i < count; i++) {
+      if (gs.particles.length >= CONFIG.MAX_PARTICLES) break;
+
+      var spreadAngle = angle + Utils.randomRange(-0.8, 0.8);
+      var speed = Utils.randomRange(40, 120);
+      var life = Utils.randomRange(0.15, 0.35);
+
+      gs.particles.push({
+        x: tip.x + Utils.randomRange(-6, 6),
+        y: tip.y + Utils.randomRange(-6, 6),
+        vx: Math.cos(spreadAngle) * speed,
+        vy: Math.sin(spreadAngle) * speed,
+        life: life, maxLife: life,
+        size: Utils.randomRange(1, 2.5),
+        color: Utils.randomPick(['#ffffff', '#eeeeee', '#cccccc', '#dddddd']),
+        type: 'trail',
+        rotation: Utils.randomRange(0, Math.PI * 2)
+      });
+    }
+  }
 
   function spawnParticles(type, x, y, count, color) {
     var lifeMin = 0.3, lifeMax = 0.6, speedMin = 80, speedMax = 250;
