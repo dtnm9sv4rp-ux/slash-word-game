@@ -12,7 +12,7 @@ var AudioSystem = (function() {
 
   // 音效文件配置
   var SOUND_FILES = {
-    slashHit:  'assets/sounds/slash-hit.mp4',
+    slashHit:  'assets/sounds/slash-hit.mp3',
     slashMiss: 'assets/sounds/sword-clash.mp3'
   };
 
