@@ -237,38 +237,35 @@ var Renderer = (function() {
     ctx.lineCap = 'round';
     ctx.lineJoin = 'round';
 
-    for (var i = 1; i < trail.length; i++) {
-      var t = i / trail.length;
-      var x1 = trail[i-1].x, y1 = trail[i-1].y;
-      var x2 = trail[i].x,   y2 = trail[i].y;
-
-      // 第1层: 浅蓝冷光边缘 — 锐利轮廓
-      ctx.shadowBlur = 3;
-      ctx.shadowColor = 'rgba(180,210,255,0.5)';
+    // ★ 构建整条路径 (一次 stroke 避免关节重叠)
+    function buildPath() {
       ctx.beginPath();
-      ctx.moveTo(x1, y1);
-      ctx.lineTo(x2, y2);
-      ctx.strokeStyle = 'rgba(180,210,255,' + (t * 0.25) + ')';
-      ctx.lineWidth = Utils.lerp(6, 14, t);
-      ctx.stroke();
-
-      // 第2层: 暖白刀光 — 主体
-      ctx.shadowBlur = 0;
-      ctx.beginPath();
-      ctx.moveTo(x1, y1);
-      ctx.lineTo(x2, y2);
-      ctx.strokeStyle = 'rgba(255,250,240,' + (t * 0.5) + ')';
-      ctx.lineWidth = Utils.lerp(3, 7, t);
-      ctx.stroke();
-
-      // 第3层: 纯白核心 — 最细最亮
-      ctx.beginPath();
-      ctx.moveTo(x1, y1);
-      ctx.lineTo(x2, y2);
-      ctx.strokeStyle = 'rgba(255,255,255,' + (t * 0.85) + ')';
-      ctx.lineWidth = Utils.lerp(0.8, 2.5, t);
-      ctx.stroke();
+      ctx.moveTo(trail[0].x, trail[0].y);
+      for (var i = 1; i < trail.length; i++) {
+        ctx.lineTo(trail[i].x, trail[i].y);
+      }
     }
+
+    // 第1层: 浅蓝冷光边缘 — 固定线宽，整条路径一次画完
+    ctx.shadowBlur = 3;
+    ctx.shadowColor = 'rgba(180,210,255,0.5)';
+    ctx.strokeStyle = 'rgba(180,210,255,0.25)';
+    ctx.lineWidth = 12;
+    buildPath();
+    ctx.stroke();
+
+    // 第2层: 暖白刀光
+    ctx.shadowBlur = 0;
+    ctx.strokeStyle = 'rgba(255,250,240,0.5)';
+    ctx.lineWidth = 5;
+    buildPath();
+    ctx.stroke();
+
+    // 第3层: 纯白核心
+    ctx.strokeStyle = 'rgba(255,255,255,0.85)';
+    ctx.lineWidth = 2;
+    buildPath();
+    ctx.stroke();
 
     // 刀尖微光
     if (trail.length > 0) {
