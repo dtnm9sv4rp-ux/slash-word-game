@@ -236,56 +236,68 @@ var Renderer = (function() {
     ctx.save();
     ctx.lineCap = 'round';
     ctx.lineJoin = 'round';
+    // 叠加混合 — 光晕叠加处更亮
+    ctx.globalCompositeOperation = 'lighter';
 
-    // 逐段绘制，越新的部分越亮越宽
+    // 逐段绘制4层 (从外到内: 辉光→光晕→刀光→核心)
     for (var i = 1; i < trail.length; i++) {
-      var t = i / trail.length;       // 0(旧)→1(新)
+      var t = i / trail.length;
       var x1 = trail[i-1].x, y1 = trail[i-1].y;
       var x2 = trail[i].x,   y2 = trail[i].y;
 
-      // 第1层 — 水墨外晕 (最宽，最有"墨意")
+      // 第1层: 外层辉光 — 最宽最淡，大范围柔光
+      ctx.shadowBlur = 30;
+      ctx.shadowColor = 'rgba(255,240,220,0.6)';
       ctx.beginPath();
       ctx.moveTo(x1, y1);
       ctx.lineTo(x2, y2);
-      ctx.strokeStyle = 'rgba(30,30,30,' + (t * 0.15) + ')';
-      ctx.lineWidth = Utils.lerp(18, 28, t);
+      ctx.strokeStyle = 'rgba(255,240,220,' + (t * 0.12) + ')';
+      ctx.lineWidth = Utils.lerp(14, 30, t);
       ctx.stroke();
 
-      // 第2层 — 墨色笔触 (刀光主体)
+      // 第2层: 中层光晕 — 暖白光
+      ctx.shadowBlur = 18;
+      ctx.shadowColor = 'rgba(255,250,240,0.8)';
       ctx.beginPath();
       ctx.moveTo(x1, y1);
       ctx.lineTo(x2, y2);
-      ctx.strokeStyle = 'rgba(40,40,40,' + (t * 0.3) + ')';
-      ctx.lineWidth = Utils.lerp(8, 16, t);
+      ctx.strokeStyle = 'rgba(255,250,240,' + (t * 0.25) + ')';
+      ctx.lineWidth = Utils.lerp(5, 14, t);
       ctx.stroke();
 
-      // 第3层 — 刃口白光 (刀刃的"亮线")
+      // 第3层: 刀光本体 — 亮白
+      ctx.shadowBlur = 8;
+      ctx.shadowColor = 'rgba(255,255,255,0.9)';
       ctx.beginPath();
       ctx.moveTo(x1, y1);
       ctx.lineTo(x2, y2);
-      ctx.strokeStyle = 'rgba(220,220,220,' + (t * 0.7) + ')';
+      ctx.strokeStyle = 'rgba(255,255,255,' + (t * 0.6) + ')';
       ctx.lineWidth = Utils.lerp(2, 6, t);
       ctx.stroke();
 
-      // 第4层 — 刀锋银线 (最细最亮的核心)
+      // 第4层: 白热核心 — 最细最亮
+      ctx.shadowBlur = 0;
       ctx.beginPath();
       ctx.moveTo(x1, y1);
       ctx.lineTo(x2, y2);
-      ctx.strokeStyle = 'rgba(255,255,255,' + (t * 0.95) + ')';
-      ctx.lineWidth = Utils.lerp(0.5, 2, t);
+      ctx.strokeStyle = 'rgba(255,255,255,' + (t * 0.9) + ')';
+      ctx.lineWidth = Utils.lerp(0.8, 2.5, t);
       ctx.stroke();
     }
 
-    // 刀光尖端 — 最新的点有高亮光斑
+    // 刀尖光斑
+    ctx.shadowBlur = 0;
     if (trail.length > 0) {
       var tip = trail[trail.length - 1];
-      var glowGrad = ctx.createRadialGradient(tip.x, tip.y, 0, tip.x, tip.y, 14);
-      glowGrad.addColorStop(0, 'rgba(255,255,255,0.8)');
-      glowGrad.addColorStop(0.4, 'rgba(200,200,200,0.3)');
-      glowGrad.addColorStop(1, 'rgba(255,255,255,0)');
+      var glowGrad = ctx.createRadialGradient(tip.x, tip.y, 0, tip.x, tip.y, 20);
+      glowGrad.addColorStop(0, 'rgba(255,255,255,1)');
+      glowGrad.addColorStop(0.15, 'rgba(255,250,235,0.9)');
+      glowGrad.addColorStop(0.4, 'rgba(255,240,210,0.4)');
+      glowGrad.addColorStop(0.7, 'rgba(255,220,180,0.08)');
+      glowGrad.addColorStop(1, 'rgba(255,200,150,0)');
       ctx.fillStyle = glowGrad;
       ctx.beginPath();
-      ctx.arc(tip.x, tip.y, 14, 0, Math.PI * 2);
+      ctx.arc(tip.x, tip.y, 20, 0, Math.PI * 2);
       ctx.fill();
     }
 
