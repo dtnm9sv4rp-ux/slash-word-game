@@ -249,7 +249,7 @@ var Renderer = (function() {
       ctx.moveTo(x1, y1);
       ctx.lineTo(x2, y2);
       ctx.strokeStyle = 'rgba(180,210,255,' + (t * 0.25) + ')';
-      ctx.lineWidth = Utils.lerp(4, 9, t);
+      ctx.lineWidth = Utils.lerp(6, 14, t);
       ctx.stroke();
 
       // 第2层: 暖白刀光 — 主体
@@ -258,7 +258,7 @@ var Renderer = (function() {
       ctx.moveTo(x1, y1);
       ctx.lineTo(x2, y2);
       ctx.strokeStyle = 'rgba(255,250,240,' + (t * 0.5) + ')';
-      ctx.lineWidth = Utils.lerp(2, 5, t);
+      ctx.lineWidth = Utils.lerp(3, 7, t);
       ctx.stroke();
 
       // 第3层: 纯白核心 — 最细最亮
@@ -266,20 +266,20 @@ var Renderer = (function() {
       ctx.moveTo(x1, y1);
       ctx.lineTo(x2, y2);
       ctx.strokeStyle = 'rgba(255,255,255,' + (t * 0.85) + ')';
-      ctx.lineWidth = Utils.lerp(0.5, 1.8, t);
+      ctx.lineWidth = Utils.lerp(0.8, 2.5, t);
       ctx.stroke();
     }
 
     // 刀尖微光
     if (trail.length > 0) {
       var tip = trail[trail.length - 1];
-      var g = ctx.createRadialGradient(tip.x, tip.y, 0, tip.x, tip.y, 8);
+      var g = ctx.createRadialGradient(tip.x, tip.y, 0, tip.x, tip.y, 10);
       g.addColorStop(0, 'rgba(255,255,255,0.9)');
       g.addColorStop(0.4, 'rgba(200,220,255,0.3)');
       g.addColorStop(1, 'rgba(180,210,255,0)');
       ctx.fillStyle = g;
       ctx.beginPath();
-      ctx.arc(tip.x, tip.y, 8, 0, Math.PI*2);
+      ctx.arc(tip.x, tip.y, 10, 0, Math.PI*2);
       ctx.fill();
     }
 
