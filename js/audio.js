@@ -1,8 +1,8 @@
 /**
  * audio.js — 音效系统
  *
- * 使用 Web Audio API 程序化生成音效 (无需下载音频文件)。
- * 后续可替换为真实音频文件。
+ * 使用真实音频文件。命中/失误音效预加载为 AudioBuffer 实现低延迟播放。
+ * 连击、单词完成、按钮音效保留程序合成。
  */
 var AudioSystem = (function() {
   'use strict';
@@ -10,125 +10,126 @@ var AudioSystem = (function() {
   var ctx = null;
   var masterGain = null;
   var volume = 0.8;
+  var buffers = {};        // 预加载的音频缓存
   var initialized = false;
 
+  // 音频文件配置
+  var SOUND_FILES = {
+    slashHit:  'assets/sounds/slash-hit.mp4',     // 正确命中 — 刀剑斜劈
+    slashMiss: 'assets/sounds/sword-clash.mp3'     // 错误命中 — 刀剑碰撞
+  };
+
   /**
-   * 初始化 (必须在用户交互后调用 — 浏览器自动播放策略)
+   * 初始化 Web Audio API
    */
   function init() {
     if (initialized) return;
-
     try {
       var AudioContext = window.AudioContext || window.webkitAudioContext;
-      if (!AudioContext) {
-        console.warn('Web Audio API not supported');
-        return;
-      }
+      if (!AudioContext) { console.warn('Web Audio API not supported'); return; }
       ctx = new AudioContext();
       masterGain = ctx.createGain();
       masterGain.connect(ctx.destination);
       masterGain.gain.value = volume;
       initialized = true;
+      // 预加载所有音效
+      loadAllSounds();
     } catch (e) {
       console.warn('Audio init failed: ' + e.message);
     }
   }
 
   /**
-   * 设置主音量
+   * 预加载所有音效文件到 AudioBuffer
    */
+  function loadAllSounds() {
+    Object.keys(SOUND_FILES).forEach(function(key) {
+      loadSound(key, SOUND_FILES[key]);
+    });
+  }
+
+  function loadSound(key, url) {
+    fetch(url)
+      .then(function(response) {
+        if (!response.ok) throw new Error('HTTP ' + response.status);
+        return response.arrayBuffer();
+      })
+      .then(function(arrayBuffer) {
+        return ctx.decodeAudioData(arrayBuffer);
+      })
+      .then(function(audioBuffer) {
+        buffers[key] = audioBuffer;
+        console.log('Sound loaded: ' + key + ' (' + audioBuffer.duration.toFixed(2) + 's)');
+      })
+      .catch(function(err) {
+        console.warn('Failed to load sound ' + key + ': ' + err.message);
+      });
+  }
+
+  /**
+   * 播放预加载的音效
+   */
+  function playBuffer(key) {
+    if (!ctx || !buffers[key]) return false;
+    ensureResumed();
+
+    var source = ctx.createBufferSource();
+    source.buffer = buffers[key];
+
+    var gainNode = ctx.createGain();
+    gainNode.gain.value = volume;
+
+    source.connect(gainNode);
+    gainNode.connect(masterGain);
+    source.start(0);
+    return true;
+  }
+
+  /**
+   * 使用 HTML5 Audio 回退播放 (用于未预载的文件)
+   */
+  function playFile(url) {
+    var audio = new Audio(url);
+    audio.volume = volume;
+    audio.play().catch(function(e) {
+      console.warn('Audio play failed: ' + e.message);
+    });
+  }
+
   function setVolume(vol) {
     volume = Utils.clamp(vol, 0, 1);
-    if (masterGain) {
-      masterGain.gain.value = volume;
-    }
+    if (masterGain) masterGain.gain.value = volume;
   }
 
-  /**
-   * 确保 AudioContext 处于活跃状态
-   */
   function ensureResumed() {
-    if (ctx && ctx.state === 'suspended') {
-      ctx.resume();
+    if (ctx && ctx.state === 'suspended') ctx.resume();
+  }
+
+  /* ================================================================
+   * 游戏音效
+   * ================================================================ */
+
+  /** 正确命中 — 刀剑斜劈命中声 */
+  function playSlashHit() {
+    if (!playBuffer('slashHit')) {
+      // 回退：直接播放文件
+      playFile(SOUND_FILES.slashHit);
     }
   }
 
-  /**
-   * 弹刀命中音效 — 金属碰撞声
-   */
-  function playSlashHit() {
-    if (!ctx) return;
-    ensureResumed();
-
-    var now = ctx.currentTime;
-
-    // 主音 — 高频金属撞击
-    var osc1 = ctx.createOscillator();
-    var gain1 = ctx.createGain();
-    osc1.type = 'square';
-    osc1.frequency.setValueAtTime(800, now);
-    osc1.frequency.exponentialRampToValueAtTime(200, now + 0.15);
-    gain1.gain.setValueAtTime(0.3, now);
-    gain1.gain.exponentialRampToValueAtTime(0.001, now + 0.2);
-    osc1.connect(gain1);
-    gain1.connect(masterGain);
-    osc1.start(now);
-    osc1.stop(now + 0.2);
-
-    // 谐波 — 增加锐利感
-    var osc2 = ctx.createOscillator();
-    var gain2 = ctx.createGain();
-    osc2.type = 'sawtooth';
-    osc2.frequency.setValueAtTime(1200, now);
-    osc2.frequency.exponentialRampToValueAtTime(100, now + 0.1);
-    gain2.gain.setValueAtTime(0.15, now);
-    gain2.gain.exponentialRampToValueAtTime(0.001, now + 0.15);
-    osc2.connect(gain2);
-    gain2.connect(masterGain);
-    osc2.start(now);
-    osc2.stop(now + 0.15);
-
-    // 噪声 — 金属质感
-    playNoise(0.08, 0.12, now);
-  }
-
-  /**
-   * 弹刀失误音效 — 挥空声
-   */
+  /** 错误命中 — 刀剑碰撞声 */
   function playSlashMiss() {
-    if (!ctx) return;
-    ensureResumed();
-
-    var now = ctx.currentTime;
-
-    // 低频"嗖"声
-    var osc = ctx.createOscillator();
-    var gain = ctx.createGain();
-    osc.type = 'sine';
-    osc.frequency.setValueAtTime(300, now);
-    osc.frequency.exponentialRampToValueAtTime(80, now + 0.3);
-    gain.gain.setValueAtTime(0.2, now);
-    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.35);
-    osc.connect(gain);
-    gain.connect(masterGain);
-    osc.start(now);
-    osc.stop(now + 0.35);
-
-    // 噪音 — 布料/风声
-    playNoise(0.06, 0.25, now);
+    if (!playBuffer('slashMiss')) {
+      playFile(SOUND_FILES.slashMiss);
+    }
   }
 
-  /**
-   * 连击里程碑音效
-   */
+  /** 连击里程碑 — 程序合成 (保留) */
   function playComboMilestone() {
     if (!ctx) return;
     ensureResumed();
-
     var now = ctx.currentTime;
-
-    // 上升音阶
-    var notes = [523, 659, 784, 1047]; // C5 E5 G5 C6
+    var notes = [523, 659, 784, 1047];
     notes.forEach(function(freq, i) {
       var osc = ctx.createOscillator();
       var gain = ctx.createGain();
@@ -144,17 +145,12 @@ var AudioSystem = (function() {
     });
   }
 
-  /**
-   * 单词完成音效
-   */
+  /** 单词完成 — 程序合成 (保留) */
   function playWordComplete() {
     if (!ctx) return;
     ensureResumed();
-
     var now = ctx.currentTime;
-
-    // 胜利音阶
-    var notes = [392, 523, 659, 784]; // G4 C5 E5 G5
+    var notes = [392, 523, 659, 784];
     notes.forEach(function(freq, i) {
       var osc = ctx.createOscillator();
       var gain = ctx.createGain();
@@ -170,15 +166,11 @@ var AudioSystem = (function() {
     });
   }
 
-  /**
-   * 按钮点击音效
-   */
+  /** 按钮点击 — 程序合成 (保留) */
   function playButtonClick() {
     if (!ctx) return;
     ensureResumed();
-
     var now = ctx.currentTime;
-
     var osc = ctx.createOscillator();
     var gain = ctx.createGain();
     osc.type = 'sine';
@@ -191,36 +183,7 @@ var AudioSystem = (function() {
     osc.stop(now + 0.05);
   }
 
-  /**
-   * 生成短噪声脉冲 (用于增加打击感)
-   */
-  function playNoise(gainLevel, duration, startTime) {
-    var bufferSize = ctx.sampleRate * duration;
-    var buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
-    var data = buffer.getChannelData(0);
-    for (var i = 0; i < bufferSize; i++) {
-      data[i] = (Math.random() * 2 - 1) * (1 - i / bufferSize);
-    }
-    var source = ctx.createBufferSource();
-    source.buffer = buffer;
-
-    var bandpass = ctx.createBiquadFilter();
-    bandpass.type = 'bandpass';
-    bandpass.frequency.value = 2000;
-    bandpass.Q.value = 0.5;
-
-    var gain = ctx.createGain();
-    gain.gain.setValueAtTime(gainLevel, startTime);
-    gain.gain.exponentialRampToValueAtTime(0.001, startTime + duration);
-
-    source.connect(bandpass);
-    bandpass.connect(gain);
-    gain.connect(masterGain);
-    source.start(startTime);
-    source.stop(startTime + duration);
-  }
-
-  // 初始化 — 首次用户交互时
+  /** 初始化触发器 */
   function setupAutoInit() {
     var events = ['click', 'touchstart', 'keydown'];
     function handler() {
@@ -234,7 +197,6 @@ var AudioSystem = (function() {
     });
   }
 
-  // 公开 API
   return {
     init: init,
     setupAutoInit: setupAutoInit,
