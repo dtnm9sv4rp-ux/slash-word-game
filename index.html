@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>弹刀 — Slash Word Game</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/screens.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/ink-wash.css">
+</head>
+<body>
+
+  <!-- ===== Canvas (always present, behind all overlays) ===== -->
+  <canvas id="game-canvas"></canvas>
+
+  <!-- ===== Blood Flash Overlay ===== -->
+  <div id="blood-flash" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:5;pointer-events:none;"></div>
+
+  <!-- ============================================================ -->
+  <!-- Screen: Main Menu -->
+  <!-- ============================================================ -->
+  <div id="screen-menu" class="screen active">
+    <div class="screen-inner">
+      <h1 class="game-title title-calligraphy">弹 刀</h1>
+      <p class="game-subtitle">Slash Word Game</p>
+      <div class="brush-divider"></div>
+
+      <div class="menu-buttons">
+        <button class="btn btn-large" data-screen="game">开始游戏</button>
+        <button class="btn" data-screen="tutorial">教程</button>
+        <button class="btn" data-screen="shop">商店</button>
+        <button class="btn" data-screen="words">词库管理</button>
+        <button class="btn" data-screen="settings">设置</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Screen: Game HUD (transparent overlay during gameplay) -->
+  <!-- ============================================================ -->
+  <div id="screen-game" class="screen screen-transparent">
+    <div id="hud-container">
+      <!-- Word progress boxes -->
+      <div id="hud-word-progress"></div>
+
+      <!-- Chinese definition -->
+      <div id="hud-word-definition"></div>
+
+      <!-- Stats row -->
+      <div id="hud-stats">
+        <span id="hud-combo">连击 0</span>
+        <span id="hud-hitrate">命中率 100%</span>
+        <span id="hud-score">分数 0</span>
+        <span id="hud-time">用时 0:00</span>
+      </div>
+
+      <!-- Pause button -->
+      <button id="btn-pause" class="btn btn-small">暂停</button>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Screen: Results -->
+  <!-- ============================================================ -->
+  <div id="screen-results" class="screen">
+    <div class="screen-inner">
+      <h2 class="title-calligraphy">结果</h2>
+      <div class="brush-divider"></div>
+
+      <div id="results-stats">
+        <div class="stat-row">
+          <span class="stat-label">完成单词</span>
+          <span class="stat-value" id="stat-words-cleared">0</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">命中率</span>
+          <span class="stat-value" id="stat-hitrate">0%</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">最高连击</span>
+          <span class="stat-value" id="stat-max-combo">0</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">获得积分</span>
+          <span class="stat-value highlight" id="stat-points">0</span>
+        </div>
+      </div>
+
+      <div id="results-new-record" style="display:none; color:var(--color-gold); font-family:var(--font-calligraphy); font-size:20px;">
+        新纪录！
+      </div>
+
+      <button class="btn btn-large" data-screen="game">再来一局</button>
+      <button class="btn" id="btn-review-errors" style="display:none;">复习错词</button>
+      <button class="btn" data-screen="menu">返回菜单</button>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Screen: Shop -->
+  <!-- ============================================================ -->
+  <div id="screen-shop" class="screen">
+    <div class="screen-inner">
+      <h2 class="title-calligraphy">商店</h2>
+      <div class="brush-divider"></div>
+
+      <div id="shop-coins" class="gold-shimmer">金币: 0</div>
+
+      <div id="shop-items">
+        <!-- Knife skins section -->
+        <h3 class="shop-section-title">武士刀皮肤</h3>
+        <div id="shop-skins-grid" class="shop-item-grid">
+          <!-- Filled by JS -->
+        </div>
+
+        <!-- Trail skins section -->
+        <h3 class="shop-section-title">轨迹特效</h3>
+        <div id="shop-trails-grid" class="shop-item-grid">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+
+      <button class="btn" data-screen="menu">返回</button>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Screen: Word Management -->
+  <!-- ============================================================ -->
+  <div id="screen-words" class="screen">
+    <div class="screen-inner">
+      <h2 class="title-calligraphy">词库管理</h2>
+      <div class="brush-divider"></div>
+
+      <!-- Word count -->
+      <p id="word-count" style="color:var(--color-ink-faded); font-size:14px;">共 0 个单词</p>
+
+      <!-- Word list table -->
+      <div id="word-list-container">
+        <table id="word-list">
+          <thead>
+            <tr>
+              <th>单词</th>
+              <th>释义</th>
+              <th>难度</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody id="word-list-body">
+            <!-- Filled by JS -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Add word form -->
+      <div style="display:flex;gap:var(--space-sm);width:100%;">
+        <input type="text" id="input-new-word" placeholder="英文单词" style="flex:1;">
+        <input type="text" id="input-new-def" placeholder="中文释义" style="flex:2;">
+        <select id="select-new-difficulty">
+          <option value="1">简单</option>
+          <option value="2" selected>中等</option>
+          <option value="3">困难</option>
+        </select>
+        <button class="btn btn-small" id="btn-add-word">添加</button>
+      </div>
+
+      <!-- Import section -->
+      <div id="word-import-section">
+        <p style="font-family:var(--font-calligraphy); font-size:18px; margin-bottom:0;">导入单词</p>
+        <textarea id="word-import-textarea" placeholder="每行一个单词，格式：apple 苹果&#10;或 CSV 格式：apple,苹果,1&#10;或粘贴 JSON 数组"></textarea>
+        <div id="import-buttons">
+          <button class="btn btn-small" id="btn-import">导入文本</button>
+          <button class="btn btn-small" id="btn-import-file">上传文件</button>
+          <input type="file" id="input-file-upload" accept=".csv,.json,.txt" style="display:none;">
+          <button class="btn btn-small" id="btn-export">导出 JSON</button>
+          <button class="btn btn-small btn-danger" id="btn-reset-words">重置词库</button>
+        </div>
+      </div>
+
+      <button class="btn" data-screen="menu">返回</button>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Screen: Settings -->
+  <!-- ============================================================ -->
+  <div id="screen-settings" class="screen">
+    <div class="screen-inner">
+      <h2 class="title-calligraphy">设置</h2>
+      <div class="brush-divider"></div>
+
+      <div class="settings-group">
+        <!-- Knife speed -->
+        <div class="setting-row">
+          <span class="setting-label">武士刀下落速度</span>
+          <div class="setting-control">
+            <span style="font-size:12px;color:var(--color-ink-faded);">慢</span>
+            <input type="range" id="setting-knife-speed" min="0.5" max="2.0" step="0.1" value="1.0">
+            <span style="font-size:12px;color:var(--color-ink-faded);">快</span>
+            <span id="setting-speed-label" style="font-size:14px;min-width:30px;">1.0x</span>
+          </div>
+        </div>
+
+        <!-- Group size -->
+        <div class="setting-row">
+          <span class="setting-label">每组刀数</span>
+          <div class="setting-control">
+            <select id="setting-group-size">
+              <option value="2" selected>2 把</option>
+              <option value="3">3 把</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Difficulty preset -->
+        <div class="setting-row">
+          <span class="setting-label">难度预设</span>
+          <div class="setting-control">
+            <select id="setting-difficulty">
+              <option value="easy">简单</option>
+              <option value="medium" selected>中等</option>
+              <option value="hard">困难</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- SFX Volume -->
+        <div class="setting-row">
+          <span class="setting-label">音效音量</span>
+          <div class="setting-control">
+            <input type="range" id="setting-sfx-volume" min="0" max="1" step="0.1" value="0.8">
+            <span id="setting-volume-label" style="font-size:14px;min-width:30px;">80%</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn" data-screen="menu">返回</button>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Screen: Tutorial -->
+  <!-- ============================================================ -->
+  <div id="screen-tutorial" class="screen">
+    <div class="screen-inner">
+      <h2 class="title-calligraphy">教程</h2>
+      <div class="brush-divider"></div>
+
+      <div id="tutorial-steps">
+        <div class="tutorial-step">
+          <div class="tutorial-step-number">一</div>
+          <div class="tutorial-step-content">
+            <h3>看准释义，找到字母</h3>
+            <p>屏幕下方显示单词的中文释义。屏幕上有一片竹林，每根竹子代表单词的一个字母位置。当前目标竹子有虚线高亮框。</p>
+          </div>
+        </div>
+
+        <div class="tutorial-step">
+          <div class="tutorial-step-number">二</div>
+          <div class="tutorial-step-content">
+            <h3>按住鼠标，斩击竹节</h3>
+            <p>按住鼠标左键（或触摸屏长按），拖动划过竹子上的<strong>正确字母竹节</strong>。竹子会被斩断，上半截飞出落下，伴随竹木碎裂音效和白色碎屑。</p>
+          </div>
+        </div>
+
+        <div class="tutorial-step">
+          <div class="tutorial-step-number">三</div>
+          <div class="tutorial-step-content">
+            <h3>按顺序拼写</h3>
+            <p>按单词字母顺序从左到右依次斩击竹子。每斩断一根竹子，对应字母方框填满。全部竹子斩断后自动进入下一个单词。</p>
+          </div>
+        </div>
+
+        <div class="tutorial-step">
+          <div class="tutorial-step-number">四</div>
+          <div class="tutorial-step-content">
+            <h3>找到弱点竹节</h3>
+            <p>每根竹子有 3-8 个竹节，每个竹节有一个字母。<strong>只有一个是正确的</strong>。仔细观察，找到正确字母并精准斩击。</p>
+          </div>
+        </div>
+
+        <div class="tutorial-step">
+          <div class="tutorial-step-number">五</div>
+          <div class="tutorial-step-content">
+            <h3>斩错的后果</h3>
+            <p>斩到错误字母会有<strong>金属碰撞音效</strong> + 刀刃弹回效果 + 火花四溅。方框会用<strong>红色</strong>填上正确字母。你不会"死"，但命中率会下降。</p>
+          </div>
+        </div>
+
+        <div class="tutorial-note">
+          <strong>提示：</strong>所有竹子同时出现在场景中。按顺序从当前目标竹子中找到正确竹节并斩断它。保持高连击（Combo）可以获得更多积分！
+        </div>
+      </div>
+
+      <button class="btn btn-large" data-screen="game">开始游戏</button>
+      <button class="btn" data-screen="menu">返回菜单</button>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Scripts (loaded in dependency order) -->
+  <!-- ============================================================ -->
+  <!-- 1. Configuration -->
+  <script src="js/config.js"></script>
+
+  <!-- 2. Utilities -->
+  <script src="js/utils.js"></script>
+
+  <!-- 3. Data layer -->
+  <script src="js/storage.js"></script>
+  <script src="js/word-manager.js"></script>
+  <script src="js/scoring.js"></script>
+  <!-- <script src="js/shop.js"></script> -->
+
+  <!-- 4. Audio -->
+  <script src="js/audio.js"></script>
+
+  <!-- 5. Rendering -->
+  <!-- <script src="js/particles.js"></script> -->
+  <!-- <script src="js/screen-shake.js"></script> -->
+  <script src="js/bamboo.js"></script>
+  <script src="js/renderer.js"></script>
+
+  <!-- 6. Input -->
+  <script src="js/slash-detection.js"></script>
+  <script src="js/input.js"></script>
+
+  <!-- 7. Core loop -->
+  <script src="js/game-loop.js"></script>
+
+  <!-- 8. UI Manager -->
+  <script src="js/ui-manager.js"></script>
+
+  <!-- 9. Bootstrap -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
