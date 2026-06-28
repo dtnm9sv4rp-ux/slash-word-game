@@ -67,6 +67,9 @@ var BambooSystem = (function() {
       swayAmp: 0.8 + Math.random() * 1.8,       // 摇晃幅度 (0.8~2.6px)
       swaySpeed: 0.7 + Math.random() * 0.8,     // 摇晃速度 (0.7~1.5)
 
+      // 水墨竹节纹理 (随机选4张之一)
+      texIndex: Math.floor(Math.random() * 4),
+
       // 下落碎片 (上半截)
       fallPiece: null,
 

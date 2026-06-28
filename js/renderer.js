@@ -6,8 +6,20 @@ var Renderer = (function() {
 
   var bgImage = null;
   var bgLoaded = false;
+  var segImages = [null, null, null, null];  // 4张竹节纹理
+  var segLoaded = [false, false, false, false];
   var leaves = [];
   var leafTimer = 0;
+
+  // 预加载竹节纹理
+  for (var si = 0; si < 4; si++) {
+    (function(idx) {
+      var img = new Image();
+      img.onload = function() { segLoaded[idx] = true; };
+      img.src = 'assets/textures/bamboo-seg-' + idx + '.png';
+      segImages[idx] = img;
+    })(si);
+  }
 
   /* ================================================================
    * 背景
@@ -62,83 +74,62 @@ var Renderer = (function() {
 
     if (bamboo.segments.length > 0) {
       drawBambooStalk(ctx, bamboo.x + swayX, bamboo.topY, bamboo.groundY,
-                       bamboo.width, bamboo.segments, bamboo.segHeight);
+                       bamboo.width, bamboo.segments, bamboo.segHeight,
+                       bamboo.texIndex);
     }
     if (bamboo.fallPiece) {
       drawFallingPiece(ctx, bamboo.fallPiece);
     }
   }
 
-  function drawBambooStalk(ctx, x, topY, groundY, width, segments, segH) {
+  function drawBambooStalk(ctx, x, topY, groundY, width, segments, segH, texIdx) {
     if (groundY - topY < 10) return;
     var halfW = width / 2;
-    var h = groundY - topY;
 
     ctx.save();
 
-    // 竹身渐变色 (墨绿，中间淡边缘深 → 圆柱体感)
-    var bodyGrad = ctx.createLinearGradient(x - halfW, 0, x + halfW, 0);
-    bodyGrad.addColorStop(0,   'rgba(40,45,35,0.75)');
-    bodyGrad.addColorStop(0.2, 'rgba(75,80,65,0.5)');
-    bodyGrad.addColorStop(0.45,'rgba(125,130,110,0.32)');
-    bodyGrad.addColorStop(0.55,'rgba(135,140,115,0.28)');
-    bodyGrad.addColorStop(0.8, 'rgba(75,80,65,0.5)');
-    bodyGrad.addColorStop(1,   'rgba(40,45,35,0.75)');
-    ctx.fillStyle = bodyGrad;
-    ctx.fillRect(x - halfW, topY, width, h);
+    // 用竹节纹理逐段拼装
+    var segImg = segImages[texIdx || 0];
+    var imgReady = segImg && segLoaded[texIdx || 0];
 
-    // 细微纵纹
-    ctx.globalAlpha = 0.07;
-    for (var tx = x - halfW + 3; tx <= x + halfW - 3; tx += 4) {
-      ctx.strokeStyle = '#000';
-      ctx.lineWidth = 0.4 + Math.random() * 0.3;
-      ctx.beginPath();
-      ctx.moveTo(tx, topY);
-      ctx.lineTo(tx + (Math.random()-0.5)*1.5, groundY);
-      ctx.stroke();
+    if (imgReady) {
+      for (var s = 0; s < segments.length; s++) {
+        var segTop = segments[s].y - segH / 2;
+        // 画纹理 (略微拉伸填满竹节)
+        ctx.drawImage(segImg, x - halfW, segTop, width, segH);
+      }
+      // 顶部剩余 (如果贴图不够覆盖)
+      if (segments.length > 0) {
+        var firstSegTop = segments[0].y - segH / 2;
+        if (firstSegTop > topY + 2) {
+          ctx.drawImage(segImg, x - halfW, topY, width, firstSegTop - topY);
+        }
+      }
+    } else {
+      // 纹理未加载 → 纯色回退
+      var grad = ctx.createLinearGradient(x - halfW, 0, x + halfW, 0);
+      grad.addColorStop(0, 'rgba(45,50,40,0.7)');
+      grad.addColorStop(0.5, 'rgba(130,135,120,0.3)');
+      grad.addColorStop(1, 'rgba(45,50,40,0.7)');
+      ctx.fillStyle = grad;
+      ctx.fillRect(x - halfW, topY, width, groundY - topY);
     }
-    ctx.globalAlpha = 1;
 
-    // 轮廓 — 微不规则水墨双线
-    ctx.strokeStyle = 'rgba(20,25,18,0.55)';
-    ctx.lineWidth = 1.6;
-    ctx.beginPath();
-    ctx.moveTo(x - halfW, topY);
-    for (var ly = topY + 12; ly < groundY; ly += 18) {
-      ctx.lineTo(x - halfW + (Math.random()-0.5)*0.8, ly);
-    }
-    ctx.lineTo(x - halfW, groundY);
-    ctx.stroke();
-
-    ctx.beginPath();
-    ctx.moveTo(x + halfW, topY);
-    for (var ry = topY + 12; ry < groundY; ry += 18) {
-      ctx.lineTo(x + halfW + (Math.random()-0.5)*0.8, ry);
-    }
-    ctx.lineTo(x + halfW, groundY);
-    ctx.stroke();
-
-    // 竹节
+    // 竹节环 + 字母
     for (var i = 0; i < segments.length; i++) {
       var seg = segments[i];
       var nodeY = seg.y + segH / 2;
       var bulgeW = halfW + CONFIG.BAMBOO_NODE_RADIUS;
 
-      ctx.fillStyle = 'rgba(25,28,22,0.45)';
-      ctx.fillRect(x - bulgeW, nodeY - 3, bulgeW * 2, 6);
+      // 竹节凸起 (半透明深色条)
+      ctx.fillStyle = 'rgba(20,24,16,0.35)';
+      ctx.fillRect(x - bulgeW, nodeY - 2.5, bulgeW * 2, 5);
 
-      ctx.strokeStyle = 'rgba(18,20,15,0.55)';
-      ctx.lineWidth = 1.4;
+      ctx.strokeStyle = 'rgba(14,18,11,0.5)';
+      ctx.lineWidth = 1.3;
       ctx.beginPath();
       ctx.moveTo(x - bulgeW, nodeY);
       ctx.lineTo(x + bulgeW, nodeY);
-      ctx.stroke();
-
-      ctx.strokeStyle = 'rgba(18,20,15,0.25)';
-      ctx.lineWidth = 0.7;
-      ctx.beginPath();
-      ctx.moveTo(x - bulgeW, nodeY + 2);
-      ctx.lineTo(x + bulgeW, nodeY + 2);
       ctx.stroke();
 
       drawBambooLetter(ctx, seg.letter, x, seg.y, halfW);
@@ -149,10 +140,10 @@ var Renderer = (function() {
       var topSeg = segments[0];
       var topNodeY = topSeg.y - segH / 2;
       var bulgeW = halfW + CONFIG.BAMBOO_NODE_RADIUS;
-      ctx.fillStyle = 'rgba(25,28,22,0.45)';
-      ctx.fillRect(x - bulgeW, topNodeY - 2, bulgeW * 2, 5);
-      ctx.strokeStyle = 'rgba(18,20,15,0.55)';
-      ctx.lineWidth = 1.2;
+      ctx.fillStyle = 'rgba(20,24,16,0.35)';
+      ctx.fillRect(x - bulgeW, topNodeY - 2, bulgeW * 2, 4);
+      ctx.strokeStyle = 'rgba(14,18,11,0.5)';
+      ctx.lineWidth = 1.1;
       ctx.beginPath();
       ctx.moveTo(x - bulgeW, topNodeY);
       ctx.lineTo(x + bulgeW, topNodeY);
