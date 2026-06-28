@@ -87,20 +87,18 @@ var Renderer = (function() {
   function drawBambooStalk(ctx, baseX, topY, groundY, width, segments, segH, texIdx, swayAmp, totalH) {
     if (groundY - topY < 10) return;
     var halfW = width / 2;
-
-    ctx.save();
-
-    // 逐段绘制 (每段独立计算摇晃偏移: 离根部越远摇摆越大)
     var segImg = segImages[texIdx || 0];
     var imgReady = segImg && segLoaded[texIdx || 0];
 
+    // === 第1遍: 画纹理 (multiply让白色变透明，只留墨色) ===
+    ctx.save();
+    if (imgReady) ctx.globalCompositeOperation = 'multiply';
+
     for (var s = 0; s < segments.length; s++) {
       var segTop = segments[s].y - segH / 2;
-      // 渐进摇晃: 从段顶到根部，摇晃线性递减
       var distFromGround = groundY - segments[s].y;
-      var swayRatio = distFromGround / (totalH || 1); // 0(根部) ~ 1(顶端)
-      var segSway = swayAmp * swayRatio;
-      var sx = baseX + segSway;
+      var swayRatio = distFromGround / (totalH || 1);
+      var sx = baseX + swayAmp * swayRatio;
 
       if (imgReady) {
         ctx.drawImage(segImg, sx - halfW, segTop, width, segH);
@@ -112,23 +110,30 @@ var Renderer = (function() {
         ctx.fillStyle = grad;
         ctx.fillRect(sx - halfW, segTop, width, segH);
       }
+    }
+    ctx.restore();
 
-      // 竹节环
-      var seg = segments[s];
+    // === 第2遍: 竹节线 + 字母 (正常模式，不参与multiply) ===
+    for (var t = 0; t < segments.length; t++) {
+      var seg = segments[t];
+      var distFromGround2 = groundY - seg.y;
+      var sr2 = distFromGround2 / (totalH || 1);
+      var sx2 = baseX + swayAmp * sr2;
       var nodeY = seg.y + segH / 2;
       var bulgeW = halfW + CONFIG.BAMBOO_NODE_RADIUS;
 
-      ctx.fillStyle = 'rgba(18,22,14,0.3)';
-      ctx.fillRect(sx - bulgeW, nodeY - 2, bulgeW * 2, 4);
-      ctx.strokeStyle = 'rgba(12,16,9,0.45)';
+      // 竹节环
+      ctx.fillStyle = 'rgba(16,20,12,0.25)';
+      ctx.fillRect(sx2 - bulgeW, nodeY - 2, bulgeW * 2, 4);
+      ctx.strokeStyle = 'rgba(10,14,8,0.4)';
       ctx.lineWidth = 1.2;
       ctx.beginPath();
-      ctx.moveTo(sx - bulgeW, nodeY);
-      ctx.lineTo(sx + bulgeW, nodeY);
+      ctx.moveTo(sx2 - bulgeW, nodeY);
+      ctx.lineTo(sx2 + bulgeW, nodeY);
       ctx.stroke();
 
-      // 字母 — 半透明暗底 + 白字
-      drawBambooLetter(ctx, seg.letter, sx, seg.y, halfW);
+      // 字母
+      drawBambooLetter(ctx, seg.letter, sx2, seg.y, halfW);
     }
 
     // 顶节线
@@ -138,17 +143,15 @@ var Renderer = (function() {
       var topSway = swayAmp * (groundY - topSeg.y) / (totalH || 1);
       var tx = baseX + topSway;
       var bulgeW = halfW + CONFIG.BAMBOO_NODE_RADIUS;
-      ctx.fillStyle = 'rgba(18,22,14,0.3)';
+      ctx.fillStyle = 'rgba(16,20,12,0.25)';
       ctx.fillRect(tx - bulgeW, topNodeY - 1.5, bulgeW * 2, 3);
-      ctx.strokeStyle = 'rgba(12,16,9,0.45)';
+      ctx.strokeStyle = 'rgba(10,14,8,0.4)';
       ctx.lineWidth = 1;
       ctx.beginPath();
       ctx.moveTo(tx - bulgeW, topNodeY);
       ctx.lineTo(tx + bulgeW, topNodeY);
       ctx.stroke();
     }
-
-    ctx.restore();
   }
 
   function drawBambooLetter(ctx, letter, x, y, halfW) {
