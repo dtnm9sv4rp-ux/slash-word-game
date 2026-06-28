@@ -74,7 +74,7 @@
 /* ===== Game HUD (定位在卷轴下方深色边缘内) ===== */
 #screen-game {
   justify-content: flex-end;
-  padding-bottom: 0;
+  padding-bottom: 6px;
 }
 
 #hud-container {
@@ -83,8 +83,55 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
-  padding: 8px 16px 12px;
+  padding: 4px 16px 8px;
   margin-bottom: 2px;
+  max-height: 16vh;  /* 强制限制在底部17%黑边内 */
+  overflow: hidden;
+}
+
+/* HUD 白字适配深色背景 */
+#hud-word-definition {
+  color: #e8e4dc !important;
+  opacity: 1 !important;
+}
+
+#hud-stats {
+  color: #c8c4bc !important;
+}
+
+#hud-combo, #hud-score, #hud-hitrate, #hud-time {
+  color: #c8c4bc !important;
+}
+
+#hud-combo.combo-active {
+  color: #ffffff !important;
+}
+
+.hud-letter-box {
+  border-color: #88847c !important;
+  color: #e8e4dc !important;
+  background: rgba(255,255,255,0.06) !important;
+}
+
+.hud-letter-box.filled {
+  background: rgba(255,255,255,0.12) !important;
+  color: #ffffff !important;
+  border-color: #bbb7af !important;
+}
+
+.hud-letter-box.filled-error {
+  background: rgba(200,60,40,0.25) !important;
+  border-color: #cc4444 !important;
+  color: #ff8888 !important;
+}
+
+#btn-pause {
+  color: #99958d !important;
+  border-color: #66635c !important;
+}
+#btn-pause:hover {
+  color: #e8e4dc !important;
+  background: rgba(255,255,255,0.1) !important;
 }
 
 #hud-word-definition {

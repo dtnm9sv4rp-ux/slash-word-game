@@ -277,7 +277,7 @@ var GameLoop = (function() {
     if (!hint) return;
     var orig = hint.textContent;
     hint.textContent = '★ 正确字母: ' + letter + ' ★';
-    hint.style.color = CONFIG.COLORS.blood;
+    hint.style.setProperty('color', '#ff6666', 'important');
     setTimeout(function() { hint.textContent = orig; hint.style.color = ''; }, 900);
   }
 
