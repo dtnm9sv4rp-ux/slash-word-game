@@ -152,15 +152,14 @@ var Renderer = (function() {
   }
 
   function drawBambooLetter(ctx, letter, x, y, halfW) {
-    var bgW = halfW + 6;
-    // 极淡暗底 — 让字在纹理上可读
-    ctx.fillStyle = 'rgba(0,0,0,0.25)';
-    ctx.fillRect(x - bgW, y - CONFIG.BAMBOO_LETTER_SIZE/2 - 1, bgW * 2, CONFIG.BAMBOO_LETTER_SIZE + 3);
-    // 白色粗字
-    ctx.fillStyle = '#f0ede5';
+    // 文字阴影 (增加在纹理上的可读性)
+    ctx.fillStyle = 'rgba(0,0,0,0.45)';
     ctx.font = 'bold ' + CONFIG.BAMBOO_LETTER_SIZE + 'px "Microsoft YaHei","PingFang SC",Arial,sans-serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
+    ctx.fillText(letter, x + 1, y + 1);
+    // 白色字本体
+    ctx.fillStyle = '#f5f0e8';
     ctx.fillText(letter, x, y);
   }
 
