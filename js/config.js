@@ -10,7 +10,7 @@ var CONFIG = {
   BAMBOO_SEGMENTS_MIN: 3,          // 每根竹子最少竹节数
   BAMBOO_SEGMENTS_MAX: 8,          // 每根竹子最多竹节数
   BAMBOO_SEGMENT_HEIGHT: 58,       // 每节高度 (像素)
-  BAMBOO_WIDTH: 22,                // 竹身粗细
+  BAMBOO_WIDTH: 58,                // 竹身粗细 (匹配方形竹节纹理)
   BAMBOO_NODE_RADIUS: 5,           // 竹节凸起半径
   BAMBOO_MARGIN: 70,               // 最左/最右竹子距屏幕边缘距离
   BAMBOO_GROUND_OFFSET: 230,       // (保留旧值，实际由卷轴比例计算)

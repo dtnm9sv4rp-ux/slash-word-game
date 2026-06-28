@@ -70,83 +70,81 @@ var Renderer = (function() {
 
   function drawBamboo(ctx, bamboo) {
     if (!bamboo.alive && !bamboo.fallPiece) return;
-    var swayX = bamboo._swayOffset || 0;
 
     if (bamboo.segments.length > 0) {
-      drawBambooStalk(ctx, bamboo.x + swayX, bamboo.topY, bamboo.groundY,
+      // 渐进摇晃: 根部固定，越往上越大
+      var swayAmp = bamboo._swayOffset || 0;
+      var totalH = bamboo.groundY - bamboo.topY;
+      drawBambooStalk(ctx, bamboo.x, bamboo.topY, bamboo.groundY,
                        bamboo.width, bamboo.segments, bamboo.segHeight,
-                       bamboo.texIndex);
+                       bamboo.texIndex, swayAmp, totalH);
     }
     if (bamboo.fallPiece) {
       drawFallingPiece(ctx, bamboo.fallPiece);
     }
   }
 
-  function drawBambooStalk(ctx, x, topY, groundY, width, segments, segH, texIdx) {
+  function drawBambooStalk(ctx, baseX, topY, groundY, width, segments, segH, texIdx, swayAmp, totalH) {
     if (groundY - topY < 10) return;
     var halfW = width / 2;
 
     ctx.save();
 
-    // 用竹节纹理逐段拼装
+    // 逐段绘制 (每段独立计算摇晃偏移: 离根部越远摇摆越大)
     var segImg = segImages[texIdx || 0];
     var imgReady = segImg && segLoaded[texIdx || 0];
 
-    if (imgReady) {
-      for (var s = 0; s < segments.length; s++) {
-        var segTop = segments[s].y - segH / 2;
-        // 画纹理 (略微拉伸填满竹节)
-        ctx.drawImage(segImg, x - halfW, segTop, width, segH);
-      }
-      // 顶部剩余 (如果贴图不够覆盖)
-      if (segments.length > 0) {
-        var firstSegTop = segments[0].y - segH / 2;
-        if (firstSegTop > topY + 2) {
-          ctx.drawImage(segImg, x - halfW, topY, width, firstSegTop - topY);
-        }
-      }
-    } else {
-      // 纹理未加载 → 纯色回退
-      var grad = ctx.createLinearGradient(x - halfW, 0, x + halfW, 0);
-      grad.addColorStop(0, 'rgba(45,50,40,0.7)');
-      grad.addColorStop(0.5, 'rgba(130,135,120,0.3)');
-      grad.addColorStop(1, 'rgba(45,50,40,0.7)');
-      ctx.fillStyle = grad;
-      ctx.fillRect(x - halfW, topY, width, groundY - topY);
-    }
+    for (var s = 0; s < segments.length; s++) {
+      var segTop = segments[s].y - segH / 2;
+      // 渐进摇晃: 从段顶到根部，摇晃线性递减
+      var distFromGround = groundY - segments[s].y;
+      var swayRatio = distFromGround / (totalH || 1); // 0(根部) ~ 1(顶端)
+      var segSway = swayAmp * swayRatio;
+      var sx = baseX + segSway;
 
-    // 竹节环 + 字母
-    for (var i = 0; i < segments.length; i++) {
-      var seg = segments[i];
+      if (imgReady) {
+        ctx.drawImage(segImg, sx - halfW, segTop, width, segH);
+      } else {
+        var grad = ctx.createLinearGradient(sx - halfW, 0, sx + halfW, 0);
+        grad.addColorStop(0, 'rgba(45,50,40,0.7)');
+        grad.addColorStop(0.5, 'rgba(130,135,120,0.3)');
+        grad.addColorStop(1, 'rgba(45,50,40,0.7)');
+        ctx.fillStyle = grad;
+        ctx.fillRect(sx - halfW, segTop, width, segH);
+      }
+
+      // 竹节环
+      var seg = segments[s];
       var nodeY = seg.y + segH / 2;
       var bulgeW = halfW + CONFIG.BAMBOO_NODE_RADIUS;
 
-      // 竹节凸起 (半透明深色条)
-      ctx.fillStyle = 'rgba(20,24,16,0.35)';
-      ctx.fillRect(x - bulgeW, nodeY - 2.5, bulgeW * 2, 5);
-
-      ctx.strokeStyle = 'rgba(14,18,11,0.5)';
-      ctx.lineWidth = 1.3;
+      ctx.fillStyle = 'rgba(18,22,14,0.3)';
+      ctx.fillRect(sx - bulgeW, nodeY - 2, bulgeW * 2, 4);
+      ctx.strokeStyle = 'rgba(12,16,9,0.45)';
+      ctx.lineWidth = 1.2;
       ctx.beginPath();
-      ctx.moveTo(x - bulgeW, nodeY);
-      ctx.lineTo(x + bulgeW, nodeY);
+      ctx.moveTo(sx - bulgeW, nodeY);
+      ctx.lineTo(sx + bulgeW, nodeY);
       ctx.stroke();
 
-      drawBambooLetter(ctx, seg.letter, x, seg.y, halfW);
+      // 字母 — 半透明暗底 + 白字
+      drawBambooLetter(ctx, seg.letter, sx, seg.y, halfW);
     }
 
-    // 顶部竹节线
+    // 顶节线
     if (segments.length > 0) {
       var topSeg = segments[0];
       var topNodeY = topSeg.y - segH / 2;
+      var topSway = swayAmp * (groundY - topSeg.y) / (totalH || 1);
+      var tx = baseX + topSway;
       var bulgeW = halfW + CONFIG.BAMBOO_NODE_RADIUS;
-      ctx.fillStyle = 'rgba(20,24,16,0.35)';
-      ctx.fillRect(x - bulgeW, topNodeY - 2, bulgeW * 2, 4);
-      ctx.strokeStyle = 'rgba(14,18,11,0.5)';
-      ctx.lineWidth = 1.1;
+      ctx.fillStyle = 'rgba(18,22,14,0.3)';
+      ctx.fillRect(tx - bulgeW, topNodeY - 1.5, bulgeW * 2, 3);
+      ctx.strokeStyle = 'rgba(12,16,9,0.45)';
+      ctx.lineWidth = 1;
       ctx.beginPath();
-      ctx.moveTo(x - bulgeW, topNodeY);
-      ctx.lineTo(x + bulgeW, topNodeY);
+      ctx.moveTo(tx - bulgeW, topNodeY);
+      ctx.lineTo(tx + bulgeW, topNodeY);
       ctx.stroke();
     }
 
@@ -155,12 +153,11 @@ var Renderer = (function() {
 
   function drawBambooLetter(ctx, letter, x, y, halfW) {
     var bgW = halfW + 6;
-    ctx.fillStyle = 'rgba(245,242,235,0.7)';
-    ctx.fillRect(x - bgW, y - CONFIG.BAMBOO_LETTER_SIZE/2 - 2, bgW * 2, CONFIG.BAMBOO_LETTER_SIZE + 4);
-    ctx.strokeStyle = 'rgba(0,0,0,0.1)';
-    ctx.lineWidth = 0.5;
-    ctx.strokeRect(x - bgW, y - CONFIG.BAMBOO_LETTER_SIZE/2 - 2, bgW * 2, CONFIG.BAMBOO_LETTER_SIZE + 4);
-    ctx.fillStyle = '#1a1a1a';
+    // 极淡暗底 — 让字在纹理上可读
+    ctx.fillStyle = 'rgba(0,0,0,0.25)';
+    ctx.fillRect(x - bgW, y - CONFIG.BAMBOO_LETTER_SIZE/2 - 1, bgW * 2, CONFIG.BAMBOO_LETTER_SIZE + 3);
+    // 白色粗字
+    ctx.fillStyle = '#f0ede5';
     ctx.font = 'bold ' + CONFIG.BAMBOO_LETTER_SIZE + 'px "Microsoft YaHei","PingFang SC",Arial,sans-serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
