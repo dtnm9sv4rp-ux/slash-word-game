@@ -101,7 +101,8 @@ var Renderer = (function() {
       var sx = baseX + swayAmp * swayRatio;
 
       if (imgReady) {
-        ctx.drawImage(segImg, sx - halfW, segTop, width, segH);
+        // 上下各多画3px，叠压消除节间缝隙
+        ctx.drawImage(segImg, sx - halfW, segTop - 3, width, segH + 6);
       } else {
         var grad = ctx.createLinearGradient(sx - halfW, 0, sx + halfW, 0);
         grad.addColorStop(0, 'rgba(45,50,40,0.7)');
@@ -174,24 +175,43 @@ var Renderer = (function() {
     ctx.rotate(fp.rotation);
     ctx.translate(-fp.x, -(fp.y + fp.height / 2));
 
-    var halfW = fp.width / 2;
-    var grad = ctx.createLinearGradient(fp.x - halfW, 0, fp.x + halfW, 0);
-    grad.addColorStop(0, 'rgba(55,60,50,0.6)');
-    grad.addColorStop(0.5, 'rgba(130,135,120,0.3)');
-    grad.addColorStop(1, 'rgba(55,60,50,0.6)');
-    ctx.fillStyle = grad;
-    ctx.fillRect(fp.x - halfW, fp.y, fp.width, fp.height);
+    // 碎片宽度收窄到60%
+    var narrowW = fp.width * 0.6;
+    var halfNW = narrowW / 2;
 
-    ctx.strokeStyle = 'rgba(25,30,22,0.5)';
-    ctx.lineWidth = 1;
-    ctx.strokeRect(fp.x - halfW, fp.y, fp.width, fp.height);
+    // 尝试用竹节纹理
+    var texUsed = false;
+    for (var ti = 0; ti < 4; ti++) {
+      if (segLoaded[ti] && segImages[ti]) {
+        ctx.save();
+        ctx.globalCompositeOperation = 'multiply';
+        // 只取纹理中间窄条
+        var srcX = (segImages[ti].width - narrowW * 2) / 2;
+        ctx.drawImage(segImages[ti],
+          srcX, 0, narrowW * 2, segImages[ti].height,
+          fp.x - halfNW, fp.y, narrowW, fp.height);
+        ctx.restore();
+        texUsed = true;
+        break;
+      }
+    }
 
-    ctx.strokeStyle = 'rgba(50,55,45,0.6)';
-    ctx.lineWidth = 1.3;
+    if (!texUsed) {
+      var grad = ctx.createLinearGradient(fp.x - halfNW, 0, fp.x + halfNW, 0);
+      grad.addColorStop(0, 'rgba(55,60,50,0.6)');
+      grad.addColorStop(0.5, 'rgba(130,135,120,0.3)');
+      grad.addColorStop(1, 'rgba(55,60,50,0.6)');
+      ctx.fillStyle = grad;
+      ctx.fillRect(fp.x - halfNW, fp.y, narrowW, fp.height);
+    }
+
+    // 断裂锯齿
+    ctx.strokeStyle = 'rgba(40,45,35,0.6)';
+    ctx.lineWidth = 1.2;
     ctx.beginPath();
-    ctx.moveTo(fp.x - halfW - 2, fp.y + fp.height);
-    for (var i = 0; i < halfW * 2 + 4; i += 4) {
-      ctx.lineTo(fp.x - halfW - 2 + i, fp.y + fp.height + (i % 8 < 4 ? 2 : -2));
+    ctx.moveTo(fp.x - halfNW - 1, fp.y + fp.height);
+    for (var i = 0; i < narrowW + 2; i += 3) {
+      ctx.lineTo(fp.x - halfNW - 1 + i, fp.y + fp.height + (i % 6 < 3 ? -3 : 2));
     }
     ctx.stroke();
 
