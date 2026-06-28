@@ -40,13 +40,13 @@ var Renderer = (function() {
           var data = octx.getImageData(0, 0, oc.width, oc.height);
           var pixels = data.data;
           for (var p = 0; p < pixels.length; p += 4) {
-            // 浅色像素(灰底)→透明; 深色像素(字)→保留变白
+            // 灰底(R~147)比白字(R~230)暗 → 暗的去掉，亮的保留
             var brightness = (pixels[p] + pixels[p+1] + pixels[p+2]) / 3;
-            if (brightness > 100) {
-              // 背景色 → 完全透明
+            if (brightness < 180) {
+              // 暗色灰底 → 完全透明
               pixels[p+3] = 0;
             } else {
-              // 笔触 → 设为米白色
+              // 亮色笔触 → 设为米白色, 不透明
               pixels[p] = 240;
               pixels[p+1] = 235;
               pixels[p+2] = 224;
