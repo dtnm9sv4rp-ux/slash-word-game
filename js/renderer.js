@@ -87,30 +87,26 @@ var Renderer = (function() {
   function drawBambooStalk(ctx, baseX, topY, groundY, width, segments, segH, texIdx, swayAmp, totalH) {
     if (groundY - topY < 10) return;
     var halfW = width / 2;
+    var stalkH = groundY - topY;
     var segImg = segImages[texIdx || 0];
     var imgReady = segImg && segLoaded[texIdx || 0];
 
-    // === 第1遍: 画纹理 (multiply让白色变透明，只留墨色) ===
+    // === 第1遍: 整根竹子一次拉伸(无接缝) ===
     ctx.save();
-    if (imgReady) ctx.globalCompositeOperation = 'multiply';
-
-    for (var s = 0; s < segments.length; s++) {
-      var segTop = segments[s].y - segH / 2;
-      var distFromGround = groundY - segments[s].y;
-      var swayRatio = distFromGround / (totalH || 1);
-      var sx = baseX + swayAmp * swayRatio;
-
-      if (imgReady) {
-        // 上下各多画3px，叠压消除节间缝隙
-        ctx.drawImage(segImg, sx - halfW, segTop - 3, width, segH + 6);
-      } else {
-        var grad = ctx.createLinearGradient(sx - halfW, 0, sx + halfW, 0);
-        grad.addColorStop(0, 'rgba(45,50,40,0.7)');
-        grad.addColorStop(0.5, 'rgba(130,135,120,0.3)');
-        grad.addColorStop(1, 'rgba(45,50,40,0.7)');
-        ctx.fillStyle = grad;
-        ctx.fillRect(sx - halfW, segTop, width, segH);
-      }
+    if (imgReady) {
+      ctx.globalCompositeOperation = 'multiply';
+      // 取图中间竖向窄条，拉伸填满整根竹子
+      var srcW = segImg.width * 0.25;
+      var srcX = (segImg.width - srcW) / 2;
+      ctx.drawImage(segImg, srcX, 0, srcW, segImg.height,
+                    baseX - halfW, topY, width, stalkH);
+    } else {
+      var grad = ctx.createLinearGradient(baseX - halfW, 0, baseX + halfW, 0);
+      grad.addColorStop(0, 'rgba(45,50,40,0.7)');
+      grad.addColorStop(0.5, 'rgba(130,135,120,0.3)');
+      grad.addColorStop(1, 'rgba(45,50,40,0.7)');
+      ctx.fillStyle = grad;
+      ctx.fillRect(baseX - halfW, topY, width, stalkH);
     }
     ctx.restore();
 
@@ -175,8 +171,8 @@ var Renderer = (function() {
     ctx.rotate(fp.rotation);
     ctx.translate(-fp.x, -(fp.y + fp.height / 2));
 
-    // 碎片宽度收窄到60%
-    var narrowW = fp.width * 0.6;
+    // 碎片宽度收窄到45%
+    var narrowW = fp.width * 0.45;
     var halfNW = narrowW / 2;
 
     // 尝试用竹节纹理
