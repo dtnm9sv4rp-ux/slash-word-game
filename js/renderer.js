@@ -141,13 +141,16 @@ var Renderer = (function() {
     var size = CONFIG.BAMBOO_LETTER_SIZE;
 
     if (img && lettersReady && img.complete && img.naturalWidth > 0) {
-      // 用AI生成的字母贴图
+      // screen模式: 暗色(灰底)→透明, 亮色(白字)→保留
+      ctx.save();
+      ctx.globalCompositeOperation = 'screen';
       var iw = img.naturalWidth;
       var ih = img.naturalHeight;
       var scale = size / Math.max(iw, ih);
       var dw = iw * scale;
       var dh = ih * scale;
       ctx.drawImage(img, x - dw/2, y - dh/2, dw, dh);
+      ctx.restore();
     } else {
       // 回退：Canvas画字
       ctx.fillStyle = 'rgba(0,0,0,0.4)';
