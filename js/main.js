@@ -24,6 +24,7 @@
     wireWordManagement();
     wireShopScreen();
     wireResultsScreen();
+    wirePauseOverlay();
 
     // 点击音效
     document.addEventListener('click', function(e) {
@@ -478,9 +479,22 @@
     var reviewBtn = document.getElementById('btn-review-errors');
     if (reviewBtn) {
       reviewBtn.addEventListener('click', function() {
-        // Start a new round with only error words
-        // For now, just restart with full word bank
         GameLoop.startGame();
+      });
+    }
+  }
+
+  function wirePauseOverlay() {
+    var btnResume = document.getElementById('btn-resume');
+    var btnQuit = document.getElementById('btn-quit');
+    if (btnResume) {
+      btnResume.addEventListener('click', function() {
+        GameLoop.resumeGame();
+      });
+    }
+    if (btnQuit) {
+      btnQuit.addEventListener('click', function() {
+        GameLoop.quitToMenu();
       });
     }
   }

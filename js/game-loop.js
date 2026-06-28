@@ -46,12 +46,25 @@ var GameLoop = (function() {
   function togglePause() {
     if (state === 'playing') {
       state = 'paused';
-      document.getElementById('btn-pause').textContent = '继续';
+      document.getElementById('screen-pause').classList.add('active');
     } else if (state === 'paused') {
-      state = 'playing';
-      lastTime = performance.now();
-      document.getElementById('btn-pause').textContent = '暂停';
+      resumeGame();
     }
+  }
+
+  function resumeGame() {
+    state = 'playing';
+    lastTime = performance.now();
+    document.getElementById('screen-pause').classList.remove('active');
+  }
+
+  function quitToMenu() {
+    state = 'idle';
+    document.getElementById('screen-pause').classList.remove('active');
+    if (animFrameId) { cancelAnimationFrame(animFrameId); animFrameId = null; }
+    InputSystem.clearTrail();
+    drawStaticBg();
+    UIManager.showScreen('menu');
   }
 
   /* ================================================================
@@ -591,6 +604,7 @@ var GameLoop = (function() {
 
   return {
     init: init, startGame: startGame, stopGame: stopGame, togglePause: togglePause,
+    resumeGame: resumeGame, quitToMenu: quitToMenu,
     getState: function() { return state; }
   };
 })();

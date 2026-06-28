@@ -49,16 +49,26 @@
       <!-- Chinese definition -->
       <div id="hud-word-definition"></div>
 
-      <!-- Stats row -->
+      <!-- Stats row + 暂停 -->
       <div id="hud-stats">
         <span id="hud-combo">连击 0</span>
         <span id="hud-hitrate">命中率 100%</span>
         <span id="hud-score">分数 0</span>
         <span id="hud-time">用时 0:00</span>
+        <button id="btn-pause" class="btn btn-small" style="margin-left:8px;">暂停</button>
       </div>
+    </div>
+  </div>
 
-      <!-- Pause button -->
-      <button id="btn-pause" class="btn btn-small">暂停</button>
+  <!-- Pause overlay -->
+  <div id="screen-pause" class="screen" style="background:rgba(0,0,0,0.5); z-index:50;">
+    <div class="screen-inner">
+      <h2 class="title-calligraphy" style="color:#e8e4dc;">暂停</h2>
+      <div class="brush-divider" style="background:linear-gradient(90deg,transparent,#88847c 50%,transparent);"></div>
+      <div class="menu-buttons" style="max-width:280px;">
+        <button class="btn" id="btn-resume" style="color:#e8e4dc;border-color:#88847c;">返回游戏</button>
+        <button class="btn" id="btn-quit" style="color:#e8e4dc;border-color:#88847c;">返回主菜单</button>
+      </div>
     </div>
   </div>
 
