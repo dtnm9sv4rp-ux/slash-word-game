@@ -18,7 +18,77 @@ var Renderer = (function() {
   /** 获取竹子安全区 (画卷中间区域，上下深色边缘之外) */
   function getSafeArea() {
     var h = window.innerHeight;
-    return {
+  
+
+  /* ================================================================
+   * 竹叶飘落系统
+   * ================================================================ */
+
+  var leaves = [];
+  var leafTimer = 0;
+
+  function updateLeaves(dt, w, h) {
+    // 定时生成竹叶
+    leafTimer += dt;
+    if (leafTimer > 1.2 && leaves.length < 20) {
+      leafTimer = 0;
+      spawnLeaf(w, h);
+    }
+
+    // 更新每片叶
+    for (var i = leaves.length - 1; i >= 0; i--) {
+      var l = leaves[i];
+      l.x += l.vx * dt + Math.sin(l.swayPhase) * 18 * dt;
+      l.y += l.vy * dt;
+      l.swayPhase += l.swaySpeed * dt;
+      l.rotation += l.rotSpeed * dt;
+      l.opacity -= 0.08 * dt;
+      if (l.opacity <= 0 || l.y > h + 60) {
+        leaves.splice(i, 1);
+      }
+    }
+  }
+
+  function spawnLeaf(w, h) {
+    leaves.push({
+      x: Math.random() * w,
+      y: -20,
+      vx: (Math.random() - 0.5) * 25,
+      vy: 15 + Math.random() * 35,
+      rotation: Math.random() * Math.PI * 2,
+      rotSpeed: (Math.random() - 0.5) * 3,
+      swayPhase: Math.random() * Math.PI * 2,
+      swaySpeed: 2 + Math.random() * 3,
+      size: 5 + Math.random() * 10,
+      opacity: 0.3 + Math.random() * 0.4,
+      color: Math.random() < 0.5 ? 'rgba(60,80,50,ALPHA)' : 'rgba(80,100,60,ALPHA)'
+    });
+  }
+
+  function drawLeaves(ctx) {
+    for (var i = 0; i < leaves.length; i++) {
+      var l = leaves[i];
+      ctx.save();
+      ctx.globalAlpha = l.opacity;
+      ctx.translate(l.x, l.y);
+      ctx.rotate(l.rotation);
+      // 竹叶 — 细长椭圆
+      ctx.fillStyle = l.color.replace('ALPHA', l.opacity.toFixed(2));
+      ctx.beginPath();
+      ctx.ellipse(0, 0, l.size * 0.7, l.size * 0.2, 0, 0, Math.PI * 2);
+      ctx.fill();
+      // 叶脉
+      ctx.strokeStyle = l.color.replace('ALPHA', (l.opacity * 0.5).toFixed(2));
+      ctx.lineWidth = 0.3;
+      ctx.beginPath();
+      ctx.moveTo(-l.size * 0.6, 0);
+      ctx.lineTo(l.size * 0.6, 0);
+      ctx.stroke();
+      ctx.restore();
+    }
+  }
+
+  return {
       top: h * CONFIG.SCROLL_TOP_EDGE,
       bottom: h * (1 - CONFIG.SCROLL_BOTTOM_EDGE)
     };
@@ -27,7 +97,77 @@ var Renderer = (function() {
   /** 获取下方深色边缘区域 (放 HUD) */
   function getBottomEdgeArea() {
     var h = window.innerHeight;
-    return {
+  
+
+  /* ================================================================
+   * 竹叶飘落系统
+   * ================================================================ */
+
+  var leaves = [];
+  var leafTimer = 0;
+
+  function updateLeaves(dt, w, h) {
+    // 定时生成竹叶
+    leafTimer += dt;
+    if (leafTimer > 1.2 && leaves.length < 20) {
+      leafTimer = 0;
+      spawnLeaf(w, h);
+    }
+
+    // 更新每片叶
+    for (var i = leaves.length - 1; i >= 0; i--) {
+      var l = leaves[i];
+      l.x += l.vx * dt + Math.sin(l.swayPhase) * 18 * dt;
+      l.y += l.vy * dt;
+      l.swayPhase += l.swaySpeed * dt;
+      l.rotation += l.rotSpeed * dt;
+      l.opacity -= 0.08 * dt;
+      if (l.opacity <= 0 || l.y > h + 60) {
+        leaves.splice(i, 1);
+      }
+    }
+  }
+
+  function spawnLeaf(w, h) {
+    leaves.push({
+      x: Math.random() * w,
+      y: -20,
+      vx: (Math.random() - 0.5) * 25,
+      vy: 15 + Math.random() * 35,
+      rotation: Math.random() * Math.PI * 2,
+      rotSpeed: (Math.random() - 0.5) * 3,
+      swayPhase: Math.random() * Math.PI * 2,
+      swaySpeed: 2 + Math.random() * 3,
+      size: 5 + Math.random() * 10,
+      opacity: 0.3 + Math.random() * 0.4,
+      color: Math.random() < 0.5 ? 'rgba(60,80,50,ALPHA)' : 'rgba(80,100,60,ALPHA)'
+    });
+  }
+
+  function drawLeaves(ctx) {
+    for (var i = 0; i < leaves.length; i++) {
+      var l = leaves[i];
+      ctx.save();
+      ctx.globalAlpha = l.opacity;
+      ctx.translate(l.x, l.y);
+      ctx.rotate(l.rotation);
+      // 竹叶 — 细长椭圆
+      ctx.fillStyle = l.color.replace('ALPHA', l.opacity.toFixed(2));
+      ctx.beginPath();
+      ctx.ellipse(0, 0, l.size * 0.7, l.size * 0.2, 0, 0, Math.PI * 2);
+      ctx.fill();
+      // 叶脉
+      ctx.strokeStyle = l.color.replace('ALPHA', (l.opacity * 0.5).toFixed(2));
+      ctx.lineWidth = 0.3;
+      ctx.beginPath();
+      ctx.moveTo(-l.size * 0.6, 0);
+      ctx.lineTo(l.size * 0.6, 0);
+      ctx.stroke();
+      ctx.restore();
+    }
+  }
+
+  return {
       top: h * (1 - CONFIG.SCROLL_BOTTOM_EDGE),
       bottom: h
     };
@@ -63,48 +203,71 @@ var Renderer = (function() {
   function drawBamboo(ctx, bamboo) {
     if (!bamboo.alive && !bamboo.fallPiece) return;
 
-    // 先画下半截 (残留部分)
+    // 先画下半截 (残留部分) — 应用微风摇晃
+    var swayX = bamboo._swayOffset || 0;
     if (bamboo.segments.length > 0) {
-      drawBambooStalk(ctx, bamboo.x, bamboo.topY, bamboo.groundY,
-                       bamboo.width, bamboo.segments, bamboo.segHeight,
-                       bamboo.isCurrentTarget);
+      drawBambooStalk(ctx, bamboo.x + swayX, bamboo.topY, bamboo.groundY,
+                       bamboo.width, bamboo.segments, bamboo.segHeight);
     }
 
     // 再画下落碎片
     if (bamboo.fallPiece) {
-      drawFallingPiece(ctx, bamboo.fallPiece, bamboo.isCurrentTarget);
+      drawFallingPiece(ctx, bamboo.fallPiece);
     }
   }
 
   /**
    * 绘制竹身 (从 topY 到 groundY)
    */
-  function drawBambooStalk(ctx, x, topY, groundY, width, segments, segH, isTarget) {
+  function drawBambooStalk(ctx, x, topY, groundY, width, segments, segH) {
     if (groundY - topY < 10) return;
     var halfW = width / 2;
+    var h = groundY - topY;
 
     ctx.save();
 
-    // 竹身底色 (中空浅色)
+    // 竹身底色 — 墨竹渐变 (中间淡、边缘深，模拟圆柱体)
     var bodyGrad = ctx.createLinearGradient(x - halfW, 0, x + halfW, 0);
-    bodyGrad.addColorStop(0, 'rgba(60,60,60,0.6)');
-    bodyGrad.addColorStop(0.3, 'rgba(140,140,140,0.4)');
-    bodyGrad.addColorStop(0.5, 'rgba(180,180,180,0.3)');
-    bodyGrad.addColorStop(0.7, 'rgba(140,140,140,0.4)');
-    bodyGrad.addColorStop(1, 'rgba(60,60,60,0.6)');
+    bodyGrad.addColorStop(0, 'rgba(40,45,35,0.75)');
+    bodyGrad.addColorStop(0.2, 'rgba(80,85,70,0.5)');
+    bodyGrad.addColorStop(0.45, 'rgba(140,145,120,0.3)');
+    bodyGrad.addColorStop(0.55, 'rgba(150,155,130,0.25)');
+    bodyGrad.addColorStop(0.8, 'rgba(80,85,70,0.5)');
+    bodyGrad.addColorStop(1, 'rgba(40,45,35,0.75)');
 
     ctx.fillStyle = bodyGrad;
-    ctx.fillRect(x - halfW, topY, width, groundY - topY);
+    ctx.fillRect(x - halfW, topY, width, h);
 
-    // 竹身轮廓 (水墨双线)
-    ctx.strokeStyle = 'rgba(30,30,30,0.7)';
-    ctx.lineWidth = 1.5;
+    // 竹身纹理 — 细微纵纹 (手绘感)
+    ctx.globalAlpha = 0.08;
+    for (var tx = x - halfW + 3; tx <= x + halfW - 3; tx += 4) {
+      ctx.strokeStyle = 'rgba(0,0,0,0.6)';
+      ctx.lineWidth = 0.5 + Math.random() * 0.3;
+      ctx.beginPath();
+      ctx.moveTo(tx, topY);
+      ctx.lineTo(tx + (Math.random()-0.5)*1.5, groundY);
+      ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+
+    // 竹身轮廓 — 不规则水墨双线
+    ctx.strokeStyle = 'rgba(20,25,18,0.6)';
+    ctx.lineWidth = 1.8;
+    // 左线 (略带不规则)
     ctx.beginPath();
     ctx.moveTo(x - halfW, topY);
+    for (var ly = topY + 15; ly < groundY; ly += 20) {
+      ctx.lineTo(x - halfW + (Math.random()-0.5)*0.8, ly);
+    }
     ctx.lineTo(x - halfW, groundY);
     ctx.stroke();
+
+    // 右线
     ctx.beginPath();
     ctx.moveTo(x + halfW, topY);
+    for (var ry = topY + 15; ry < groundY; ry += 20) {
+      ctx.lineTo(x + halfW + (Math.random()-0.5)*0.8, ry);
+    }
     ctx.lineTo(x + halfW, groundY);
     ctx.stroke();
 
@@ -324,6 +487,76 @@ var Renderer = (function() {
     }
   }
 
+
+
+  /* ================================================================
+   * 竹叶飘落系统
+   * ================================================================ */
+
+  var leaves = [];
+  var leafTimer = 0;
+
+  function updateLeaves(dt, w, h) {
+    // 定时生成竹叶
+    leafTimer += dt;
+    if (leafTimer > 1.2 && leaves.length < 20) {
+      leafTimer = 0;
+      spawnLeaf(w, h);
+    }
+
+    // 更新每片叶
+    for (var i = leaves.length - 1; i >= 0; i--) {
+      var l = leaves[i];
+      l.x += l.vx * dt + Math.sin(l.swayPhase) * 18 * dt;
+      l.y += l.vy * dt;
+      l.swayPhase += l.swaySpeed * dt;
+      l.rotation += l.rotSpeed * dt;
+      l.opacity -= 0.08 * dt;
+      if (l.opacity <= 0 || l.y > h + 60) {
+        leaves.splice(i, 1);
+      }
+    }
+  }
+
+  function spawnLeaf(w, h) {
+    leaves.push({
+      x: Math.random() * w,
+      y: -20,
+      vx: (Math.random() - 0.5) * 25,
+      vy: 15 + Math.random() * 35,
+      rotation: Math.random() * Math.PI * 2,
+      rotSpeed: (Math.random() - 0.5) * 3,
+      swayPhase: Math.random() * Math.PI * 2,
+      swaySpeed: 2 + Math.random() * 3,
+      size: 5 + Math.random() * 10,
+      opacity: 0.3 + Math.random() * 0.4,
+      color: Math.random() < 0.5 ? 'rgba(60,80,50,ALPHA)' : 'rgba(80,100,60,ALPHA)'
+    });
+  }
+
+  function drawLeaves(ctx) {
+    for (var i = 0; i < leaves.length; i++) {
+      var l = leaves[i];
+      ctx.save();
+      ctx.globalAlpha = l.opacity;
+      ctx.translate(l.x, l.y);
+      ctx.rotate(l.rotation);
+      // 竹叶 — 细长椭圆
+      ctx.fillStyle = l.color.replace('ALPHA', l.opacity.toFixed(2));
+      ctx.beginPath();
+      ctx.ellipse(0, 0, l.size * 0.7, l.size * 0.2, 0, 0, Math.PI * 2);
+      ctx.fill();
+      // 叶脉
+      ctx.strokeStyle = l.color.replace('ALPHA', (l.opacity * 0.5).toFixed(2));
+      ctx.lineWidth = 0.3;
+      ctx.beginPath();
+      ctx.moveTo(-l.size * 0.6, 0);
+      ctx.lineTo(l.size * 0.6, 0);
+      ctx.stroke();
+      ctx.restore();
+    }
+  }
+
   return {
     drawStaticBackground: drawStaticBackground,
     drawGameBackground: drawGameBackground,
@@ -332,6 +565,8 @@ var Renderer = (function() {
     drawParticles: drawParticles,
     getSafeArea: getSafeArea,
     getBottomEdgeArea: getBottomEdgeArea,
-    loadBgImage: loadBgImage
+    loadBgImage: loadBgImage,
+    updateLeaves: updateLeaves,
+    drawLeaves: drawLeaves
   };
 })();

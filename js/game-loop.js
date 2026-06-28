@@ -88,10 +88,11 @@ var GameLoop = (function() {
     // 命中冷却
     if (gs.hitCooldown > 0) gs.hitCooldown -= dt;
     InputSystem.fadeTrail(dt);
-    // 刀光拖尾粒子
     spawnTrailSparks(dt);
     checkSlashCollisions();
     updateParticles(dt);
+    // 竹叶飘落
+    Renderer.updateLeaves(dt, window.innerWidth, window.innerHeight);
     updateHUD();
   }
 
@@ -557,6 +558,9 @@ var GameLoop = (function() {
     ctx.translate(sx, sy);
 
     Renderer.drawGameBackground(ctx, w, h);
+
+    // 竹叶飘落 (竹子背后)
+    Renderer.drawLeaves(ctx);
 
     // 竹子
     for (var i = 0; i < gs.bamboos.length; i++) {

@@ -62,6 +62,11 @@ var BambooSystem = (function() {
       brokenAtSegIdx: -1,
       letterFilled: false,
 
+      // 微风摇晃
+      swayPhase: Math.random() * Math.PI * 2,   // 随机初始相位
+      swayAmp: 0.8 + Math.random() * 1.8,       // 摇晃幅度 (0.8~2.6px)
+      swaySpeed: 0.7 + Math.random() * 0.8,     // 摇晃速度 (0.7~1.5)
+
       // 下落碎片 (上半截)
       fallPiece: null,
 
@@ -174,6 +179,10 @@ var BambooSystem = (function() {
    * 更新竹子 (下落碎片动画)
    */
   function update(bamboo, dt) {
+    // 微风摇晃
+    bamboo.swayPhase += bamboo.swaySpeed * dt;
+    bamboo._swayOffset = Math.sin(bamboo.swayPhase) * bamboo.swayAmp;
+
     if (!bamboo.fallPiece) return;
 
     var fp = bamboo.fallPiece;
