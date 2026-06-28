@@ -36,9 +36,13 @@
     // 监听界面切换
     document.addEventListener('screenChanged', function(e) {
       var screen = e.detail.screen;
+      var video = document.getElementById('bg-video');
+
       if (screen === 'game') {
+        if (video) video.style.display = 'none';
         GameLoop.startGame();
       } else {
+        if (video) video.style.display = '';
         if (GameLoop.getState() !== 'idle') {
           GameLoop.stopGame();
         }

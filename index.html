@@ -13,6 +13,12 @@
 </head>
 <body>
 
+  <!-- ===== Background Video (主菜单动态背景) ===== -->
+  <video id="bg-video" autoplay muted loop playsinline
+         style="position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+    <source src="assets/bamboo-bg.mp4" type="video/mp4">
+  </video>
+
   <!-- ===== Canvas (always present, behind all overlays) ===== -->
   <canvas id="game-canvas"></canvas>
 
