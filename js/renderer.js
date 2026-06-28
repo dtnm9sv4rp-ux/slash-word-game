@@ -110,44 +110,12 @@ var Renderer = (function() {
     }
     ctx.restore();
 
-    // === 第2遍: 竹节线 + 字母 (正常模式，不参与multiply) ===
+    // === 第2遍: 字母 (正常模式) ===
     for (var t = 0; t < segments.length; t++) {
       var seg = segments[t];
-      var distFromGround2 = groundY - seg.y;
-      var sr2 = distFromGround2 / (totalH || 1);
+      var sr2 = (groundY - seg.y) / (totalH || 1);
       var sx2 = baseX + swayAmp * sr2;
-      var nodeY = seg.y + segH / 2;
-      var bulgeW = halfW + CONFIG.BAMBOO_NODE_RADIUS;
-
-      // 竹节环
-      ctx.fillStyle = 'rgba(16,20,12,0.25)';
-      ctx.fillRect(sx2 - bulgeW, nodeY - 2, bulgeW * 2, 4);
-      ctx.strokeStyle = 'rgba(10,14,8,0.4)';
-      ctx.lineWidth = 1.2;
-      ctx.beginPath();
-      ctx.moveTo(sx2 - bulgeW, nodeY);
-      ctx.lineTo(sx2 + bulgeW, nodeY);
-      ctx.stroke();
-
-      // 字母
       drawBambooLetter(ctx, seg.letter, sx2, seg.y, halfW);
-    }
-
-    // 顶节线
-    if (segments.length > 0) {
-      var topSeg = segments[0];
-      var topNodeY = topSeg.y - segH / 2;
-      var topSway = swayAmp * (groundY - topSeg.y) / (totalH || 1);
-      var tx = baseX + topSway;
-      var bulgeW = halfW + CONFIG.BAMBOO_NODE_RADIUS;
-      ctx.fillStyle = 'rgba(16,20,12,0.25)';
-      ctx.fillRect(tx - bulgeW, topNodeY - 1.5, bulgeW * 2, 3);
-      ctx.strokeStyle = 'rgba(10,14,8,0.4)';
-      ctx.lineWidth = 1;
-      ctx.beginPath();
-      ctx.moveTo(tx - bulgeW, topNodeY);
-      ctx.lineTo(tx + bulgeW, topNodeY);
-      ctx.stroke();
     }
   }
 
