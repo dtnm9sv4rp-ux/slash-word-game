@@ -110,24 +110,24 @@ var Renderer = (function() {
     }
     ctx.restore();
 
-    // === 第2遍: 字母 (正常模式) ===
+    // === 第2遍: 字母 (不参与摇晃) ===
     for (var t = 0; t < segments.length; t++) {
       var seg = segments[t];
-      var sr2 = (groundY - seg.y) / (totalH || 1);
-      var sx2 = baseX + swayAmp * sr2;
-      drawBambooLetter(ctx, seg.letter, sx2, seg.y, halfW);
+      drawBambooLetter(ctx, seg.letter, baseX, seg.y, halfW);
     }
   }
 
   function drawBambooLetter(ctx, letter, x, y, halfW) {
-    // 文字阴影 (增加在纹理上的可读性)
-    ctx.fillStyle = 'rgba(0,0,0,0.45)';
-    ctx.font = 'bold ' + CONFIG.BAMBOO_LETTER_SIZE + 'px "Microsoft YaHei","PingFang SC",Arial,sans-serif';
+    // 水墨毛笔字体 — 白色
+    var fontStr = 'bold ' + CONFIG.BAMBOO_LETTER_SIZE + 'px "Ma Shan Zheng","STKaiti","KaiTi","SimSun",serif';
+    // 墨色阴影
+    ctx.fillStyle = 'rgba(0,0,0,0.4)';
+    ctx.font = fontStr;
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.fillText(letter, x + 1, y + 1);
-    // 白色字本体
-    ctx.fillStyle = '#f5f0e8';
+    ctx.fillText(letter, x + 1.5, y + 1.5);
+    // 白色毛笔字本体
+    ctx.fillStyle = '#f0ebe0';
     ctx.fillText(letter, x, y);
   }
 
