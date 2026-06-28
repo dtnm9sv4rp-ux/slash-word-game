@@ -17,6 +17,7 @@
     initCanvas();
     GameLoop.init();
     UIManager.init();
+    Renderer.loadBgImage();  // 预加载卷轴背景
 
     // 连接 UI 事件
     wireSettingsScreen();

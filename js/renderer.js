@@ -1,64 +1,59 @@
 /**
- * renderer.js — Canvas 绘制 (水墨竹林版)
- *
- * 竹子竖直站立，水墨笔触风格。
- * 竹节处有字母，被斩断后上半截下落消失。
+ * renderer.js — Canvas 绘制 (水墨卷轴背景 + 竹林)
  */
+
 var Renderer = (function() {
   'use strict';
 
-  /* ================================================================
-   * 背景
-   * ================================================================ */
+  var bgImage = null;
+  var bgLoaded = false;
+
+  function loadBgImage() {
+    if (bgImage) return;
+    bgImage = new Image();
+    bgImage.onload = function() { bgLoaded = true; };
+    bgImage.src = 'assets/textures/scroll-bg.png';
+  }
+
+  /** 获取竹子安全区 (画卷中间区域，上下深色边缘之外) */
+  function getSafeArea() {
+    var h = window.innerHeight;
+    return {
+      top: h * CONFIG.SCROLL_TOP_EDGE,
+      bottom: h * (1 - CONFIG.SCROLL_BOTTOM_EDGE)
+    };
+  }
+
+  /** 获取下方深色边缘区域 (放 HUD) */
+  function getBottomEdgeArea() {
+    var h = window.innerHeight;
+    return {
+      top: h * (1 - CONFIG.SCROLL_BOTTOM_EDGE),
+      bottom: h
+    };
+  }
+
+  function drawBgImage(ctx, w, h) {
+    if (!bgLoaded) {
+      // 图片未加载完 → 用纯色过渡
+      loadBgImage();
+      ctx.fillStyle = CONFIG.COLORS.paperWhite;
+      ctx.fillRect(0, 0, w, h);
+      return;
+    }
+    // 等比缩放填满宽度，垂直居中
+    var scale = w / bgImage.width;
+    var drawH = bgImage.height * scale;
+    var offsetY = (h - drawH) / 2;
+    ctx.drawImage(bgImage, 0, offsetY, w, drawH);
+  }
 
   function drawStaticBackground(ctx, w, h) {
-    ctx.fillStyle = CONFIG.COLORS.paperWhite;
-    ctx.fillRect(0, 0, w, h);
-    // 淡墨晕染
-    ctx.save();
-    ctx.globalAlpha = 0.025;
-    var spots = [
-      {x: w*0.15, y: h*0.3, r: w*0.35},
-      {x: w*0.8, y: h*0.6, r: w*0.3},
-      {x: w*0.5, y: h*0.15, r: w*0.25}
-    ];
-    spots.forEach(function(s) {
-      var g = ctx.createRadialGradient(s.x, s.y, 0, s.x, s.y, s.r);
-      g.addColorStop(0, CONFIG.COLORS.inkBlack);
-      g.addColorStop(1, 'transparent');
-      ctx.fillStyle = g;
-      ctx.fillRect(0, 0, w, h);
-    });
-    ctx.restore();
-    // 地面淡线
-    ctx.strokeStyle = 'rgba(0,0,0,0.08)';
-    ctx.lineWidth = 1;
-    ctx.beginPath();
-    ctx.moveTo(0, h - CONFIG.BAMBOO_GROUND_OFFSET);
-    ctx.lineTo(w, h - CONFIG.BAMBOO_GROUND_OFFSET);
-    ctx.stroke();
+    drawBgImage(ctx, w, h);
   }
 
   function drawGameBackground(ctx, w, h) {
-    ctx.fillStyle = CONFIG.COLORS.paperWhite;
-    ctx.fillRect(0, 0, w, h);
-    // 地面淡线
-    var gy = h - CONFIG.BAMBOO_GROUND_OFFSET;
-    ctx.strokeStyle = 'rgba(0,0,0,0.06)';
-    ctx.lineWidth = 1;
-    ctx.beginPath();
-    ctx.moveTo(0, gy);
-    ctx.lineTo(w, gy);
-    ctx.stroke();
-    // 淡墨雾
-    ctx.save();
-    ctx.globalAlpha = 0.02;
-    var g = ctx.createRadialGradient(w*0.5, h*0.4, 0, w*0.5, h*0.4, Math.max(w,h)*0.5);
-    g.addColorStop(0, CONFIG.COLORS.inkBlack);
-    g.addColorStop(1, 'transparent');
-    ctx.fillStyle = g;
-    ctx.fillRect(0, 0, w, h);
-    ctx.restore();
+    drawBgImage(ctx, w, h);
   }
 
   /* ================================================================
@@ -334,6 +329,9 @@ var Renderer = (function() {
     drawGameBackground: drawGameBackground,
     drawBamboo: drawBamboo,
     drawTrail: drawTrail,
-    drawParticles: drawParticles
+    drawParticles: drawParticles,
+    getSafeArea: getSafeArea,
+    getBottomEdgeArea: getBottomEdgeArea,
+    loadBgImage: loadBgImage
   };
 })();

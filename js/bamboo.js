@@ -15,9 +15,12 @@ var BambooSystem = (function() {
    * @param {string} targetLetter - 正确字母
    * @param {string[]} distractorPool - 干扰字母候选池
    */
-  function create(index, x, groundY, targetLetter, distractorPool) {
-    var segCount = Utils.randomInt(CONFIG.BAMBOO_SEGMENTS_MIN, CONFIG.BAMBOO_SEGMENTS_MAX);
+  function create(index, x, groundY, targetLetter, distractorPool, maxTop) {
     var segH = CONFIG.BAMBOO_SEGMENT_HEIGHT;
+    // 限制竹高不超出上方安全区
+    var maxSegs = Math.floor((groundY - (maxTop || 0)) / segH);
+    var upper = Math.min(CONFIG.BAMBOO_SEGMENTS_MAX, Math.max(CONFIG.BAMBOO_SEGMENTS_MIN, maxSegs));
+    var segCount = Utils.randomInt(CONFIG.BAMBOO_SEGMENTS_MIN, upper);
     var totalH = segCount * segH;
 
     // 正确字母藏在随机竹节中

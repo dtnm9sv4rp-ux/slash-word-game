@@ -71,10 +71,10 @@
   max-width: 320px;
 }
 
-/* ===== Game HUD ===== */
+/* ===== Game HUD (定位在卷轴下方深色边缘内) ===== */
 #screen-game {
   justify-content: flex-end;
-  padding-bottom: var(--space-xl);
+  padding-bottom: 0;
 }
 
 #hud-container {
@@ -82,7 +82,9 @@
   max-width: var(--max-content-width);
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
+  gap: 6px;
+  padding: 8px 16px 12px;
+  margin-bottom: 2px;
 }
 
 #hud-word-definition {

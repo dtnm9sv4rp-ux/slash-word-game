@@ -92,7 +92,9 @@ var GameLoop = (function() {
 
     var w = window.innerWidth || 1024;
     var h = window.innerHeight || 768;
-    var groundY = h - CONFIG.BAMBOO_GROUND_OFFSET;
+    var safe = Renderer.getSafeArea();
+    var groundY = safe.bottom;  // 竹子根部在画卷底部
+    var maxTop = safe.top;      // 竹子不能长出画卷顶部
     var wordUpper = word.word.toUpperCase();
     var count = wordUpper.length;
 
@@ -116,7 +118,7 @@ var GameLoop = (function() {
     for (var k = 0; k < count; k++) {
       var x = CONFIG.BAMBOO_MARGIN + spacing * (k + 1);
       var targetLetter = wordUpper[k];
-      var bamboo = BambooSystem.create(k, x, groundY, targetLetter, pool);
+      var bamboo = BambooSystem.create(k, x, groundY, targetLetter, pool, maxTop);
       bamboo.isCurrentTarget = (k === 0);
       gs.bamboos.push(bamboo);
     }

@@ -13,7 +13,11 @@ var CONFIG = {
   BAMBOO_WIDTH: 22,                // 竹身粗细
   BAMBOO_NODE_RADIUS: 5,           // 竹节凸起半径
   BAMBOO_MARGIN: 70,               // 最左/最右竹子距屏幕边缘距离
-  BAMBOO_GROUND_OFFSET: 230,       // 竹子底部距屏幕底部距离 (给HUD留足空间)
+  BAMBOO_GROUND_OFFSET: 230,       // (保留旧值，实际由卷轴比例计算)
+
+  // 卷轴背景安全区比例
+  SCROLL_TOP_EDGE: 0.17,           // 上方深色边缘占比
+  SCROLL_BOTTOM_EDGE: 0.17,        // 下方深色边缘占比
   BAMBOO_MIN_HEIGHT: 220,          // 竹子最小总高度 (3节)
   BAMBOO_HITBOX_PAD_X: 14,         // 水平碰撞容差
   BAMBOO_HITBOX_PAD_Y: 4,          // 垂直碰撞容差
