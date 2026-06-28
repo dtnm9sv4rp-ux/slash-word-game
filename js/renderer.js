@@ -6,8 +6,10 @@ var Renderer = (function() {
 
   var bgImage = null;
   var bgLoaded = false;
-  var segImages = [null, null, null, null];  // 4张竹节纹理
+  var segImages = [null, null, null, null];
   var segLoaded = [false, false, false, false];
+  var letterImages = {};  // { 'A': Image, 'B': Image, ... }
+  var lettersReady = false;
   var leaves = [];
   var leafTimer = 0;
 
@@ -20,6 +22,23 @@ var Renderer = (function() {
       segImages[idx] = img;
     })(si);
   }
+
+  // 预加载26个字母贴图
+  (function() {
+    var loaded = 0;
+    var letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    for (var li = 0; li < 26; li++) {
+      (function(l) {
+        var img = new Image();
+        img.onload = function() {
+          loaded++;
+          if (loaded >= 26) lettersReady = true;
+        };
+        img.src = 'assets/textures/letter-' + l + '.png';
+        letterImages[l] = img;
+      })(letters[li]);
+    }
+  })();
 
   /* ================================================================
    * 背景
@@ -118,17 +137,27 @@ var Renderer = (function() {
   }
 
   function drawBambooLetter(ctx, letter, x, y, halfW) {
-    // 水墨毛笔字体 — 白色
-    var fontStr = 'bold ' + CONFIG.BAMBOO_LETTER_SIZE + 'px "Ma Shan Zheng","STKaiti","KaiTi","SimSun",serif';
-    // 墨色阴影
-    ctx.fillStyle = 'rgba(0,0,0,0.4)';
-    ctx.font = fontStr;
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
-    ctx.fillText(letter, x + 1.5, y + 1.5);
-    // 白色毛笔字本体
-    ctx.fillStyle = '#f0ebe0';
-    ctx.fillText(letter, x, y);
+    var img = letterImages[letter];
+    var size = CONFIG.BAMBOO_LETTER_SIZE;
+
+    if (img && lettersReady && img.complete && img.naturalWidth > 0) {
+      // 用AI生成的字母贴图
+      var iw = img.naturalWidth;
+      var ih = img.naturalHeight;
+      var scale = size / Math.max(iw, ih);
+      var dw = iw * scale;
+      var dh = ih * scale;
+      ctx.drawImage(img, x - dw/2, y - dh/2, dw, dh);
+    } else {
+      // 回退：Canvas画字
+      ctx.fillStyle = 'rgba(0,0,0,0.4)';
+      ctx.font = 'bold ' + size + 'px "Ma Shan Zheng","STKaiti","KaiTi",serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(letter, x + 1.5, y + 1.5);
+      ctx.fillStyle = '#f0ebe0';
+      ctx.fillText(letter, x, y);
+    }
   }
 
   function drawFallingPiece(ctx, fp) {
