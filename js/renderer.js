@@ -23,19 +23,42 @@ var Renderer = (function() {
     })(si);
   }
 
-  // 预加载26个字母贴图
+  // 预加载26个字母贴图 (含背景透明化处理)
   (function() {
     var loaded = 0;
     var letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     for (var li = 0; li < 26; li++) {
       (function(l) {
-        var img = new Image();
-        img.onload = function() {
+        var raw = new Image();
+        raw.onload = function() {
+          // 创建离屏canvas去除灰色底
+          var oc = document.createElement('canvas');
+          oc.width = raw.naturalWidth;
+          oc.height = raw.naturalHeight;
+          var octx = oc.getContext('2d');
+          octx.drawImage(raw, 0, 0);
+          var data = octx.getImageData(0, 0, oc.width, oc.height);
+          var pixels = data.data;
+          for (var p = 0; p < pixels.length; p += 4) {
+            // 浅色像素(灰底)→透明; 深色像素(字)→保留变白
+            var brightness = (pixels[p] + pixels[p+1] + pixels[p+2]) / 3;
+            if (brightness > 100) {
+              // 背景色 → 完全透明
+              pixels[p+3] = 0;
+            } else {
+              // 笔触 → 设为米白色
+              pixels[p] = 240;
+              pixels[p+1] = 235;
+              pixels[p+2] = 224;
+              pixels[p+3] = 255;
+            }
+          }
+          octx.putImageData(data, 0, 0);
+          letterImages[l] = oc;  // 存处理后的canvas
           loaded++;
           if (loaded >= 26) lettersReady = true;
         };
-        img.src = 'assets/textures/letter-' + l + '.png';
-        letterImages[l] = img;
+        raw.src = 'assets/textures/letter-' + l + '.png';
       })(letters[li]);
     }
   })();
@@ -137,22 +160,16 @@ var Renderer = (function() {
   }
 
   function drawBambooLetter(ctx, letter, x, y, halfW) {
-    var img = letterImages[letter];
+    var src = letterImages[letter];  // 处理后的canvas (已去底)
     var size = CONFIG.BAMBOO_LETTER_SIZE;
 
-    if (img && lettersReady && img.complete && img.naturalWidth > 0) {
-      // screen模式: 暗色(灰底)→透明, 亮色(白字)→保留
-      ctx.save();
-      ctx.globalCompositeOperation = 'screen';
-      var iw = img.naturalWidth;
-      var ih = img.naturalHeight;
-      var scale = size / Math.max(iw, ih);
-      var dw = iw * scale;
-      var dh = ih * scale;
-      ctx.drawImage(img, x - dw/2, y - dh/2, dw, dh);
-      ctx.restore();
+    if (src && lettersReady && src.width > 0) {
+      var scale = size / Math.max(src.width, src.height);
+      var dw = src.width * scale;
+      var dh = src.height * scale;
+      ctx.drawImage(src, x - dw/2, y - dh/2, dw, dh);
     } else {
-      // 回退：Canvas画字
+      // 回退
       ctx.fillStyle = 'rgba(0,0,0,0.4)';
       ctx.font = 'bold ' + size + 'px "Ma Shan Zheng","STKaiti","KaiTi",serif';
       ctx.textAlign = 'center';
