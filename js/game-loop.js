@@ -26,53 +26,53 @@ var GameLoop = (function() {
   }
 
   function startGame() {
-    if (state === 'playing') return;
+    if (state === 'playing' || gs._starting) return;
+    gs._starting = true;
+
+    // ★ 彻底清理上次游戏状态
+    if (animFrameId) { cancelAnimationFrame(animFrameId); animFrameId = null; }
     resetGameState();
+    InputSystem.clearTrail();
+
     var bank = WordManager.getActiveBank();
 
-    if (bank === 'custom') {
-      // 使用自定义词库
-      WordManager.prepareSession(CONFIG.WORDS_PER_ROUND);
+    function go() {
       state = 'playing';
       lastTime = performance.now();
       gs.roundStartTime = performance.now();
-      if (!animFrameId) animFrameId = requestAnimationFrame(loop);
+      gs._starting = false;
+      animFrameId = requestAnimationFrame(loop);
       startNextWord();
+    }
+
+    if (bank === 'custom') {
+      WordManager.prepareSession(CONFIG.WORDS_PER_ROUND);
+      go();
     } else {
-      // 加载CET词库
       WordManager.loadCETBank(bank, function(wordBank) {
         if (!wordBank || wordBank.length === 0) {
-          alert('词库加载失败，请刷新重试');
+          alert('词库加载失败');
+          gs._starting = false;
           return;
         }
-        // 获取今日待学单词
         var dueIds = Storage.getDueWords(bank, wordBank);
         if (dueIds.length === 0) {
-          alert('今日目标已完成！明天再来吧。');
+          alert('今日目标已完成！');
           UIManager.showScreen('menu');
+          gs._starting = false;
           return;
         }
-        // 建立id→word映射
         var wordMap = {};
         wordBank.forEach(function(w) { wordMap[w.id] = w; });
-        // 取前N个待学单词作为本轮
         var roundWords = dueIds.slice(0, CONFIG.WORDS_PER_ROUND).map(function(id) {
           return wordMap[id];
         }).filter(Boolean);
 
-        // 存储本轮单词ID用于进度追踪
+        // ★ 直接设置session，不污染自定义词库
+        WordManager.setSessionWords(roundWords);
         gs.bank = bank;
         gs.roundWordIds = roundWords.map(function(w) { return w.id; });
-
-        // 替换WordManager的session为CET单词
-        WordManager.importWords(roundWords);
-        WordManager.prepareSession(roundWords.length);
-
-        state = 'playing';
-        lastTime = performance.now();
-        gs.roundStartTime = performance.now();
-        if (!animFrameId) animFrameId = requestAnimationFrame(loop);
-        startNextWord();
+        go();
       });
     }
   }
@@ -655,7 +655,8 @@ var GameLoop = (function() {
       wordProgress: [], errorsThisWord: 0, currentBambooIdx: 0,
       sessionPoints: 0, sessionWordsCleared: 0, coinsEarned: 0,
       wordCompleteTimer: false,
-      roundStartTime: 0, roundEndTime: 0
+      roundStartTime: 0, roundEndTime: 0,
+      _starting: false, bank: null, roundWordIds: null
     };
     InputSystem.clearTrail();
   }

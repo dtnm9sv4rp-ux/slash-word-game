@@ -348,6 +348,11 @@ var WordManager = (function() {
     exportWords: exportWords,
     loadCETBank: loadCETBank,
     setActiveBank: setActiveBank,
-    getActiveBank: getActiveBank
+    getActiveBank: getActiveBank,
+    /** 直接设置本轮单词(不修改永久词库) */
+    setSessionWords: function(words) {
+      sessionWords = words.slice();
+      sessionWordIndex = 0;
+    }
   };
 })();
