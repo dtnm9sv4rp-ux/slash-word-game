@@ -1,0 +1,5472 @@
+[
+  {
+    "id": "cet6_0",
+    "word": "abnormal",
+    "definition": "异常的,反常的"
+  },
+  {
+    "id": "cet6_1",
+    "word": "abolish",
+    "definition": "废除,取消"
+  },
+  {
+    "id": "cet6_2",
+    "word": "absurd",
+    "definition": "荒谬的,荒唐的"
+  },
+  {
+    "id": "cet6_3",
+    "word": "abuse",
+    "definition": "滥用,虐待"
+  },
+  {
+    "id": "cet6_4",
+    "word": "accessory",
+    "definition": "附件,配件,从犯"
+  },
+  {
+    "id": "cet6_5",
+    "word": "accommodate",
+    "definition": "容纳,适应,提供住宿"
+  },
+  {
+    "id": "cet6_6",
+    "word": "accordance",
+    "definition": "一致,和谐"
+  },
+  {
+    "id": "cet6_7",
+    "word": "accumulate",
+    "definition": "积累,积聚"
+  },
+  {
+    "id": "cet6_8",
+    "word": "acquaint",
+    "definition": "使认识,使熟悉"
+  },
+  {
+    "id": "cet6_9",
+    "word": "activate",
+    "definition": "激活,启动"
+  },
+  {
+    "id": "cet6_10",
+    "word": "acute",
+    "definition": "急性的,敏锐的"
+  },
+  {
+    "id": "cet6_11",
+    "word": "addict",
+    "definition": "上瘾,入迷"
+  },
+  {
+    "id": "cet6_12",
+    "word": "adhere",
+    "definition": "坚持,黏附"
+  },
+  {
+    "id": "cet6_13",
+    "word": "adjacent",
+    "definition": "邻近的,毗连的"
+  },
+  {
+    "id": "cet6_14",
+    "word": "administer",
+    "definition": "管理,执行,给予"
+  },
+  {
+    "id": "cet6_15",
+    "word": "adolescent",
+    "definition": "青少年,青春期的"
+  },
+  {
+    "id": "cet6_16",
+    "word": "adverse",
+    "definition": "不利的,相反的"
+  },
+  {
+    "id": "cet6_17",
+    "word": "advocate",
+    "definition": "提倡,倡导者"
+  },
+  {
+    "id": "cet6_18",
+    "word": "aesthetic",
+    "definition": "美学的,审美的"
+  },
+  {
+    "id": "cet6_19",
+    "word": "affection",
+    "definition": "喜爱,感情"
+  },
+  {
+    "id": "cet6_20",
+    "word": "affiliate",
+    "definition": "使隶属,附属机构"
+  },
+  {
+    "id": "cet6_21",
+    "word": "affirm",
+    "definition": "断言,证实"
+  },
+  {
+    "id": "cet6_22",
+    "word": "aggravate",
+    "definition": "加重,恶化"
+  },
+  {
+    "id": "cet6_23",
+    "word": "aggregate",
+    "definition": "总计,集合体"
+  },
+  {
+    "id": "cet6_24",
+    "word": "agony",
+    "definition": "极大的痛苦"
+  },
+  {
+    "id": "cet6_25",
+    "word": "alien",
+    "definition": "外国的,陌生的,外星人"
+  },
+  {
+    "id": "cet6_26",
+    "word": "allege",
+    "definition": "声称,指控"
+  },
+  {
+    "id": "cet6_27",
+    "word": "alleviate",
+    "definition": "减轻,缓解"
+  },
+  {
+    "id": "cet6_28",
+    "word": "allocate",
+    "definition": "分配,拨出"
+  },
+  {
+    "id": "cet6_29",
+    "word": "alloy",
+    "definition": "合金"
+  },
+  {
+    "id": "cet6_30",
+    "word": "alternate",
+    "definition": "交替,轮流"
+  },
+  {
+    "id": "cet6_31",
+    "word": "ambiguous",
+    "definition": "模棱两可的,含糊的"
+  },
+  {
+    "id": "cet6_32",
+    "word": "amend",
+    "definition": "修改,修订"
+  },
+  {
+    "id": "cet6_33",
+    "word": "analogy",
+    "definition": "类比,相似"
+  },
+  {
+    "id": "cet6_34",
+    "word": "anonymous",
+    "definition": "匿名的,无名的"
+  },
+  {
+    "id": "cet6_35",
+    "word": "apparatus",
+    "definition": "设备,仪器,机构"
+  },
+  {
+    "id": "cet6_36",
+    "word": "applaud",
+    "definition": "鼓掌,称赞"
+  },
+  {
+    "id": "cet6_37",
+    "word": "appraisal",
+    "definition": "评价,评估"
+  },
+  {
+    "id": "cet6_38",
+    "word": "appropriate",
+    "definition": "适当的,合适的"
+  },
+  {
+    "id": "cet6_39",
+    "word": "apt",
+    "definition": "恰当的,有倾向的"
+  },
+  {
+    "id": "cet6_40",
+    "word": "array",
+    "definition": "排列,阵列,大量"
+  },
+  {
+    "id": "cet6_41",
+    "word": "articulate",
+    "definition": "清晰地表达"
+  },
+  {
+    "id": "cet6_42",
+    "word": "ascend",
+    "definition": "上升,攀登"
+  },
+  {
+    "id": "cet6_43",
+    "word": "ascribe",
+    "definition": "归因于,归咎于"
+  },
+  {
+    "id": "cet6_44",
+    "word": "assault",
+    "definition": "攻击,袭击"
+  },
+  {
+    "id": "cet6_45",
+    "word": "assert",
+    "definition": "断言,坚持"
+  },
+  {
+    "id": "cet6_46",
+    "word": "asset",
+    "definition": "资产,优点"
+  },
+  {
+    "id": "cet6_47",
+    "word": "assimilate",
+    "definition": "同化,吸收,消化"
+  },
+  {
+    "id": "cet6_48",
+    "word": "attorney",
+    "definition": "律师,代理人"
+  },
+  {
+    "id": "cet6_49",
+    "word": "attribute",
+    "definition": "属性,归因于"
+  },
+  {
+    "id": "cet6_50",
+    "word": "authentic",
+    "definition": "真实的,可靠的"
+  },
+  {
+    "id": "cet6_51",
+    "word": "authorize",
+    "definition": "授权,批准"
+  },
+  {
+    "id": "cet6_52",
+    "word": "avail",
+    "definition": "有用,有益"
+  },
+  {
+    "id": "cet6_53",
+    "word": "avert",
+    "definition": "避免,转移"
+  },
+  {
+    "id": "cet6_54",
+    "word": "bachelor",
+    "definition": "学士,单身汉"
+  },
+  {
+    "id": "cet6_55",
+    "word": "bankrupt",
+    "definition": "破产的,破产者"
+  },
+  {
+    "id": "cet6_56",
+    "word": "barren",
+    "definition": "贫瘠的,不孕的"
+  },
+  {
+    "id": "cet6_57",
+    "word": "beforehand",
+    "definition": "预先,事先"
+  },
+  {
+    "id": "cet6_58",
+    "word": "betray",
+    "definition": "背叛,出卖"
+  },
+  {
+    "id": "cet6_59",
+    "word": "bewilder",
+    "definition": "使迷惑,使困惑"
+  },
+  {
+    "id": "cet6_60",
+    "word": "bias",
+    "definition": "偏见,偏向"
+  },
+  {
+    "id": "cet6_61",
+    "word": "bibliography",
+    "definition": "参考书目"
+  },
+  {
+    "id": "cet6_62",
+    "word": "biography",
+    "definition": "传记"
+  },
+  {
+    "id": "cet6_63",
+    "word": "bizarre",
+    "definition": "奇异的,古怪的"
+  },
+  {
+    "id": "cet6_64",
+    "word": "blaze",
+    "definition": "火焰,燃烧,闪耀"
+  },
+  {
+    "id": "cet6_65",
+    "word": "bleak",
+    "definition": "荒凉的,暗淡的,阴冷的"
+  },
+  {
+    "id": "cet6_66",
+    "word": "bless",
+    "definition": "祝福,保佑"
+  },
+  {
+    "id": "cet6_67",
+    "word": "blossom",
+    "definition": "开花,花朵,兴旺"
+  },
+  {
+    "id": "cet6_68",
+    "word": "blunder",
+    "definition": "大错,犯错"
+  },
+  {
+    "id": "cet6_69",
+    "word": "blunt",
+    "definition": "钝的,直率的"
+  },
+  {
+    "id": "cet6_70",
+    "word": "bonus",
+    "definition": "奖金,红利"
+  },
+  {
+    "id": "cet6_71",
+    "word": "boom",
+    "definition": "繁荣,迅速增长"
+  },
+  {
+    "id": "cet6_72",
+    "word": "boycott",
+    "definition": "抵制,拒绝购买"
+  },
+  {
+    "id": "cet6_73",
+    "word": "brace",
+    "definition": "支架,支撑,brace oneself"
+  },
+  {
+    "id": "cet6_74",
+    "word": "breach",
+    "definition": "违反,破坏,缺口"
+  },
+  {
+    "id": "cet6_75",
+    "word": "breakdown",
+    "definition": "故障,崩溃,分解"
+  },
+  {
+    "id": "cet6_76",
+    "word": "brew",
+    "definition": "酿造,酝酿"
+  },
+  {
+    "id": "cet6_77",
+    "word": "bribe",
+    "definition": "贿赂,行贿"
+  },
+  {
+    "id": "cet6_78",
+    "word": "brisk",
+    "definition": "轻快的,兴隆的"
+  },
+  {
+    "id": "cet6_79",
+    "word": "bruise",
+    "definition": "淤青,擦伤"
+  },
+  {
+    "id": "cet6_80",
+    "word": "brutal",
+    "definition": "残忍的,野蛮的"
+  },
+  {
+    "id": "cet6_81",
+    "word": "bulk",
+    "definition": "大量,大部分,体积"
+  },
+  {
+    "id": "cet6_82",
+    "word": "bulletin",
+    "definition": "公告,布告"
+  },
+  {
+    "id": "cet6_83",
+    "word": "bureaucracy",
+    "definition": "官僚机构,官僚主义"
+  },
+  {
+    "id": "cet6_84",
+    "word": "casualty",
+    "definition": "伤亡人员,受害者"
+  },
+  {
+    "id": "cet6_85",
+    "word": "catastrophe",
+    "definition": "灾难,大祸"
+  },
+  {
+    "id": "cet6_86",
+    "word": "cater",
+    "definition": "迎合,提供餐饮"
+  },
+  {
+    "id": "cet6_87",
+    "word": "caution",
+    "definition": "谨慎,小心,警告"
+  },
+  {
+    "id": "cet6_88",
+    "word": "census",
+    "definition": "人口普查,统计"
+  },
+  {
+    "id": "cet6_89",
+    "word": "certify",
+    "definition": "证明,证实"
+  },
+  {
+    "id": "cet6_90",
+    "word": "cherish",
+    "definition": "珍爱,珍惜"
+  },
+  {
+    "id": "cet6_91",
+    "word": "chronic",
+    "definition": "慢性的,长期的"
+  },
+  {
+    "id": "cet6_92",
+    "word": "circulation",
+    "definition": "流通,循环,发行量"
+  },
+  {
+    "id": "cet6_93",
+    "word": "clamp",
+    "definition": "夹钳,夹紧"
+  },
+  {
+    "id": "cet6_94",
+    "word": "clarity",
+    "definition": "清楚,明晰"
+  },
+  {
+    "id": "cet6_95",
+    "word": "clash",
+    "definition": "冲突,碰撞,不协调"
+  },
+  {
+    "id": "cet6_96",
+    "word": "cling",
+    "definition": "紧紧抓住,坚持"
+  },
+  {
+    "id": "cet6_97",
+    "word": "clinic",
+    "definition": "诊所,门诊部"
+  },
+  {
+    "id": "cet6_98",
+    "word": "clip",
+    "definition": "夹子,修剪,片段"
+  },
+  {
+    "id": "cet6_99",
+    "word": "clockwise",
+    "definition": "顺时针方向的"
+  },
+  {
+    "id": "cet6_100",
+    "word": "cluster",
+    "definition": "群,簇,丛生"
+  },
+  {
+    "id": "cet6_101",
+    "word": "clutch",
+    "definition": "抓住,离合器"
+  },
+  {
+    "id": "cet6_102",
+    "word": "coalition",
+    "definition": "联盟,联合"
+  },
+  {
+    "id": "cet6_103",
+    "word": "cognitive",
+    "definition": "认知的,认识的"
+  },
+  {
+    "id": "cet6_104",
+    "word": "coherent",
+    "definition": "连贯的,一致的"
+  },
+  {
+    "id": "cet6_105",
+    "word": "coincide",
+    "definition": "同时发生,巧合"
+  },
+  {
+    "id": "cet6_106",
+    "word": "collaborate",
+    "definition": "合作,协作"
+  },
+  {
+    "id": "cet6_107",
+    "word": "collide",
+    "definition": "碰撞,冲突"
+  },
+  {
+    "id": "cet6_108",
+    "word": "commemorate",
+    "definition": "纪念,庆祝"
+  },
+  {
+    "id": "cet6_109",
+    "word": "commence",
+    "definition": "开始,着手"
+  },
+  {
+    "id": "cet6_110",
+    "word": "commend",
+    "definition": "称赞,推荐"
+  },
+  {
+    "id": "cet6_111",
+    "word": "commentary",
+    "definition": "评论,解说"
+  },
+  {
+    "id": "cet6_112",
+    "word": "commodity",
+    "definition": "商品,日用品"
+  },
+  {
+    "id": "cet6_113",
+    "word": "commonplace",
+    "definition": "平凡的,普通的"
+  },
+  {
+    "id": "cet6_114",
+    "word": "commute",
+    "definition": "通勤,减刑"
+  },
+  {
+    "id": "cet6_115",
+    "word": "compact",
+    "definition": "紧凑的,小巧的,契约"
+  },
+  {
+    "id": "cet6_116",
+    "word": "comparable",
+    "definition": "可比较的,类似的"
+  },
+  {
+    "id": "cet6_117",
+    "word": "compartment",
+    "definition": "隔间,车厢"
+  },
+  {
+    "id": "cet6_118",
+    "word": "compatible",
+    "definition": "兼容的,合得来的"
+  },
+  {
+    "id": "cet6_119",
+    "word": "compensate",
+    "definition": "补偿,赔偿"
+  },
+  {
+    "id": "cet6_120",
+    "word": "compile",
+    "definition": "编纂,编译"
+  },
+  {
+    "id": "cet6_121",
+    "word": "complement",
+    "definition": "补充,补足"
+  },
+  {
+    "id": "cet6_122",
+    "word": "complication",
+    "definition": "复杂,并发症"
+  },
+  {
+    "id": "cet6_123",
+    "word": "comply",
+    "definition": "遵守,服从"
+  },
+  {
+    "id": "cet6_124",
+    "word": "compose",
+    "definition": "组成,创作,镇定"
+  },
+  {
+    "id": "cet6_125",
+    "word": "compound",
+    "definition": "混合物,复合的,加剧"
+  },
+  {
+    "id": "cet6_126",
+    "word": "compulsory",
+    "definition": "强制的,必修的"
+  },
+  {
+    "id": "cet6_127",
+    "word": "concede",
+    "definition": "让步,承认"
+  },
+  {
+    "id": "cet6_128",
+    "word": "conceive",
+    "definition": "构想,怀孕"
+  },
+  {
+    "id": "cet6_129",
+    "word": "conception",
+    "definition": "概念,构想,怀孕"
+  },
+  {
+    "id": "cet6_130",
+    "word": "concise",
+    "definition": "简洁的,简明的"
+  },
+  {
+    "id": "cet6_131",
+    "word": "confer",
+    "definition": "商议,授予"
+  },
+  {
+    "id": "cet6_132",
+    "word": "confidential",
+    "definition": "机密的,秘密的"
+  },
+  {
+    "id": "cet6_133",
+    "word": "configuration",
+    "definition": "配置,布局"
+  },
+  {
+    "id": "cet6_134",
+    "word": "conform",
+    "definition": "遵守,符合,一致"
+  },
+  {
+    "id": "cet6_135",
+    "word": "confront",
+    "definition": "面对,对抗"
+  },
+  {
+    "id": "cet6_136",
+    "word": "conscientious",
+    "definition": "认真的,尽责的"
+  },
+  {
+    "id": "cet6_137",
+    "word": "consecutive",
+    "definition": "连续的,一贯的"
+  },
+  {
+    "id": "cet6_138",
+    "word": "consensus",
+    "definition": "共识,一致意见"
+  },
+  {
+    "id": "cet6_139",
+    "word": "conserve",
+    "definition": "保存,节约"
+  },
+  {
+    "id": "cet6_140",
+    "word": "console",
+    "definition": "安慰,控制台"
+  },
+  {
+    "id": "cet6_141",
+    "word": "consolidate",
+    "definition": "巩固,加强"
+  },
+  {
+    "id": "cet6_142",
+    "word": "conspicuous",
+    "definition": "显眼的,明显的"
+  },
+  {
+    "id": "cet6_143",
+    "word": "constituent",
+    "definition": "成分,选民"
+  },
+  {
+    "id": "cet6_144",
+    "word": "constitute",
+    "definition": "构成,组成"
+  },
+  {
+    "id": "cet6_145",
+    "word": "constrain",
+    "definition": "强迫,限制"
+  },
+  {
+    "id": "cet6_146",
+    "word": "contemplate",
+    "definition": "沉思,考虑"
+  },
+  {
+    "id": "cet6_147",
+    "word": "contempt",
+    "definition": "轻蔑,鄙视"
+  },
+  {
+    "id": "cet6_148",
+    "word": "contend",
+    "definition": "竞争,主张"
+  },
+  {
+    "id": "cet6_149",
+    "word": "contradict",
+    "definition": "矛盾,反驳"
+  },
+  {
+    "id": "cet6_150",
+    "word": "contrive",
+    "definition": "设法做到,发明"
+  },
+  {
+    "id": "cet6_151",
+    "word": "convene",
+    "definition": "召集,集合"
+  },
+  {
+    "id": "cet6_152",
+    "word": "converge",
+    "definition": "汇聚,集中"
+  },
+  {
+    "id": "cet6_153",
+    "word": "conversion",
+    "definition": "转换,转变"
+  },
+  {
+    "id": "cet6_154",
+    "word": "convey",
+    "definition": "传达,运输"
+  },
+  {
+    "id": "cet6_155",
+    "word": "convict",
+    "definition": "定罪,证明有罪"
+  },
+  {
+    "id": "cet6_156",
+    "word": "coordinate",
+    "definition": "协调,坐标"
+  },
+  {
+    "id": "cet6_157",
+    "word": "cordial",
+    "definition": "热情的,友好的"
+  },
+  {
+    "id": "cet6_158",
+    "word": "correlate",
+    "definition": "使相互关联"
+  },
+  {
+    "id": "cet6_159",
+    "word": "corrode",
+    "definition": "腐蚀,侵蚀"
+  },
+  {
+    "id": "cet6_160",
+    "word": "corrupt",
+    "definition": "腐败的,使腐败"
+  },
+  {
+    "id": "cet6_161",
+    "word": "counterpart",
+    "definition": "对应的人或物"
+  },
+  {
+    "id": "cet6_162",
+    "word": "courtesy",
+    "definition": "礼貌,谦恭"
+  },
+  {
+    "id": "cet6_163",
+    "word": "coverage",
+    "definition": "覆盖范围,新闻报道"
+  },
+  {
+    "id": "cet6_164",
+    "word": "cradle",
+    "definition": "摇篮,发源地"
+  },
+  {
+    "id": "cet6_165",
+    "word": "craft",
+    "definition": "工艺,手艺,飞机"
+  },
+  {
+    "id": "cet6_166",
+    "word": "criterion",
+    "definition": "标准,准则"
+  },
+  {
+    "id": "cet6_167",
+    "word": "crucial",
+    "definition": "至关重要的,关键的"
+  },
+  {
+    "id": "cet6_168",
+    "word": "cruise",
+    "definition": "巡航,游览"
+  },
+  {
+    "id": "cet6_169",
+    "word": "crush",
+    "definition": "压碎,迷恋"
+  },
+  {
+    "id": "cet6_170",
+    "word": "cue",
+    "definition": "暗示,提示,线索"
+  },
+  {
+    "id": "cet6_171",
+    "word": "culminate",
+    "definition": "达到顶点,告终"
+  },
+  {
+    "id": "cet6_172",
+    "word": "cumulative",
+    "definition": "累积的,渐增的"
+  },
+  {
+    "id": "cet6_173",
+    "word": "curb",
+    "definition": "控制,约束,路边"
+  },
+  {
+    "id": "cet6_174",
+    "word": "cynical",
+    "definition": "愤世嫉俗的,冷嘲的"
+  },
+  {
+    "id": "cet6_175",
+    "word": "dazzle",
+    "definition": "使眼花,耀眼"
+  },
+  {
+    "id": "cet6_176",
+    "word": "deadline",
+    "definition": "截止日期,最后期限"
+  },
+  {
+    "id": "cet6_177",
+    "word": "decay",
+    "definition": "腐烂,衰退"
+  },
+  {
+    "id": "cet6_178",
+    "word": "deceive",
+    "definition": "欺骗,蒙蔽"
+  },
+  {
+    "id": "cet6_179",
+    "word": "decent",
+    "definition": "体面的,像样的"
+  },
+  {
+    "id": "cet6_180",
+    "word": "decisive",
+    "definition": "决定性的,果断的"
+  },
+  {
+    "id": "cet6_181",
+    "word": "declaration",
+    "definition": "宣言,声明"
+  },
+  {
+    "id": "cet6_182",
+    "word": "dedicate",
+    "definition": "奉献,致力于"
+  },
+  {
+    "id": "cet6_183",
+    "word": "deduce",
+    "definition": "推论,推断"
+  },
+  {
+    "id": "cet6_184",
+    "word": "deduct",
+    "definition": "扣除,减去"
+  },
+  {
+    "id": "cet6_185",
+    "word": "deem",
+    "definition": "认为,视为"
+  },
+  {
+    "id": "cet6_186",
+    "word": "deficiency",
+    "definition": "缺乏,不足"
+  },
+  {
+    "id": "cet6_187",
+    "word": "deficit",
+    "definition": "赤字,亏损"
+  },
+  {
+    "id": "cet6_188",
+    "word": "defy",
+    "definition": "反抗,蔑视,挑战"
+  },
+  {
+    "id": "cet6_189",
+    "word": "degenerate",
+    "definition": "退化,堕落"
+  },
+  {
+    "id": "cet6_190",
+    "word": "delegate",
+    "definition": "代表,委派"
+  },
+  {
+    "id": "cet6_191",
+    "word": "deliberate",
+    "definition": "故意的,深思熟虑的"
+  },
+  {
+    "id": "cet6_192",
+    "word": "delicate",
+    "definition": "精致的,微妙的,脆弱的"
+  },
+  {
+    "id": "cet6_193",
+    "word": "denial",
+    "definition": "否认,拒绝"
+  },
+  {
+    "id": "cet6_194",
+    "word": "denote",
+    "definition": "表示,意味着"
+  },
+  {
+    "id": "cet6_195",
+    "word": "dense",
+    "definition": "密集的,浓厚的"
+  },
+  {
+    "id": "cet6_196",
+    "word": "depict",
+    "definition": "描绘,描述"
+  },
+  {
+    "id": "cet6_197",
+    "word": "deploy",
+    "definition": "部署,展开"
+  },
+  {
+    "id": "cet6_198",
+    "word": "deprive",
+    "definition": "剥夺,使丧失"
+  },
+  {
+    "id": "cet6_199",
+    "word": "descendant",
+    "definition": "后代,子孙"
+  },
+  {
+    "id": "cet6_200",
+    "word": "designate",
+    "definition": "指定,标明"
+  },
+  {
+    "id": "cet6_201",
+    "word": "despise",
+    "definition": "鄙视,看不起"
+  },
+  {
+    "id": "cet6_202",
+    "word": "detach",
+    "definition": "分开,拆卸"
+  },
+  {
+    "id": "cet6_203",
+    "word": "detain",
+    "definition": "拘留,扣留"
+  },
+  {
+    "id": "cet6_204",
+    "word": "deteriorate",
+    "definition": "恶化,变坏"
+  },
+  {
+    "id": "cet6_205",
+    "word": "diagnose",
+    "definition": "诊断,判断"
+  },
+  {
+    "id": "cet6_206",
+    "word": "differentiate",
+    "definition": "区分,区别"
+  },
+  {
+    "id": "cet6_207",
+    "word": "diffuse",
+    "definition": "扩散,传播,冗长的"
+  },
+  {
+    "id": "cet6_208",
+    "word": "dignity",
+    "definition": "尊严,高贵"
+  },
+  {
+    "id": "cet6_209",
+    "word": "dilemma",
+    "definition": "困境,进退两难"
+  },
+  {
+    "id": "cet6_210",
+    "word": "diligent",
+    "definition": "勤奋的,勤勉的"
+  },
+  {
+    "id": "cet6_211",
+    "word": "dilute",
+    "definition": "稀释,冲淡"
+  },
+  {
+    "id": "cet6_212",
+    "word": "diminish",
+    "definition": "减少,缩小"
+  },
+  {
+    "id": "cet6_213",
+    "word": "directory",
+    "definition": "目录,姓名地址录"
+  },
+  {
+    "id": "cet6_214",
+    "word": "disable",
+    "definition": "使残疾,使失去能力"
+  },
+  {
+    "id": "cet6_215",
+    "word": "disastrous",
+    "definition": "灾难性的"
+  },
+  {
+    "id": "cet6_216",
+    "word": "discard",
+    "definition": "丢弃,抛弃"
+  },
+  {
+    "id": "cet6_217",
+    "word": "discern",
+    "definition": "辨别,识别"
+  },
+  {
+    "id": "cet6_218",
+    "word": "disclose",
+    "definition": "揭露,透露"
+  },
+  {
+    "id": "cet6_219",
+    "word": "discrepancy",
+    "definition": "差异,不一致"
+  },
+  {
+    "id": "cet6_220",
+    "word": "discrete",
+    "definition": "离散的,不连续的"
+  },
+  {
+    "id": "cet6_221",
+    "word": "discriminate",
+    "definition": "歧视,区分"
+  },
+  {
+    "id": "cet6_222",
+    "word": "disguise",
+    "definition": "伪装,假扮"
+  },
+  {
+    "id": "cet6_223",
+    "word": "dismay",
+    "definition": "使惊恐,沮丧"
+  },
+  {
+    "id": "cet6_224",
+    "word": "dispatch",
+    "definition": "派遣,发送"
+  },
+  {
+    "id": "cet6_225",
+    "word": "disperse",
+    "definition": "分散,驱散"
+  },
+  {
+    "id": "cet6_226",
+    "word": "displace",
+    "definition": "取代,置换"
+  },
+  {
+    "id": "cet6_227",
+    "word": "disposal",
+    "definition": "处理,处置"
+  },
+  {
+    "id": "cet6_228",
+    "word": "disregard",
+    "definition": "漠视,不理会"
+  },
+  {
+    "id": "cet6_229",
+    "word": "disrupt",
+    "definition": "扰乱,中断"
+  },
+  {
+    "id": "cet6_230",
+    "word": "distort",
+    "definition": "扭曲,歪曲"
+  },
+  {
+    "id": "cet6_231",
+    "word": "distract",
+    "definition": "使分心,分散"
+  },
+  {
+    "id": "cet6_232",
+    "word": "disturbance",
+    "definition": "干扰,骚乱"
+  },
+  {
+    "id": "cet6_233",
+    "word": "diversion",
+    "definition": "转向,消遣"
+  },
+  {
+    "id": "cet6_234",
+    "word": "divert",
+    "definition": "转移,使转向"
+  },
+  {
+    "id": "cet6_235",
+    "word": "dividend",
+    "definition": "股息,红利"
+  },
+  {
+    "id": "cet6_236",
+    "word": "divine",
+    "definition": "神圣的,非凡的"
+  },
+  {
+    "id": "cet6_237",
+    "word": "dizzy",
+    "definition": "头晕的,眩晕的"
+  },
+  {
+    "id": "cet6_238",
+    "word": "dock",
+    "definition": "码头,船坞"
+  },
+  {
+    "id": "cet6_239",
+    "word": "doctrine",
+    "definition": "教条,学说"
+  },
+  {
+    "id": "cet6_240",
+    "word": "domain",
+    "definition": "领域,范围,域名"
+  },
+  {
+    "id": "cet6_241",
+    "word": "donation",
+    "definition": "捐赠,捐款"
+  },
+  {
+    "id": "cet6_242",
+    "word": "doom",
+    "definition": "厄运,注定"
+  },
+  {
+    "id": "cet6_243",
+    "word": "drain",
+    "definition": "排水,耗尽"
+  },
+  {
+    "id": "cet6_244",
+    "word": "drastic",
+    "definition": "激烈的,极端的"
+  },
+  {
+    "id": "cet6_245",
+    "word": "drawback",
+    "definition": "缺点,不利条件"
+  },
+  {
+    "id": "cet6_246",
+    "word": "dread",
+    "definition": "恐惧,害怕"
+  },
+  {
+    "id": "cet6_247",
+    "word": "drought",
+    "definition": "干旱,旱灾"
+  },
+  {
+    "id": "cet6_248",
+    "word": "dual",
+    "definition": "双的,双重的"
+  },
+  {
+    "id": "cet6_249",
+    "word": "dubious",
+    "definition": "可疑的,不确定的"
+  },
+  {
+    "id": "cet6_250",
+    "word": "duplicate",
+    "definition": "复制,重复的"
+  },
+  {
+    "id": "cet6_251",
+    "word": "dwell",
+    "definition": "居住,详述"
+  },
+  {
+    "id": "cet6_252",
+    "word": "eclipse",
+    "definition": "日食,月食,黯然失色"
+  },
+  {
+    "id": "cet6_253",
+    "word": "ecology",
+    "definition": "生态学,生态"
+  },
+  {
+    "id": "cet6_254",
+    "word": "ecosystem",
+    "definition": "生态系统"
+  },
+  {
+    "id": "cet6_255",
+    "word": "ego",
+    "definition": "自我,自尊"
+  },
+  {
+    "id": "cet6_256",
+    "word": "eject",
+    "definition": "喷射,逐出"
+  },
+  {
+    "id": "cet6_257",
+    "word": "elapse",
+    "definition": "过去,消逝"
+  },
+  {
+    "id": "cet6_258",
+    "word": "elbow",
+    "definition": "肘部,手肘"
+  },
+  {
+    "id": "cet6_259",
+    "word": "elevate",
+    "definition": "提升,提高"
+  },
+  {
+    "id": "cet6_260",
+    "word": "elicit",
+    "definition": "引出,探出"
+  },
+  {
+    "id": "cet6_261",
+    "word": "eligible",
+    "definition": "合格的,有资格的"
+  },
+  {
+    "id": "cet6_262",
+    "word": "elite",
+    "definition": "精英,上层人士"
+  },
+  {
+    "id": "cet6_263",
+    "word": "eloquent",
+    "definition": "雄辩的,有口才的"
+  },
+  {
+    "id": "cet6_264",
+    "word": "embark",
+    "definition": "上船,着手,从事"
+  },
+  {
+    "id": "cet6_265",
+    "word": "embed",
+    "definition": "嵌入,植入"
+  },
+  {
+    "id": "cet6_266",
+    "word": "embody",
+    "definition": "体现,包含"
+  },
+  {
+    "id": "cet6_267",
+    "word": "emigrate",
+    "definition": "移民,移居国外"
+  },
+  {
+    "id": "cet6_268",
+    "word": "empirical",
+    "definition": "经验主义的,实证的"
+  },
+  {
+    "id": "cet6_269",
+    "word": "enclose",
+    "definition": "围住,附上"
+  },
+  {
+    "id": "cet6_270",
+    "word": "endeavor",
+    "definition": "努力,尽力"
+  },
+  {
+    "id": "cet6_271",
+    "word": "endow",
+    "definition": "捐赠,赋予"
+  },
+  {
+    "id": "cet6_272",
+    "word": "endurance",
+    "definition": "耐力,持久力"
+  },
+  {
+    "id": "cet6_273",
+    "word": "energetic",
+    "definition": "精力充沛的,充满活力的"
+  },
+  {
+    "id": "cet6_274",
+    "word": "enforce",
+    "definition": "执行,强制实施"
+  },
+  {
+    "id": "cet6_275",
+    "word": "enlighten",
+    "definition": "启发,启迪"
+  },
+  {
+    "id": "cet6_276",
+    "word": "enrich",
+    "definition": "使丰富,充实"
+  },
+  {
+    "id": "cet6_277",
+    "word": "enroll",
+    "definition": "注册,登记,入伍"
+  },
+  {
+    "id": "cet6_278",
+    "word": "ensue",
+    "definition": "继而发生,随之而来"
+  },
+  {
+    "id": "cet6_279",
+    "word": "entail",
+    "definition": "需要,必然导致"
+  },
+  {
+    "id": "cet6_280",
+    "word": "entitle",
+    "definition": "给权利,给称号"
+  },
+  {
+    "id": "cet6_281",
+    "word": "entity",
+    "definition": "实体,存在"
+  },
+  {
+    "id": "cet6_282",
+    "word": "entrepreneur",
+    "definition": "企业家,创业者"
+  },
+  {
+    "id": "cet6_283",
+    "word": "envisage",
+    "definition": "设想,展望"
+  },
+  {
+    "id": "cet6_284",
+    "word": "epidemic",
+    "definition": "流行病,流行的"
+  },
+  {
+    "id": "cet6_285",
+    "word": "episode",
+    "definition": "事件,一集"
+  },
+  {
+    "id": "cet6_286",
+    "word": "equator",
+    "definition": "赤道"
+  },
+  {
+    "id": "cet6_287",
+    "word": "equivalent",
+    "definition": "等价的,相当的事物"
+  },
+  {
+    "id": "cet6_288",
+    "word": "erase",
+    "definition": "擦除,抹去"
+  },
+  {
+    "id": "cet6_289",
+    "word": "erect",
+    "definition": "建立,竖立,直立的"
+  },
+  {
+    "id": "cet6_290",
+    "word": "erosion",
+    "definition": "侵蚀,腐蚀"
+  },
+  {
+    "id": "cet6_291",
+    "word": "erroneous",
+    "definition": "错误的,不正确的"
+  },
+  {
+    "id": "cet6_292",
+    "word": "erupt",
+    "definition": "爆发,喷发"
+  },
+  {
+    "id": "cet6_293",
+    "word": "escort",
+    "definition": "护送,护卫"
+  },
+  {
+    "id": "cet6_294",
+    "word": "essence",
+    "definition": "本质,精华"
+  },
+  {
+    "id": "cet6_295",
+    "word": "esteem",
+    "definition": "尊重,尊敬"
+  },
+  {
+    "id": "cet6_296",
+    "word": "eternal",
+    "definition": "永恒的,不朽的"
+  },
+  {
+    "id": "cet6_297",
+    "word": "evacuate",
+    "definition": "疏散,撤离"
+  },
+  {
+    "id": "cet6_298",
+    "word": "evaporate",
+    "definition": "蒸发,消失"
+  },
+  {
+    "id": "cet6_299",
+    "word": "evoke",
+    "definition": "唤起,引起"
+  },
+  {
+    "id": "cet6_300",
+    "word": "exceptional",
+    "definition": "例外的,异常的"
+  },
+  {
+    "id": "cet6_301",
+    "word": "excerpt",
+    "definition": "摘录,节选"
+  },
+  {
+    "id": "cet6_302",
+    "word": "excessive",
+    "definition": "过度的,过多的"
+  },
+  {
+    "id": "cet6_303",
+    "word": "exclaim",
+    "definition": "呼喊,惊叫"
+  },
+  {
+    "id": "cet6_304",
+    "word": "exclusive",
+    "definition": "独有的,排他的,独家"
+  },
+  {
+    "id": "cet6_305",
+    "word": "excursion",
+    "definition": "远足,短途旅行"
+  },
+  {
+    "id": "cet6_306",
+    "word": "exempt",
+    "definition": "免除,豁免"
+  },
+  {
+    "id": "cet6_307",
+    "word": "exert",
+    "definition": "施加,运用"
+  },
+  {
+    "id": "cet6_308",
+    "word": "exile",
+    "definition": "流放,放逐"
+  },
+  {
+    "id": "cet6_309",
+    "word": "exotic",
+    "definition": "异国情调的,奇异的"
+  },
+  {
+    "id": "cet6_310",
+    "word": "expedition",
+    "definition": "远征,探险"
+  },
+  {
+    "id": "cet6_311",
+    "word": "expel",
+    "definition": "驱逐,开除"
+  },
+  {
+    "id": "cet6_312",
+    "word": "expenditure",
+    "definition": "支出,花费"
+  },
+  {
+    "id": "cet6_313",
+    "word": "expertise",
+    "definition": "专门知识,专长"
+  },
+  {
+    "id": "cet6_314",
+    "word": "expire",
+    "definition": "到期,期满,呼气"
+  },
+  {
+    "id": "cet6_315",
+    "word": "explicit",
+    "definition": "明确的,直言的"
+  },
+  {
+    "id": "cet6_316",
+    "word": "exquisite",
+    "definition": "精美的,精致的"
+  },
+  {
+    "id": "cet6_317",
+    "word": "extinct",
+    "definition": "灭绝的,熄灭的"
+  },
+  {
+    "id": "cet6_318",
+    "word": "extinguish",
+    "definition": "熄灭,扑灭"
+  },
+  {
+    "id": "cet6_319",
+    "word": "extract",
+    "definition": "提取,摘录"
+  },
+  {
+    "id": "cet6_320",
+    "word": "extravagant",
+    "definition": "奢侈的,过分的"
+  },
+  {
+    "id": "cet6_321",
+    "word": "fabricate",
+    "definition": "制造,捏造"
+  },
+  {
+    "id": "cet6_322",
+    "word": "fabulous",
+    "definition": "极好的,难以置信的"
+  },
+  {
+    "id": "cet6_323",
+    "word": "facilitate",
+    "definition": "促进,使便利"
+  },
+  {
+    "id": "cet6_324",
+    "word": "fake",
+    "definition": "假的,赝品,冒充"
+  },
+  {
+    "id": "cet6_325",
+    "word": "fascinate",
+    "definition": "使着迷,迷住"
+  },
+  {
+    "id": "cet6_326",
+    "word": "feasible",
+    "definition": "可行的,可能的"
+  },
+  {
+    "id": "cet6_327",
+    "word": "feast",
+    "definition": "盛宴,节日"
+  },
+  {
+    "id": "cet6_328",
+    "word": "feeble",
+    "definition": "虚弱的,无力的"
+  },
+  {
+    "id": "cet6_329",
+    "word": "fellowship",
+    "definition": "友谊,奖学金,团体"
+  },
+  {
+    "id": "cet6_330",
+    "word": "feminine",
+    "definition": "女性的,阴性的"
+  },
+  {
+    "id": "cet6_331",
+    "word": "ferry",
+    "definition": "渡船,渡口"
+  },
+  {
+    "id": "cet6_332",
+    "word": "finite",
+    "definition": "有限的,限定的"
+  },
+  {
+    "id": "cet6_333",
+    "word": "fitting",
+    "definition": "合适的,配件,试衣"
+  },
+  {
+    "id": "cet6_334",
+    "word": "fixture",
+    "definition": "固定装置,设备"
+  },
+  {
+    "id": "cet6_335",
+    "word": "flap",
+    "definition": "拍打,飘动"
+  },
+  {
+    "id": "cet6_336",
+    "word": "flare",
+    "definition": "闪耀,闪光信号"
+  },
+  {
+    "id": "cet6_337",
+    "word": "flaw",
+    "definition": "缺点,瑕疵"
+  },
+  {
+    "id": "cet6_338",
+    "word": "flee",
+    "definition": "逃跑,逃避"
+  },
+  {
+    "id": "cet6_339",
+    "word": "fling",
+    "definition": "猛扔,投掷"
+  },
+  {
+    "id": "cet6_340",
+    "word": "flip",
+    "definition": "轻抛,翻转"
+  },
+  {
+    "id": "cet6_341",
+    "word": "flourish",
+    "definition": "繁荣,兴旺,挥舞"
+  },
+  {
+    "id": "cet6_342",
+    "word": "fluctuate",
+    "definition": "波动,变动"
+  },
+  {
+    "id": "cet6_343",
+    "word": "flush",
+    "definition": "脸红,冲洗,齐平的"
+  },
+  {
+    "id": "cet6_344",
+    "word": "foam",
+    "definition": "泡沫,起泡"
+  },
+  {
+    "id": "cet6_345",
+    "word": "foil",
+    "definition": "箔,挫败"
+  },
+  {
+    "id": "cet6_346",
+    "word": "foremost",
+    "definition": "最重要的,首先"
+  },
+  {
+    "id": "cet6_347",
+    "word": "foresee",
+    "definition": "预见,预知"
+  },
+  {
+    "id": "cet6_348",
+    "word": "forge",
+    "definition": "伪造,锻造,稳步前进"
+  },
+  {
+    "id": "cet6_349",
+    "word": "formidable",
+    "definition": "可怕的,令人敬畏的"
+  },
+  {
+    "id": "cet6_350",
+    "word": "foster",
+    "definition": "促进,培养,寄养"
+  },
+  {
+    "id": "cet6_351",
+    "word": "foul",
+    "definition": "犯规,肮脏的,恶臭的"
+  },
+  {
+    "id": "cet6_352",
+    "word": "fracture",
+    "definition": "骨折,破裂"
+  },
+  {
+    "id": "cet6_353",
+    "word": "fragile",
+    "definition": "脆弱的,易碎的"
+  },
+  {
+    "id": "cet6_354",
+    "word": "friction",
+    "definition": "摩擦,冲突"
+  },
+  {
+    "id": "cet6_355",
+    "word": "fringe",
+    "definition": "边缘,刘海"
+  },
+  {
+    "id": "cet6_356",
+    "word": "frustrate",
+    "definition": "使沮丧,挫败"
+  },
+  {
+    "id": "cet6_357",
+    "word": "furious",
+    "definition": "狂怒的,猛烈的"
+  },
+  {
+    "id": "cet6_358",
+    "word": "furnish",
+    "definition": "提供,装备,布置"
+  },
+  {
+    "id": "cet6_359",
+    "word": "fuse",
+    "definition": "融合,保险丝"
+  },
+  {
+    "id": "cet6_360",
+    "word": "fuss",
+    "definition": "大惊小怪,忙乱"
+  },
+  {
+    "id": "cet6_361",
+    "word": "galaxy",
+    "definition": "星系,银河"
+  },
+  {
+    "id": "cet6_362",
+    "word": "gamble",
+    "definition": "赌博,冒险"
+  },
+  {
+    "id": "cet6_363",
+    "word": "gap",
+    "definition": "差距,缺口,间隙"
+  },
+  {
+    "id": "cet6_364",
+    "word": "gasp",
+    "definition": "气喘,喘气"
+  },
+  {
+    "id": "cet6_365",
+    "word": "gauge",
+    "definition": "测量,标准,仪表"
+  },
+  {
+    "id": "cet6_366",
+    "word": "generalize",
+    "definition": "概括,归纳"
+  },
+  {
+    "id": "cet6_367",
+    "word": "gigantic",
+    "definition": "巨大的,庞大的"
+  },
+  {
+    "id": "cet6_368",
+    "word": "glare",
+    "definition": "怒视,强光"
+  },
+  {
+    "id": "cet6_369",
+    "word": "gleam",
+    "definition": "微光,闪烁"
+  },
+  {
+    "id": "cet6_370",
+    "word": "glide",
+    "definition": "滑翔,滑行"
+  },
+  {
+    "id": "cet6_371",
+    "word": "glimpse",
+    "definition": "一瞥,瞥见"
+  },
+  {
+    "id": "cet6_372",
+    "word": "glitter",
+    "definition": "闪光,闪烁"
+  },
+  {
+    "id": "cet6_373",
+    "word": "gloom",
+    "definition": "忧郁,阴暗"
+  },
+  {
+    "id": "cet6_374",
+    "word": "gorgeous",
+    "definition": "华丽的,极好的"
+  },
+  {
+    "id": "cet6_375",
+    "word": "gossip",
+    "definition": "闲话,流言蜚语"
+  },
+  {
+    "id": "cet6_376",
+    "word": "gracious",
+    "definition": "亲切的,仁慈的"
+  },
+  {
+    "id": "cet6_377",
+    "word": "graphic",
+    "definition": "图表的,生动的"
+  },
+  {
+    "id": "cet6_378",
+    "word": "grave",
+    "definition": "坟墓,严重的,庄重的"
+  },
+  {
+    "id": "cet6_379",
+    "word": "graze",
+    "definition": "吃草,擦伤"
+  },
+  {
+    "id": "cet6_380",
+    "word": "grease",
+    "definition": "油脂,润滑油"
+  },
+  {
+    "id": "cet6_381",
+    "word": "grief",
+    "definition": "悲伤,悲痛"
+  },
+  {
+    "id": "cet6_382",
+    "word": "grieve",
+    "definition": "使悲伤,悲痛"
+  },
+  {
+    "id": "cet6_383",
+    "word": "grim",
+    "definition": "严峻的,冷酷的"
+  },
+  {
+    "id": "cet6_384",
+    "word": "grin",
+    "definition": "露齿笑,咧嘴笑"
+  },
+  {
+    "id": "cet6_385",
+    "word": "groan",
+    "definition": "呻吟,抱怨"
+  },
+  {
+    "id": "cet6_386",
+    "word": "grope",
+    "definition": "摸索,探索"
+  },
+  {
+    "id": "cet6_387",
+    "word": "guardian",
+    "definition": "监护人,保护者"
+  },
+  {
+    "id": "cet6_388",
+    "word": "hamper",
+    "definition": "阻碍,妨碍"
+  },
+  {
+    "id": "cet6_389",
+    "word": "handbook",
+    "definition": "手册,指南"
+  },
+  {
+    "id": "cet6_390",
+    "word": "handicap",
+    "definition": "障碍,不利条件"
+  },
+  {
+    "id": "cet6_391",
+    "word": "harassment",
+    "definition": "骚扰,烦扰"
+  },
+  {
+    "id": "cet6_392",
+    "word": "hardy",
+    "definition": "强壮的,耐寒的"
+  },
+  {
+    "id": "cet6_393",
+    "word": "harmony",
+    "definition": "和谐,协调"
+  },
+  {
+    "id": "cet6_394",
+    "word": "haul",
+    "definition": "拖,拉,搬运"
+  },
+  {
+    "id": "cet6_395",
+    "word": "haunt",
+    "definition": "经常出没,萦绕心头"
+  },
+  {
+    "id": "cet6_396",
+    "word": "heal",
+    "definition": "治愈,愈合"
+  },
+  {
+    "id": "cet6_397",
+    "word": "heap",
+    "definition": "堆,大量"
+  },
+  {
+    "id": "cet6_398",
+    "word": "heighten",
+    "definition": "提高,加强"
+  },
+  {
+    "id": "cet6_399",
+    "word": "hemisphere",
+    "definition": "半球"
+  },
+  {
+    "id": "cet6_400",
+    "word": "henceforth",
+    "definition": "从今以后"
+  },
+  {
+    "id": "cet6_401",
+    "word": "heritage",
+    "definition": "遗产,传统"
+  },
+  {
+    "id": "cet6_402",
+    "word": "hierarchy",
+    "definition": "等级制度,层次结构"
+  },
+  {
+    "id": "cet6_403",
+    "word": "hinder",
+    "definition": "阻碍,妨碍"
+  },
+  {
+    "id": "cet6_404",
+    "word": "hinge",
+    "definition": "铰链,关键"
+  },
+  {
+    "id": "cet6_405",
+    "word": "hitherto",
+    "definition": "迄今,到目前为止"
+  },
+  {
+    "id": "cet6_406",
+    "word": "hoist",
+    "definition": "升起,吊起"
+  },
+  {
+    "id": "cet6_407",
+    "word": "homogeneous",
+    "definition": "同质的,同类的"
+  },
+  {
+    "id": "cet6_408",
+    "word": "hospitality",
+    "definition": "好客,款待"
+  },
+  {
+    "id": "cet6_409",
+    "word": "hostage",
+    "definition": "人质"
+  },
+  {
+    "id": "cet6_410",
+    "word": "hostility",
+    "definition": "敌意,敌对"
+  },
+  {
+    "id": "cet6_411",
+    "word": "hound",
+    "definition": "猎犬,追逼"
+  },
+  {
+    "id": "cet6_412",
+    "word": "hover",
+    "definition": "徘徊,盘旋"
+  },
+  {
+    "id": "cet6_413",
+    "word": "hug",
+    "definition": "拥抱"
+  },
+  {
+    "id": "cet6_414",
+    "word": "humanity",
+    "definition": "人类,人性,人文学科"
+  },
+  {
+    "id": "cet6_415",
+    "word": "humidity",
+    "definition": "湿度,潮湿"
+  },
+  {
+    "id": "cet6_416",
+    "word": "hurl",
+    "definition": "猛投,用力扔"
+  },
+  {
+    "id": "cet6_417",
+    "word": "hurricane",
+    "definition": "飓风"
+  },
+  {
+    "id": "cet6_418",
+    "word": "hypothesis",
+    "definition": "假说,假设"
+  },
+  {
+    "id": "cet6_419",
+    "word": "hysterical",
+    "definition": "歇斯底里的"
+  },
+  {
+    "id": "cet6_420",
+    "word": "ideology",
+    "definition": "意识形态,思想体系"
+  },
+  {
+    "id": "cet6_421",
+    "word": "ignite",
+    "definition": "点燃,着火"
+  },
+  {
+    "id": "cet6_422",
+    "word": "illuminate",
+    "definition": "照亮,阐明"
+  },
+  {
+    "id": "cet6_423",
+    "word": "illusion",
+    "definition": "幻觉,错觉"
+  },
+  {
+    "id": "cet6_424",
+    "word": "immerse",
+    "definition": "沉浸,使陷入"
+  },
+  {
+    "id": "cet6_425",
+    "word": "immune",
+    "definition": "免疫的,不受影响的"
+  },
+  {
+    "id": "cet6_426",
+    "word": "impair",
+    "definition": "损害,削弱"
+  },
+  {
+    "id": "cet6_427",
+    "word": "impart",
+    "definition": "传授,告知,赋予"
+  },
+  {
+    "id": "cet6_428",
+    "word": "imperative",
+    "definition": "必要的,命令式的"
+  },
+  {
+    "id": "cet6_429",
+    "word": "impetus",
+    "definition": "动力,推动力"
+  },
+  {
+    "id": "cet6_430",
+    "word": "implicit",
+    "definition": "含蓄的,隐含的"
+  },
+  {
+    "id": "cet6_431",
+    "word": "impulse",
+    "definition": "冲动,脉冲"
+  },
+  {
+    "id": "cet6_432",
+    "word": "inaugurate",
+    "definition": "开始,就职"
+  },
+  {
+    "id": "cet6_433",
+    "word": "incentive",
+    "definition": "激励,刺激"
+  },
+  {
+    "id": "cet6_434",
+    "word": "incidence",
+    "definition": "发生率"
+  },
+  {
+    "id": "cet6_435",
+    "word": "incidentally",
+    "definition": "顺便说一句"
+  },
+  {
+    "id": "cet6_436",
+    "word": "inclination",
+    "definition": "倾向,爱好,斜坡"
+  },
+  {
+    "id": "cet6_437",
+    "word": "inclusive",
+    "definition": "包容的,包括的"
+  },
+  {
+    "id": "cet6_438",
+    "word": "incorporate",
+    "definition": "包含,合并"
+  },
+  {
+    "id": "cet6_439",
+    "word": "increasingly",
+    "definition": "越来越多地"
+  },
+  {
+    "id": "cet6_440",
+    "word": "incredible",
+    "definition": "难以置信的"
+  },
+  {
+    "id": "cet6_441",
+    "word": "incur",
+    "definition": "招致,引起"
+  },
+  {
+    "id": "cet6_442",
+    "word": "indefinite",
+    "definition": "不确定的,模糊的"
+  },
+  {
+    "id": "cet6_443",
+    "word": "indignant",
+    "definition": "愤怒的,愤慨的"
+  },
+  {
+    "id": "cet6_444",
+    "word": "indispensable",
+    "definition": "必不可少的"
+  },
+  {
+    "id": "cet6_445",
+    "word": "induce",
+    "definition": "诱导,引起"
+  },
+  {
+    "id": "cet6_446",
+    "word": "indulge",
+    "definition": "沉溺于,放纵"
+  },
+  {
+    "id": "cet6_447",
+    "word": "infant",
+    "definition": "婴儿,幼儿"
+  },
+  {
+    "id": "cet6_448",
+    "word": "infect",
+    "definition": "感染,传染"
+  },
+  {
+    "id": "cet6_449",
+    "word": "infer",
+    "definition": "推断,推论"
+  },
+  {
+    "id": "cet6_450",
+    "word": "inferior",
+    "definition": "劣等的,下级的"
+  },
+  {
+    "id": "cet6_451",
+    "word": "infinite",
+    "definition": "无限的,无穷的"
+  },
+  {
+    "id": "cet6_452",
+    "word": "inflation",
+    "definition": "通货膨胀"
+  },
+  {
+    "id": "cet6_453",
+    "word": "inflict",
+    "definition": "使遭受,强加"
+  },
+  {
+    "id": "cet6_454",
+    "word": "ingenious",
+    "definition": "巧妙的,有独创性的"
+  },
+  {
+    "id": "cet6_455",
+    "word": "ingredient",
+    "definition": "成分,原料"
+  },
+  {
+    "id": "cet6_456",
+    "word": "inhabit",
+    "definition": "居住于,栖息"
+  },
+  {
+    "id": "cet6_457",
+    "word": "inherent",
+    "definition": "固有的,内在的"
+  },
+  {
+    "id": "cet6_458",
+    "word": "inhibit",
+    "definition": "抑制,阻止"
+  },
+  {
+    "id": "cet6_459",
+    "word": "inject",
+    "definition": "注射,注入"
+  },
+  {
+    "id": "cet6_460",
+    "word": "inlet",
+    "definition": "入口,水湾"
+  },
+  {
+    "id": "cet6_461",
+    "word": "innumerable",
+    "definition": "无数的,数不清的"
+  },
+  {
+    "id": "cet6_462",
+    "word": "insane",
+    "definition": "疯狂的,精神失常的"
+  },
+  {
+    "id": "cet6_463",
+    "word": "insight",
+    "definition": "洞察力,深刻见解"
+  },
+  {
+    "id": "cet6_464",
+    "word": "insistent",
+    "definition": "坚持的,坚决的"
+  },
+  {
+    "id": "cet6_465",
+    "word": "inspiration",
+    "definition": "灵感,鼓舞"
+  },
+  {
+    "id": "cet6_466",
+    "word": "instantaneous",
+    "definition": "瞬间的,即时的"
+  },
+  {
+    "id": "cet6_467",
+    "word": "intact",
+    "definition": "完整的,未受损伤的"
+  },
+  {
+    "id": "cet6_468",
+    "word": "integral",
+    "definition": "完整的,不可或缺的"
+  },
+  {
+    "id": "cet6_469",
+    "word": "integrity",
+    "definition": "正直,完整"
+  },
+  {
+    "id": "cet6_470",
+    "word": "intellect",
+    "definition": "智力,才智"
+  },
+  {
+    "id": "cet6_471",
+    "word": "intensify",
+    "definition": "加强,强化"
+  },
+  {
+    "id": "cet6_472",
+    "word": "intent",
+    "definition": "意图,专心的"
+  },
+  {
+    "id": "cet6_473",
+    "word": "interim",
+    "definition": "临时的,过渡的"
+  },
+  {
+    "id": "cet6_474",
+    "word": "intermittent",
+    "definition": "间歇的,断断续续的"
+  },
+  {
+    "id": "cet6_475",
+    "word": "intersection",
+    "definition": "交叉点,十字路口"
+  },
+  {
+    "id": "cet6_476",
+    "word": "intervene",
+    "definition": "干预,介入"
+  },
+  {
+    "id": "cet6_477",
+    "word": "intimate",
+    "definition": "亲密的,暗示"
+  },
+  {
+    "id": "cet6_478",
+    "word": "intricate",
+    "definition": "复杂的,精细的"
+  },
+  {
+    "id": "cet6_479",
+    "word": "intrigue",
+    "definition": "引起兴趣,密谋"
+  },
+  {
+    "id": "cet6_480",
+    "word": "intrinsic",
+    "definition": "固有的,内在的"
+  },
+  {
+    "id": "cet6_481",
+    "word": "intuition",
+    "definition": "直觉"
+  },
+  {
+    "id": "cet6_482",
+    "word": "invalid",
+    "definition": "无效的,残疾的"
+  },
+  {
+    "id": "cet6_483",
+    "word": "invaluable",
+    "definition": "无价的,非常宝贵的"
+  },
+  {
+    "id": "cet6_484",
+    "word": "invariably",
+    "definition": "总是,不变地"
+  },
+  {
+    "id": "cet6_485",
+    "word": "inventory",
+    "definition": "库存,存货清单"
+  },
+  {
+    "id": "cet6_486",
+    "word": "invert",
+    "definition": "倒置,颠倒"
+  },
+  {
+    "id": "cet6_487",
+    "word": "irony",
+    "definition": "讽刺,反语"
+  },
+  {
+    "id": "cet6_488",
+    "word": "irrespective",
+    "definition": "不顾的,不考虑的"
+  },
+  {
+    "id": "cet6_489",
+    "word": "irrigation",
+    "definition": "灌溉"
+  },
+  {
+    "id": "cet6_490",
+    "word": "irritate",
+    "definition": "激怒,刺激"
+  },
+  {
+    "id": "cet6_491",
+    "word": "ivory",
+    "definition": "象牙,象牙色"
+  },
+  {
+    "id": "cet6_492",
+    "word": "jeopardize",
+    "definition": "危及,危害"
+  },
+  {
+    "id": "cet6_493",
+    "word": "jerk",
+    "definition": "猛拉,急动"
+  },
+  {
+    "id": "cet6_494",
+    "word": "junction",
+    "definition": "连接,交叉口"
+  },
+  {
+    "id": "cet6_495",
+    "word": "jury",
+    "definition": "陪审团"
+  },
+  {
+    "id": "cet6_496",
+    "word": "justification",
+    "definition": "正当理由,辩护"
+  },
+  {
+    "id": "cet6_497",
+    "word": "juvenile",
+    "definition": "青少年的,青少年"
+  },
+  {
+    "id": "cet6_498",
+    "word": "kidnap",
+    "definition": "绑架"
+  },
+  {
+    "id": "cet6_499",
+    "word": "kidney",
+    "definition": "肾脏"
+  },
+  {
+    "id": "cet6_500",
+    "word": "kit",
+    "definition": "工具包,装备"
+  },
+  {
+    "id": "cet6_501",
+    "word": "knit",
+    "definition": "编织, knit together"
+  },
+  {
+    "id": "cet6_502",
+    "word": "knob",
+    "definition": "把手,旋钮"
+  },
+  {
+    "id": "cet6_503",
+    "word": "lag",
+    "definition": "落后,滞后"
+  },
+  {
+    "id": "cet6_504",
+    "word": "lame",
+    "definition": "跛的,站不住脚的"
+  },
+  {
+    "id": "cet6_505",
+    "word": "lane",
+    "definition": "车道,小巷,航线"
+  },
+  {
+    "id": "cet6_506",
+    "word": "latent",
+    "definition": "潜在的,潜伏的"
+  },
+  {
+    "id": "cet6_507",
+    "word": "latitude",
+    "definition": "纬度,自由度"
+  },
+  {
+    "id": "cet6_508",
+    "word": "lawn",
+    "definition": "草坪,草地"
+  },
+  {
+    "id": "cet6_509",
+    "word": "layman",
+    "definition": "外行,门外汉"
+  },
+  {
+    "id": "cet6_510",
+    "word": "leaflet",
+    "definition": "传单,小页"
+  },
+  {
+    "id": "cet6_511",
+    "word": "legend",
+    "definition": "传奇,传说"
+  },
+  {
+    "id": "cet6_512",
+    "word": "legislation",
+    "definition": "立法,法规"
+  },
+  {
+    "id": "cet6_513",
+    "word": "legitimate",
+    "definition": "合法的,合理的"
+  },
+  {
+    "id": "cet6_514",
+    "word": "lever",
+    "definition": "杠杆,利用"
+  },
+  {
+    "id": "cet6_515",
+    "word": "levy",
+    "definition": "征收,征税"
+  },
+  {
+    "id": "cet6_516",
+    "word": "liability",
+    "definition": "责任,负债"
+  },
+  {
+    "id": "cet6_517",
+    "word": "likelihood",
+    "definition": "可能性,概率"
+  },
+  {
+    "id": "cet6_518",
+    "word": "limitation",
+    "definition": "限制,局限"
+  },
+  {
+    "id": "cet6_519",
+    "word": "linear",
+    "definition": "线性的,直线的"
+  },
+  {
+    "id": "cet6_520",
+    "word": "linen",
+    "definition": "亚麻布, linen"
+  },
+  {
+    "id": "cet6_521",
+    "word": "liner",
+    "definition": "班轮,邮轮"
+  },
+  {
+    "id": "cet6_522",
+    "word": "linger",
+    "definition": "徘徊,逗留"
+  },
+  {
+    "id": "cet6_523",
+    "word": "literacy",
+    "definition": "读写能力,识字"
+  },
+  {
+    "id": "cet6_524",
+    "word": "literal",
+    "definition": "字面的,逐字的"
+  },
+  {
+    "id": "cet6_525",
+    "word": "litter",
+    "definition": "垃圾,乱扔"
+  },
+  {
+    "id": "cet6_526",
+    "word": "lobby",
+    "definition": "游说,大厅"
+  },
+  {
+    "id": "cet6_527",
+    "word": "locomotive",
+    "definition": "机车,火车头"
+  },
+  {
+    "id": "cet6_528",
+    "word": "lofty",
+    "definition": "崇高的,高耸的"
+  },
+  {
+    "id": "cet6_529",
+    "word": "longitude",
+    "definition": "经度"
+  },
+  {
+    "id": "cet6_530",
+    "word": "loom",
+    "definition": "织布机,隐约出现"
+  },
+  {
+    "id": "cet6_531",
+    "word": "lounge",
+    "definition": "休息室,闲逛"
+  },
+  {
+    "id": "cet6_532",
+    "word": "lubricate",
+    "definition": "润滑"
+  },
+  {
+    "id": "cet6_533",
+    "word": "luminous",
+    "definition": "发光的,明亮的"
+  },
+  {
+    "id": "cet6_534",
+    "word": "lunar",
+    "definition": "月球的,月亮的"
+  },
+  {
+    "id": "cet6_535",
+    "word": "magnify",
+    "definition": "放大,扩大"
+  },
+  {
+    "id": "cet6_536",
+    "word": "magnitude",
+    "definition": "大小,重要性,震级"
+  },
+  {
+    "id": "cet6_537",
+    "word": "majesty",
+    "definition": "威严,陛下"
+  },
+  {
+    "id": "cet6_538",
+    "word": "mall",
+    "definition": "购物中心"
+  },
+  {
+    "id": "cet6_539",
+    "word": "manifest",
+    "definition": "明显的,显示"
+  },
+  {
+    "id": "cet6_540",
+    "word": "manipulate",
+    "definition": "操纵,操作"
+  },
+  {
+    "id": "cet6_541",
+    "word": "manoeuvre",
+    "definition": "策略,调动"
+  },
+  {
+    "id": "cet6_542",
+    "word": "manuscript",
+    "definition": "手稿,原稿"
+  },
+  {
+    "id": "cet6_543",
+    "word": "marble",
+    "definition": "大理石,弹珠"
+  },
+  {
+    "id": "cet6_544",
+    "word": "marginal",
+    "definition": "边缘的,微小的"
+  },
+  {
+    "id": "cet6_545",
+    "word": "marsh",
+    "definition": "沼泽,湿地"
+  },
+  {
+    "id": "cet6_546",
+    "word": "marshal",
+    "definition": "元帅,整理,排列"
+  },
+  {
+    "id": "cet6_547",
+    "word": "masculine",
+    "definition": "男性的,阳刚的"
+  },
+  {
+    "id": "cet6_548",
+    "word": "massacre",
+    "definition": "大屠杀"
+  },
+  {
+    "id": "cet6_549",
+    "word": "massive",
+    "definition": "巨大的,大量的"
+  },
+  {
+    "id": "cet6_550",
+    "word": "masterpiece",
+    "definition": "杰作,名著"
+  },
+  {
+    "id": "cet6_551",
+    "word": "meadow",
+    "definition": "草地,牧场"
+  },
+  {
+    "id": "cet6_552",
+    "word": "mechanism",
+    "definition": "机制,机械"
+  },
+  {
+    "id": "cet6_553",
+    "word": "mediate",
+    "definition": "调解,斡旋"
+  },
+  {
+    "id": "cet6_554",
+    "word": "medieval",
+    "definition": "中世纪的"
+  },
+  {
+    "id": "cet6_555",
+    "word": "melody",
+    "definition": "旋律,曲调"
+  },
+  {
+    "id": "cet6_556",
+    "word": "memorize",
+    "definition": "记住,记忆"
+  },
+  {
+    "id": "cet6_557",
+    "word": "menace",
+    "definition": "威胁,恐吓"
+  },
+  {
+    "id": "cet6_558",
+    "word": "merge",
+    "definition": "合并,融合"
+  },
+  {
+    "id": "cet6_559",
+    "word": "merit",
+    "definition": "优点,价值,值得"
+  },
+  {
+    "id": "cet6_560",
+    "word": "metropolitan",
+    "definition": "大都市的"
+  },
+  {
+    "id": "cet6_561",
+    "word": "midst",
+    "definition": "中间,当中"
+  },
+  {
+    "id": "cet6_562",
+    "word": "migrant",
+    "definition": "移民的,候鸟"
+  },
+  {
+    "id": "cet6_563",
+    "word": "migrate",
+    "definition": "迁移,移居"
+  },
+  {
+    "id": "cet6_564",
+    "word": "militant",
+    "definition": "好战的,激进分子"
+  },
+  {
+    "id": "cet6_565",
+    "word": "mingle",
+    "definition": "混合,交往"
+  },
+  {
+    "id": "cet6_566",
+    "word": "miniature",
+    "definition": "微型的,缩影"
+  },
+  {
+    "id": "cet6_567",
+    "word": "minimal",
+    "definition": "最小的,最低限度的"
+  },
+  {
+    "id": "cet6_568",
+    "word": "minimize",
+    "definition": "使最小化, minimize"
+  },
+  {
+    "id": "cet6_569",
+    "word": "misery",
+    "definition": "痛苦,苦难"
+  },
+  {
+    "id": "cet6_570",
+    "word": "misfortune",
+    "definition": "不幸,灾祸"
+  },
+  {
+    "id": "cet6_571",
+    "word": "missionary",
+    "definition": "传教士"
+  },
+  {
+    "id": "cet6_572",
+    "word": "mobilize",
+    "definition": "动员,调动"
+  },
+  {
+    "id": "cet6_573",
+    "word": "mock",
+    "definition": "嘲笑,模拟的"
+  },
+  {
+    "id": "cet6_574",
+    "word": "momentum",
+    "definition": "动力,势头,动量"
+  },
+  {
+    "id": "cet6_575",
+    "word": "monetary",
+    "definition": "货币的,金融的"
+  },
+  {
+    "id": "cet6_576",
+    "word": "monopoly",
+    "definition": "垄断,独占"
+  },
+  {
+    "id": "cet6_577",
+    "word": "morality",
+    "definition": "道德,品行"
+  },
+  {
+    "id": "cet6_578",
+    "word": "mortal",
+    "definition": "致命的,凡人"
+  },
+  {
+    "id": "cet6_579",
+    "word": "mortgage",
+    "definition": "抵押贷款"
+  },
+  {
+    "id": "cet6_580",
+    "word": "municipal",
+    "definition": "市的,市政的"
+  },
+  {
+    "id": "cet6_581",
+    "word": "murmur",
+    "definition": "低语,喃喃"
+  },
+  {
+    "id": "cet6_582",
+    "word": "muscular",
+    "definition": "肌肉的,强壮的"
+  },
+  {
+    "id": "cet6_583",
+    "word": "mute",
+    "definition": "沉默的,哑的"
+  },
+  {
+    "id": "cet6_584",
+    "word": "mutter",
+    "definition": "咕哝,抱怨"
+  },
+  {
+    "id": "cet6_585",
+    "word": "myth",
+    "definition": "神话,虚构的事"
+  },
+  {
+    "id": "cet6_586",
+    "word": "naive",
+    "definition": "天真的,幼稚的"
+  },
+  {
+    "id": "cet6_587",
+    "word": "narrative",
+    "definition": "叙述,叙事"
+  },
+  {
+    "id": "cet6_588",
+    "word": "nasty",
+    "definition": "肮脏的,令人不快的"
+  },
+  {
+    "id": "cet6_589",
+    "word": "navigate",
+    "definition": "导航,航行"
+  },
+  {
+    "id": "cet6_590",
+    "word": "necessity",
+    "definition": "必要性,必需品"
+  },
+  {
+    "id": "cet6_591",
+    "word": "negligible",
+    "definition": "可忽略的,微不足道的"
+  },
+  {
+    "id": "cet6_592",
+    "word": "nominal",
+    "definition": "名义上的,微不足道的"
+  },
+  {
+    "id": "cet6_593",
+    "word": "nominate",
+    "definition": "提名,任命"
+  },
+  {
+    "id": "cet6_594",
+    "word": "nonetheless",
+    "definition": "尽管如此,然而"
+  },
+  {
+    "id": "cet6_595",
+    "word": "norm",
+    "definition": "规范,标准"
+  },
+  {
+    "id": "cet6_596",
+    "word": "notable",
+    "definition": "值得注意的,显著的"
+  },
+  {
+    "id": "cet6_597",
+    "word": "notify",
+    "definition": "通知,告知"
+  },
+  {
+    "id": "cet6_598",
+    "word": "notorious",
+    "definition": "臭名昭著的"
+  },
+  {
+    "id": "cet6_599",
+    "word": "notwithstanding",
+    "definition": "尽管"
+  },
+  {
+    "id": "cet6_600",
+    "word": "nourish",
+    "definition": "滋养,养育"
+  },
+  {
+    "id": "cet6_601",
+    "word": "novelty",
+    "definition": "新颖,新奇"
+  },
+  {
+    "id": "cet6_602",
+    "word": "nurture",
+    "definition": "培育,养育"
+  },
+  {
+    "id": "cet6_603",
+    "word": "oath",
+    "definition": "誓言,咒骂"
+  },
+  {
+    "id": "cet6_604",
+    "word": "obedience",
+    "definition": "服从,顺从"
+  },
+  {
+    "id": "cet6_605",
+    "word": "obscene",
+    "definition": "淫秽的,下流的"
+  },
+  {
+    "id": "cet6_606",
+    "word": "obscure",
+    "definition": "模糊的,使模糊"
+  },
+  {
+    "id": "cet6_607",
+    "word": "odor",
+    "definition": "气味,臭味"
+  },
+  {
+    "id": "cet6_608",
+    "word": "offset",
+    "definition": "抵消,补偿"
+  },
+  {
+    "id": "cet6_609",
+    "word": "offspring",
+    "definition": "后代,子女"
+  },
+  {
+    "id": "cet6_610",
+    "word": "opaque",
+    "definition": "不透明的,难懂的"
+  },
+  {
+    "id": "cet6_611",
+    "word": "oppress",
+    "definition": "压迫,压制"
+  },
+  {
+    "id": "cet6_612",
+    "word": "optimism",
+    "definition": "乐观,乐观主义"
+  },
+  {
+    "id": "cet6_613",
+    "word": "optimum",
+    "definition": "最佳的,最优的"
+  },
+  {
+    "id": "cet6_614",
+    "word": "orient",
+    "definition": "东方,定向,使适应"
+  },
+  {
+    "id": "cet6_615",
+    "word": "oriental",
+    "definition": "东方的,东方人"
+  },
+  {
+    "id": "cet6_616",
+    "word": "orientation",
+    "definition": "方向,定位,培训"
+  },
+  {
+    "id": "cet6_617",
+    "word": "originate",
+    "definition": "起源,发源"
+  },
+  {
+    "id": "cet6_618",
+    "word": "ornament",
+    "definition": "装饰品,装饰"
+  },
+  {
+    "id": "cet6_619",
+    "word": "orthodox",
+    "definition": "正统的,传统的"
+  },
+  {
+    "id": "cet6_620",
+    "word": "outbreak",
+    "definition": "爆发,突然发生"
+  },
+  {
+    "id": "cet6_621",
+    "word": "outfit",
+    "definition": "装备,全套服装"
+  },
+  {
+    "id": "cet6_622",
+    "word": "outrage",
+    "definition": "愤怒,暴行"
+  },
+  {
+    "id": "cet6_623",
+    "word": "overflow",
+    "definition": "溢出,泛滥"
+  },
+  {
+    "id": "cet6_624",
+    "word": "overhear",
+    "definition": "无意中听到,偷听"
+  },
+  {
+    "id": "cet6_625",
+    "word": "overlap",
+    "definition": "重叠,与...重叠"
+  },
+  {
+    "id": "cet6_626",
+    "word": "overt",
+    "definition": "公开的,明显的"
+  },
+  {
+    "id": "cet6_627",
+    "word": "overthrow",
+    "definition": "推翻,打倒"
+  },
+  {
+    "id": "cet6_628",
+    "word": "overturn",
+    "definition": "推翻,颠覆"
+  },
+  {
+    "id": "cet6_629",
+    "word": "overwhelm",
+    "definition": "压倒,使不知所措"
+  },
+  {
+    "id": "cet6_630",
+    "word": "owing",
+    "definition": "由于,因为"
+  },
+  {
+    "id": "cet6_631",
+    "word": "oxide",
+    "definition": "氧化物"
+  },
+  {
+    "id": "cet6_632",
+    "word": "pamphlet",
+    "definition": "小册子"
+  },
+  {
+    "id": "cet6_633",
+    "word": "panic",
+    "definition": "恐慌,惊慌"
+  },
+  {
+    "id": "cet6_634",
+    "word": "paradise",
+    "definition": "天堂,乐园"
+  },
+  {
+    "id": "cet6_635",
+    "word": "paradox",
+    "definition": "悖论,矛盾"
+  },
+  {
+    "id": "cet6_636",
+    "word": "paralyze",
+    "definition": "使瘫痪,使麻痹"
+  },
+  {
+    "id": "cet6_637",
+    "word": "parameter",
+    "definition": "参数,界限"
+  },
+  {
+    "id": "cet6_638",
+    "word": "parcel",
+    "definition": "包裹,打包"
+  },
+  {
+    "id": "cet6_639",
+    "word": "pastime",
+    "definition": "消遣,娱乐"
+  },
+  {
+    "id": "cet6_640",
+    "word": "pasture",
+    "definition": "牧场,牧草"
+  },
+  {
+    "id": "cet6_641",
+    "word": "patrol",
+    "definition": "巡逻,巡查"
+  },
+  {
+    "id": "cet6_642",
+    "word": "patron",
+    "definition": "赞助人,老顾客"
+  },
+  {
+    "id": "cet6_643",
+    "word": "pave",
+    "definition": "铺路, pave the way"
+  },
+  {
+    "id": "cet6_644",
+    "word": "peasant",
+    "definition": "农民,乡下人"
+  },
+  {
+    "id": "cet6_645",
+    "word": "pedal",
+    "definition": "踏板,踩踏板"
+  },
+  {
+    "id": "cet6_646",
+    "word": "peel",
+    "definition": "剥皮,削皮"
+  },
+  {
+    "id": "cet6_647",
+    "word": "peer",
+    "definition": "同龄人,凝视"
+  },
+  {
+    "id": "cet6_648",
+    "word": "penalty",
+    "definition": "惩罚,处罚"
+  },
+  {
+    "id": "cet6_649",
+    "word": "pendulum",
+    "definition": "钟摆,摇摆不定"
+  },
+  {
+    "id": "cet6_650",
+    "word": "penetrate",
+    "definition": "穿透,渗透"
+  },
+  {
+    "id": "cet6_651",
+    "word": "perception",
+    "definition": "感知,知觉"
+  },
+  {
+    "id": "cet6_652",
+    "word": "perfection",
+    "definition": "完美,完善"
+  },
+  {
+    "id": "cet6_653",
+    "word": "peril",
+    "definition": "危险, peril"
+  },
+  {
+    "id": "cet6_654",
+    "word": "periodic",
+    "definition": "周期的,定期的"
+  },
+  {
+    "id": "cet6_655",
+    "word": "perish",
+    "definition": "死亡,毁灭"
+  },
+  {
+    "id": "cet6_656",
+    "word": "permeate",
+    "definition": "渗透,弥漫"
+  },
+  {
+    "id": "cet6_657",
+    "word": "perpetual",
+    "definition": "永久的,不断的"
+  },
+  {
+    "id": "cet6_658",
+    "word": "perplex",
+    "definition": "使困惑,使复杂"
+  },
+  {
+    "id": "cet6_659",
+    "word": "persistent",
+    "definition": "坚持的,持续的"
+  },
+  {
+    "id": "cet6_660",
+    "word": "petition",
+    "definition": "请愿,申请"
+  },
+  {
+    "id": "cet6_661",
+    "word": "petty",
+    "definition": "琐碎的,小气的"
+  },
+  {
+    "id": "cet6_662",
+    "word": "pirate",
+    "definition": "海盗,盗版"
+  },
+  {
+    "id": "cet6_663",
+    "word": "pistol",
+    "definition": "手枪"
+  },
+  {
+    "id": "cet6_664",
+    "word": "plague",
+    "definition": "瘟疫,困扰"
+  },
+  {
+    "id": "cet6_665",
+    "word": "plaster",
+    "definition": "石膏,灰泥"
+  },
+  {
+    "id": "cet6_666",
+    "word": "plateau",
+    "definition": "高原,稳定期"
+  },
+  {
+    "id": "cet6_667",
+    "word": "plausible",
+    "definition": "看似合理的"
+  },
+  {
+    "id": "cet6_668",
+    "word": "plea",
+    "definition": "恳求,借口,辩护"
+  },
+  {
+    "id": "cet6_669",
+    "word": "plead",
+    "definition": "恳求,辩护"
+  },
+  {
+    "id": "cet6_670",
+    "word": "pledge",
+    "definition": "保证,誓言"
+  },
+  {
+    "id": "cet6_671",
+    "word": "plight",
+    "definition": "困境,苦境"
+  },
+  {
+    "id": "cet6_672",
+    "word": "poke",
+    "definition": "戳,刺, poke fun at"
+  },
+  {
+    "id": "cet6_673",
+    "word": "polar",
+    "definition": "极地的,对立的"
+  },
+  {
+    "id": "cet6_674",
+    "word": "polish",
+    "definition": "擦亮,润色"
+  },
+  {
+    "id": "cet6_675",
+    "word": "ponder",
+    "definition": "沉思,考虑"
+  },
+  {
+    "id": "cet6_676",
+    "word": "portable",
+    "definition": "便携的,手提的"
+  },
+  {
+    "id": "cet6_677",
+    "word": "portion",
+    "definition": "部分,份额"
+  },
+  {
+    "id": "cet6_678",
+    "word": "portray",
+    "definition": "描绘,扮演"
+  },
+  {
+    "id": "cet6_679",
+    "word": "posture",
+    "definition": "姿势,姿态"
+  },
+  {
+    "id": "cet6_680",
+    "word": "potent",
+    "definition": "强有力的,有效的"
+  },
+  {
+    "id": "cet6_681",
+    "word": "preach",
+    "definition": "传教,说教"
+  },
+  {
+    "id": "cet6_682",
+    "word": "precaution",
+    "definition": "预防,警惕"
+  },
+  {
+    "id": "cet6_683",
+    "word": "precede",
+    "definition": "在之前,先于"
+  },
+  {
+    "id": "cet6_684",
+    "word": "precedent",
+    "definition": "先例,前例"
+  },
+  {
+    "id": "cet6_685",
+    "word": "preclude",
+    "definition": "排除,阻止"
+  },
+  {
+    "id": "cet6_686",
+    "word": "predominant",
+    "definition": "主要的,占优势的"
+  },
+  {
+    "id": "cet6_687",
+    "word": "premature",
+    "definition": "过早的,不成熟的"
+  },
+  {
+    "id": "cet6_688",
+    "word": "premier",
+    "definition": "总理,首相"
+  },
+  {
+    "id": "cet6_689",
+    "word": "premise",
+    "definition": "前提,假定"
+  },
+  {
+    "id": "cet6_690",
+    "word": "premium",
+    "definition": "保险费,优质,加价"
+  },
+  {
+    "id": "cet6_691",
+    "word": "prescription",
+    "definition": "处方,药方"
+  },
+  {
+    "id": "cet6_692",
+    "word": "presentation",
+    "definition": "演示,介绍,展示"
+  },
+  {
+    "id": "cet6_693",
+    "word": "preside",
+    "definition": "主持,负责人"
+  },
+  {
+    "id": "cet6_694",
+    "word": "prestige",
+    "definition": "声望,威望"
+  },
+  {
+    "id": "cet6_695",
+    "word": "presumably",
+    "definition": "可能,大概"
+  },
+  {
+    "id": "cet6_696",
+    "word": "presume",
+    "definition": "假设,推定"
+  },
+  {
+    "id": "cet6_697",
+    "word": "pretext",
+    "definition": "借口,托词"
+  },
+  {
+    "id": "cet6_698",
+    "word": "prevalent",
+    "definition": "流行的,普遍的"
+  },
+  {
+    "id": "cet6_699",
+    "word": "prey",
+    "definition": "猎物,捕食, prey on"
+  },
+  {
+    "id": "cet6_700",
+    "word": "priest",
+    "definition": "牧师,神父"
+  },
+  {
+    "id": "cet6_701",
+    "word": "prime",
+    "definition": "首要的, prime time"
+  },
+  {
+    "id": "cet6_702",
+    "word": "primitive",
+    "definition": "原始的,简单的"
+  },
+  {
+    "id": "cet6_703",
+    "word": "privacy",
+    "definition": "隐私,私密"
+  },
+  {
+    "id": "cet6_704",
+    "word": "privilege",
+    "definition": "特权,优惠"
+  },
+  {
+    "id": "cet6_705",
+    "word": "probe",
+    "definition": "探查,探测器"
+  },
+  {
+    "id": "cet6_706",
+    "word": "proceedings",
+    "definition": "程序,诉讼,会议记录"
+  },
+  {
+    "id": "cet6_707",
+    "word": "proclaim",
+    "definition": "宣布,宣告"
+  },
+  {
+    "id": "cet6_708",
+    "word": "productive",
+    "definition": "多产的,富有成效的"
+  },
+  {
+    "id": "cet6_709",
+    "word": "productivity",
+    "definition": "生产力,效率"
+  },
+  {
+    "id": "cet6_710",
+    "word": "proficiency",
+    "definition": "熟练,精通"
+  },
+  {
+    "id": "cet6_711",
+    "word": "profile",
+    "definition": "轮廓,简介,侧面"
+  },
+  {
+    "id": "cet6_712",
+    "word": "profitable",
+    "definition": "有利可图的,有益的"
+  },
+  {
+    "id": "cet6_713",
+    "word": "profound",
+    "definition": "深刻的,深奥的"
+  },
+  {
+    "id": "cet6_714",
+    "word": "progressive",
+    "definition": "进步的,逐步的"
+  },
+  {
+    "id": "cet6_715",
+    "word": "prolong",
+    "definition": "延长,拖延"
+  },
+  {
+    "id": "cet6_716",
+    "word": "promising",
+    "definition": "有前途的,有希望的"
+  },
+  {
+    "id": "cet6_717",
+    "word": "prone",
+    "definition": "倾向于, prone to"
+  },
+  {
+    "id": "cet6_718",
+    "word": "propaganda",
+    "definition": "宣传"
+  },
+  {
+    "id": "cet6_719",
+    "word": "propel",
+    "definition": "推进,推动"
+  },
+  {
+    "id": "cet6_720",
+    "word": "prophet",
+    "definition": "先知,预言家"
+  },
+  {
+    "id": "cet6_721",
+    "word": "proposition",
+    "definition": "提议,主张,命题"
+  },
+  {
+    "id": "cet6_722",
+    "word": "prose",
+    "definition": "散文"
+  },
+  {
+    "id": "cet6_723",
+    "word": "prosecute",
+    "definition": "起诉,检举"
+  },
+  {
+    "id": "cet6_724",
+    "word": "prospective",
+    "definition": "预期的,未来的"
+  },
+  {
+    "id": "cet6_725",
+    "word": "prosperity",
+    "definition": "繁荣,兴旺"
+  },
+  {
+    "id": "cet6_726",
+    "word": "protective",
+    "definition": "保护的,防护的"
+  },
+  {
+    "id": "cet6_727",
+    "word": "prototype",
+    "definition": "原型,雏形"
+  },
+  {
+    "id": "cet6_728",
+    "word": "provocative",
+    "definition": "挑衅的,煽动性的"
+  },
+  {
+    "id": "cet6_729",
+    "word": "provoke",
+    "definition": "激起,挑衅"
+  },
+  {
+    "id": "cet6_730",
+    "word": "proximity",
+    "definition": "接近,邻近"
+  },
+  {
+    "id": "cet6_731",
+    "word": "publicity",
+    "definition": "宣传,知名度"
+  },
+  {
+    "id": "cet6_732",
+    "word": "purify",
+    "definition": "净化,提纯"
+  },
+  {
+    "id": "cet6_733",
+    "word": "pursuit",
+    "definition": "追求,追赶"
+  },
+  {
+    "id": "cet6_734",
+    "word": "qualification",
+    "definition": "资格,条件"
+  },
+  {
+    "id": "cet6_735",
+    "word": "qualitative",
+    "definition": "定性的,质量的"
+  },
+  {
+    "id": "cet6_736",
+    "word": "quantify",
+    "definition": "量化,定量"
+  },
+  {
+    "id": "cet6_737",
+    "word": "quantitative",
+    "definition": "定量的,数量的"
+  },
+  {
+    "id": "cet6_738",
+    "word": "quarterly",
+    "definition": "每季度的,季刊"
+  },
+  {
+    "id": "cet6_739",
+    "word": "queer",
+    "definition": "奇怪的,古怪的"
+  },
+  {
+    "id": "cet6_740",
+    "word": "quench",
+    "definition": "解渴,熄灭"
+  },
+  {
+    "id": "cet6_741",
+    "word": "quest",
+    "definition": "探索,寻求"
+  },
+  {
+    "id": "cet6_742",
+    "word": "quota",
+    "definition": "配额,限额"
+  },
+  {
+    "id": "cet6_743",
+    "word": "quotation",
+    "definition": "引文,报价"
+  },
+  {
+    "id": "cet6_744",
+    "word": "racket",
+    "definition": "球拍,喧闹"
+  },
+  {
+    "id": "cet6_745",
+    "word": "radiate",
+    "definition": "辐射,散发"
+  },
+  {
+    "id": "cet6_746",
+    "word": "radical",
+    "definition": "根本的,激进的"
+  },
+  {
+    "id": "cet6_747",
+    "word": "rage",
+    "definition": "愤怒,狂怒,风行"
+  },
+  {
+    "id": "cet6_748",
+    "word": "raid",
+    "definition": "突袭,搜查"
+  },
+  {
+    "id": "cet6_749",
+    "word": "rally",
+    "definition": "集会, rally around"
+  },
+  {
+    "id": "cet6_750",
+    "word": "random",
+    "definition": "随机的,随意的"
+  },
+  {
+    "id": "cet6_751",
+    "word": "rating",
+    "definition": "评级,评分"
+  },
+  {
+    "id": "cet6_752",
+    "word": "readily",
+    "definition": "容易地,乐意地"
+  },
+  {
+    "id": "cet6_753",
+    "word": "realistic",
+    "definition": "现实的,切实的"
+  },
+  {
+    "id": "cet6_754",
+    "word": "reap",
+    "definition": "收获, reap the benefits"
+  },
+  {
+    "id": "cet6_755",
+    "word": "rebellion",
+    "definition": "叛乱,反抗"
+  },
+  {
+    "id": "cet6_756",
+    "word": "recession",
+    "definition": "衰退,不景气"
+  },
+  {
+    "id": "cet6_757",
+    "word": "recipe",
+    "definition": "食谱,秘诀"
+  },
+  {
+    "id": "cet6_758",
+    "word": "recipient",
+    "definition": "接受者,收件人"
+  },
+  {
+    "id": "cet6_759",
+    "word": "reciprocal",
+    "definition": "相互的,互惠的"
+  },
+  {
+    "id": "cet6_760",
+    "word": "recite",
+    "definition": "背诵,朗诵"
+  },
+  {
+    "id": "cet6_761",
+    "word": "reckless",
+    "definition": "鲁莽的,不计后果的"
+  },
+  {
+    "id": "cet6_762",
+    "word": "reckon",
+    "definition": "认为,估算"
+  },
+  {
+    "id": "cet6_763",
+    "word": "reclaim",
+    "definition": "回收,开垦"
+  },
+  {
+    "id": "cet6_764",
+    "word": "reconcile",
+    "definition": "使和解,调和"
+  },
+  {
+    "id": "cet6_765",
+    "word": "recreation",
+    "definition": "娱乐,消遣"
+  },
+  {
+    "id": "cet6_766",
+    "word": "recruit",
+    "definition": "招募,新兵"
+  },
+  {
+    "id": "cet6_767",
+    "word": "rectangular",
+    "definition": "矩形的,长方形的"
+  },
+  {
+    "id": "cet6_768",
+    "word": "rectify",
+    "definition": "纠正,改正"
+  },
+  {
+    "id": "cet6_769",
+    "word": "recur",
+    "definition": "再发生,复发"
+  },
+  {
+    "id": "cet6_770",
+    "word": "recycle",
+    "definition": "回收,循环利用"
+  },
+  {
+    "id": "cet6_771",
+    "word": "redundant",
+    "definition": "多余的,冗余的"
+  },
+  {
+    "id": "cet6_772",
+    "word": "refrain",
+    "definition": "克制, refrain from"
+  },
+  {
+    "id": "cet6_773",
+    "word": "refreshment",
+    "definition": "茶点,点心"
+  },
+  {
+    "id": "cet6_774",
+    "word": "refuge",
+    "definition": "避难,庇护"
+  },
+  {
+    "id": "cet6_775",
+    "word": "refund",
+    "definition": "退款,退还"
+  },
+  {
+    "id": "cet6_776",
+    "word": "refute",
+    "definition": "驳斥,反驳"
+  },
+  {
+    "id": "cet6_777",
+    "word": "regime",
+    "definition": "政权,政体"
+  },
+  {
+    "id": "cet6_778",
+    "word": "rehearsal",
+    "definition": "排练,预演"
+  },
+  {
+    "id": "cet6_779",
+    "word": "reign",
+    "definition": "统治,在位"
+  },
+  {
+    "id": "cet6_780",
+    "word": "rein",
+    "definition": "缰绳,控制"
+  },
+  {
+    "id": "cet6_781",
+    "word": "rejoice",
+    "definition": "欣喜,高兴"
+  },
+  {
+    "id": "cet6_782",
+    "word": "relay",
+    "definition": "接力,转播"
+  },
+  {
+    "id": "cet6_783",
+    "word": "reliance",
+    "definition": "依靠,信赖"
+  },
+  {
+    "id": "cet6_784",
+    "word": "relish",
+    "definition": "享受, relish the moment"
+  },
+  {
+    "id": "cet6_785",
+    "word": "remainder",
+    "definition": "剩余,其余"
+  },
+  {
+    "id": "cet6_786",
+    "word": "remnant",
+    "definition": "残余,剩余"
+  },
+  {
+    "id": "cet6_787",
+    "word": "renaissance",
+    "definition": "文艺复兴"
+  },
+  {
+    "id": "cet6_788",
+    "word": "render",
+    "definition": "使成为,给予,渲染"
+  },
+  {
+    "id": "cet6_789",
+    "word": "renew",
+    "definition": "更新,续期"
+  },
+  {
+    "id": "cet6_790",
+    "word": "repay",
+    "definition": "偿还,报答"
+  },
+  {
+    "id": "cet6_791",
+    "word": "repel",
+    "definition": "击退,排斥"
+  },
+  {
+    "id": "cet6_792",
+    "word": "repertoire",
+    "definition": "全部节目, repertoire"
+  },
+  {
+    "id": "cet6_793",
+    "word": "repression",
+    "definition": "压抑,镇压"
+  },
+  {
+    "id": "cet6_794",
+    "word": "reproach",
+    "definition": "责备,指责"
+  },
+  {
+    "id": "cet6_795",
+    "word": "resemblance",
+    "definition": "相似,类似"
+  },
+  {
+    "id": "cet6_796",
+    "word": "resent",
+    "definition": "怨恨,憎恨"
+  },
+  {
+    "id": "cet6_797",
+    "word": "reside",
+    "definition": "居住, reside in"
+  },
+  {
+    "id": "cet6_798",
+    "word": "residential",
+    "definition": "住宅的,居住的"
+  },
+  {
+    "id": "cet6_799",
+    "word": "resistant",
+    "definition": "抵抗的,耐...的"
+  },
+  {
+    "id": "cet6_800",
+    "word": "resolute",
+    "definition": "坚决的,坚定的"
+  },
+  {
+    "id": "cet6_801",
+    "word": "resonance",
+    "definition": "共鸣,共振"
+  },
+  {
+    "id": "cet6_802",
+    "word": "respective",
+    "definition": "各自的,分别的"
+  },
+  {
+    "id": "cet6_803",
+    "word": "restrain",
+    "definition": "抑制,制止"
+  },
+  {
+    "id": "cet6_804",
+    "word": "resultant",
+    "definition": "由此引起的,因而发生的"
+  },
+  {
+    "id": "cet6_805",
+    "word": "resume",
+    "definition": "恢复,简历"
+  },
+  {
+    "id": "cet6_806",
+    "word": "retail",
+    "definition": "零售"
+  },
+  {
+    "id": "cet6_807",
+    "word": "retain",
+    "definition": "保持,保留"
+  },
+  {
+    "id": "cet6_808",
+    "word": "retort",
+    "definition": "反驳,回嘴"
+  },
+  {
+    "id": "cet6_809",
+    "word": "retrieve",
+    "definition": "取回,检索"
+  },
+  {
+    "id": "cet6_810",
+    "word": "retrospect",
+    "definition": "回顾, retrospective"
+  },
+  {
+    "id": "cet6_811",
+    "word": "revelation",
+    "definition": "揭示,启示"
+  },
+  {
+    "id": "cet6_812",
+    "word": "revenge",
+    "definition": "复仇,报复"
+  },
+  {
+    "id": "cet6_813",
+    "word": "revive",
+    "definition": "复兴,苏醒"
+  },
+  {
+    "id": "cet6_814",
+    "word": "revolve",
+    "definition": "旋转, revolve around"
+  },
+  {
+    "id": "cet6_815",
+    "word": "rigorous",
+    "definition": "严格的,严密的"
+  },
+  {
+    "id": "cet6_816",
+    "word": "riot",
+    "definition": "暴乱,骚乱"
+  },
+  {
+    "id": "cet6_817",
+    "word": "rip",
+    "definition": "撕裂, rip off"
+  },
+  {
+    "id": "cet6_818",
+    "word": "ripple",
+    "definition": "涟漪,波纹"
+  },
+  {
+    "id": "cet6_819",
+    "word": "ritual",
+    "definition": "仪式,惯例"
+  },
+  {
+    "id": "cet6_820",
+    "word": "robust",
+    "definition": "强健的, robust"
+  },
+  {
+    "id": "cet6_821",
+    "word": "romance",
+    "definition": "浪漫,爱情故事"
+  },
+  {
+    "id": "cet6_822",
+    "word": "rot",
+    "definition": "腐烂,腐败"
+  },
+  {
+    "id": "cet6_823",
+    "word": "rotary",
+    "definition": "旋转的, rotary"
+  },
+  {
+    "id": "cet6_824",
+    "word": "royalty",
+    "definition": "皇室,版税"
+  },
+  {
+    "id": "cet6_825",
+    "word": "rupture",
+    "definition": "破裂,断裂"
+  },
+  {
+    "id": "cet6_826",
+    "word": "sacred",
+    "definition": "神圣的,宗教的"
+  },
+  {
+    "id": "cet6_827",
+    "word": "safeguard",
+    "definition": "保护, safeguard"
+  },
+  {
+    "id": "cet6_828",
+    "word": "salute",
+    "definition": "敬礼,致敬"
+  },
+  {
+    "id": "cet6_829",
+    "word": "sanction",
+    "definition": "制裁,批准"
+  },
+  {
+    "id": "cet6_830",
+    "word": "saturate",
+    "definition": "使饱和,浸透"
+  },
+  {
+    "id": "cet6_831",
+    "word": "savage",
+    "definition": "野蛮的,凶猛的"
+  },
+  {
+    "id": "cet6_832",
+    "word": "scandal",
+    "definition": "丑闻, scandal"
+  },
+  {
+    "id": "cet6_833",
+    "word": "scar",
+    "definition": "伤疤,疤痕"
+  },
+  {
+    "id": "cet6_834",
+    "word": "scent",
+    "definition": "气味,香味"
+  },
+  {
+    "id": "cet6_835",
+    "word": "sceptical",
+    "definition": "怀疑的, sceptical"
+  },
+  {
+    "id": "cet6_836",
+    "word": "scorn",
+    "definition": "轻蔑,鄙视"
+  },
+  {
+    "id": "cet6_837",
+    "word": "scrap",
+    "definition": "碎片, scrap"
+  },
+  {
+    "id": "cet6_838",
+    "word": "scrutiny",
+    "definition": "仔细检查, scrutiny"
+  },
+  {
+    "id": "cet6_839",
+    "word": "sculpture",
+    "definition": "雕塑,雕刻"
+  },
+  {
+    "id": "cet6_840",
+    "word": "seam",
+    "definition": "缝,接缝"
+  },
+  {
+    "id": "cet6_841",
+    "word": "sector",
+    "definition": "行业,部门,扇形"
+  },
+  {
+    "id": "cet6_842",
+    "word": "seemingly",
+    "definition": "表面上,似乎"
+  },
+  {
+    "id": "cet6_843",
+    "word": "segment",
+    "definition": "部分,片段"
+  },
+  {
+    "id": "cet6_844",
+    "word": "segregate",
+    "definition": "隔离,分开"
+  },
+  {
+    "id": "cet6_845",
+    "word": "sensation",
+    "definition": "感觉,轰动"
+  },
+  {
+    "id": "cet6_846",
+    "word": "sentiment",
+    "definition": "情绪,感情"
+  },
+  {
+    "id": "cet6_847",
+    "word": "siege",
+    "definition": "围攻,包围"
+  },
+  {
+    "id": "cet6_848",
+    "word": "signify",
+    "definition": "表示,意味着"
+  },
+  {
+    "id": "cet6_849",
+    "word": "silicon",
+    "definition": "硅"
+  },
+  {
+    "id": "cet6_850",
+    "word": "simulate",
+    "definition": "模拟,仿真"
+  },
+  {
+    "id": "cet6_851",
+    "word": "simultaneous",
+    "definition": "同时的,同时发生的"
+  },
+  {
+    "id": "cet6_852",
+    "word": "situated",
+    "definition": "位于, situated"
+  },
+  {
+    "id": "cet6_853",
+    "word": "skeleton",
+    "definition": "骨架,骨骼"
+  },
+  {
+    "id": "cet6_854",
+    "word": "skeptical",
+    "definition": "怀疑的, skeptical"
+  },
+  {
+    "id": "cet6_855",
+    "word": "skip",
+    "definition": "跳过,略过"
+  },
+  {
+    "id": "cet6_856",
+    "word": "slack",
+    "definition": "松弛的,懈怠的"
+  },
+  {
+    "id": "cet6_857",
+    "word": "slash",
+    "definition": "砍,削减"
+  },
+  {
+    "id": "cet6_858",
+    "word": "slaughter",
+    "definition": "屠杀,屠宰"
+  },
+  {
+    "id": "cet6_859",
+    "word": "slim",
+    "definition": "苗条的, slim"
+  },
+  {
+    "id": "cet6_860",
+    "word": "slogan",
+    "definition": "口号,标语"
+  },
+  {
+    "id": "cet6_861",
+    "word": "slot",
+    "definition": "槽, slot"
+  },
+  {
+    "id": "cet6_862",
+    "word": "slump",
+    "definition": "暴跌,低迷"
+  },
+  {
+    "id": "cet6_863",
+    "word": "smash",
+    "definition": "打碎, smash"
+  },
+  {
+    "id": "cet6_864",
+    "word": "smuggle",
+    "definition": "走私, smuggle"
+  },
+  {
+    "id": "cet6_865",
+    "word": "snap",
+    "definition": "突然折断, snap"
+  },
+  {
+    "id": "cet6_866",
+    "word": "snatch",
+    "definition": "抢夺, snatch"
+  },
+  {
+    "id": "cet6_867",
+    "word": "soak",
+    "definition": "浸泡, soak"
+  },
+  {
+    "id": "cet6_868",
+    "word": "soar",
+    "definition": "飙升, soar"
+  },
+  {
+    "id": "cet6_869",
+    "word": "sober",
+    "definition": "清醒的,严肃的"
+  },
+  {
+    "id": "cet6_870",
+    "word": "solicitor",
+    "definition": "律师, solicitor"
+  },
+  {
+    "id": "cet6_871",
+    "word": "solidarity",
+    "definition": "团结, solidarity"
+  },
+  {
+    "id": "cet6_872",
+    "word": "solitary",
+    "definition": "孤独的,单独的"
+  },
+  {
+    "id": "cet6_873",
+    "word": "sovereign",
+    "definition": "君主,拥有主权的"
+  },
+  {
+    "id": "cet6_874",
+    "word": "spacious",
+    "definition": "宽敞的, spacious"
+  },
+  {
+    "id": "cet6_875",
+    "word": "sparkle",
+    "definition": "闪光,闪耀"
+  },
+  {
+    "id": "cet6_876",
+    "word": "specialty",
+    "definition": "专业,特长"
+  },
+  {
+    "id": "cet6_877",
+    "word": "specification",
+    "definition": "规格,说明书"
+  },
+  {
+    "id": "cet6_878",
+    "word": "spectacle",
+    "definition": "奇观,景象"
+  },
+  {
+    "id": "cet6_879",
+    "word": "spectator",
+    "definition": "观众,旁观者"
+  },
+  {
+    "id": "cet6_880",
+    "word": "spectrum",
+    "definition": "光谱,范围"
+  },
+  {
+    "id": "cet6_881",
+    "word": "spice",
+    "definition": "香料, spice"
+  },
+  {
+    "id": "cet6_882",
+    "word": "spill",
+    "definition": "溢出,洒出"
+  },
+  {
+    "id": "cet6_883",
+    "word": "spine",
+    "definition": "脊柱, spine"
+  },
+  {
+    "id": "cet6_884",
+    "word": "spiral",
+    "definition": "螺旋的,盘旋上升"
+  },
+  {
+    "id": "cet6_885",
+    "word": "splash",
+    "definition": "飞溅, splash"
+  },
+  {
+    "id": "cet6_886",
+    "word": "spoil",
+    "definition": "破坏,宠坏"
+  },
+  {
+    "id": "cet6_887",
+    "word": "spokesman",
+    "definition": "发言人"
+  },
+  {
+    "id": "cet6_888",
+    "word": "sponge",
+    "definition": "海绵, sponge"
+  },
+  {
+    "id": "cet6_889",
+    "word": "spontaneous",
+    "definition": "自发的,自然的"
+  },
+  {
+    "id": "cet6_890",
+    "word": "spouse",
+    "definition": "配偶"
+  },
+  {
+    "id": "cet6_891",
+    "word": "sprinkle",
+    "definition": "洒,撒, sprinkle"
+  },
+  {
+    "id": "cet6_892",
+    "word": "spy",
+    "definition": "间谍, spy"
+  },
+  {
+    "id": "cet6_893",
+    "word": "stabilize",
+    "definition": "使稳定, stabilize"
+  },
+  {
+    "id": "cet6_894",
+    "word": "stagger",
+    "definition": "蹒跚, stagger"
+  },
+  {
+    "id": "cet6_895",
+    "word": "staircase",
+    "definition": "楼梯"
+  },
+  {
+    "id": "cet6_896",
+    "word": "stall",
+    "definition": "摊位,熄火,拖延"
+  },
+  {
+    "id": "cet6_897",
+    "word": "standpoint",
+    "definition": "立场,观点"
+  },
+  {
+    "id": "cet6_898",
+    "word": "staple",
+    "definition": "主要的,订书钉"
+  },
+  {
+    "id": "cet6_899",
+    "word": "startle",
+    "definition": "使惊吓, startle"
+  },
+  {
+    "id": "cet6_900",
+    "word": "statesman",
+    "definition": "政治家"
+  },
+  {
+    "id": "cet6_901",
+    "word": "stationary",
+    "definition": "静止的,固定的"
+  },
+  {
+    "id": "cet6_902",
+    "word": "stereo",
+    "definition": "立体声, stereo"
+  },
+  {
+    "id": "cet6_903",
+    "word": "stereotype",
+    "definition": "刻板印象"
+  },
+  {
+    "id": "cet6_904",
+    "word": "stern",
+    "definition": "严厉的, stern"
+  },
+  {
+    "id": "cet6_905",
+    "word": "steward",
+    "definition": "乘务员, steward"
+  },
+  {
+    "id": "cet6_906",
+    "word": "sticky",
+    "definition": "粘的, sticky"
+  },
+  {
+    "id": "cet6_907",
+    "word": "stitch",
+    "definition": "缝, stitch"
+  },
+  {
+    "id": "cet6_908",
+    "word": "straightforward",
+    "definition": "直截了当的,简单的"
+  },
+  {
+    "id": "cet6_909",
+    "word": "strand",
+    "definition": "一缕, strand"
+  },
+  {
+    "id": "cet6_910",
+    "word": "strategic",
+    "definition": "战略性的, strategic"
+  },
+  {
+    "id": "cet6_911",
+    "word": "streamline",
+    "definition": "精简, streamline"
+  },
+  {
+    "id": "cet6_912",
+    "word": "stride",
+    "definition": "大步走, stride"
+  },
+  {
+    "id": "cet6_913",
+    "word": "striking",
+    "definition": "引人注目的, striking"
+  },
+  {
+    "id": "cet6_914",
+    "word": "strip",
+    "definition": "条,剥去, strip"
+  },
+  {
+    "id": "cet6_915",
+    "word": "strive",
+    "definition": "努力, strive"
+  },
+  {
+    "id": "cet6_916",
+    "word": "stroll",
+    "definition": "散步, stroll"
+  },
+  {
+    "id": "cet6_917",
+    "word": "stubborn",
+    "definition": "固执的, stubborn"
+  },
+  {
+    "id": "cet6_918",
+    "word": "stumble",
+    "definition": "绊倒, stumble"
+  },
+  {
+    "id": "cet6_919",
+    "word": "stun",
+    "definition": "使震惊, stun"
+  },
+  {
+    "id": "cet6_920",
+    "word": "sturdy",
+    "definition": "结实的, sturdy"
+  },
+  {
+    "id": "cet6_921",
+    "word": "subjective",
+    "definition": "主观的, subjective"
+  },
+  {
+    "id": "cet6_922",
+    "word": "submarine",
+    "definition": "潜艇, submarine"
+  },
+  {
+    "id": "cet6_923",
+    "word": "subordinate",
+    "definition": "下级的,从属的"
+  },
+  {
+    "id": "cet6_924",
+    "word": "subscribe",
+    "definition": "订阅, subscribe"
+  },
+  {
+    "id": "cet6_925",
+    "word": "subsidy",
+    "definition": "补贴, subsidy"
+  },
+  {
+    "id": "cet6_926",
+    "word": "subtle",
+    "definition": "微妙的, subtle"
+  },
+  {
+    "id": "cet6_927",
+    "word": "succession",
+    "definition": "连续,继承"
+  },
+  {
+    "id": "cet6_928",
+    "word": "sue",
+    "definition": "起诉, sue"
+  },
+  {
+    "id": "cet6_929",
+    "word": "suffice",
+    "definition": "足够, suffice"
+  },
+  {
+    "id": "cet6_930",
+    "word": "suicide",
+    "definition": "自杀, suicide"
+  },
+  {
+    "id": "cet6_931",
+    "word": "sulfur",
+    "definition": "硫, sulfur"
+  },
+  {
+    "id": "cet6_932",
+    "word": "summit",
+    "definition": "峰会,顶点"
+  },
+  {
+    "id": "cet6_933",
+    "word": "summon",
+    "definition": "召唤, summon"
+  },
+  {
+    "id": "cet6_934",
+    "word": "superb",
+    "definition": "极好的, superb"
+  },
+  {
+    "id": "cet6_935",
+    "word": "superficial",
+    "definition": "表面的,肤浅的"
+  },
+  {
+    "id": "cet6_936",
+    "word": "superintendent",
+    "definition": "主管, superintendent"
+  },
+  {
+    "id": "cet6_937",
+    "word": "supersonic",
+    "definition": "超声速的, supersonic"
+  },
+  {
+    "id": "cet6_938",
+    "word": "supervise",
+    "definition": "监督, supervise"
+  },
+  {
+    "id": "cet6_939",
+    "word": "supplement",
+    "definition": "补充, supplement"
+  },
+  {
+    "id": "cet6_940",
+    "word": "suppress",
+    "definition": "镇压,抑制"
+  },
+  {
+    "id": "cet6_941",
+    "word": "surge",
+    "definition": "激增, surge"
+  },
+  {
+    "id": "cet6_942",
+    "word": "surgeon",
+    "definition": "外科医生"
+  },
+  {
+    "id": "cet6_943",
+    "word": "surpass",
+    "definition": "超过, surpass"
+  },
+  {
+    "id": "cet6_944",
+    "word": "surplus",
+    "definition": "盈余, surplus"
+  },
+  {
+    "id": "cet6_945",
+    "word": "surrender",
+    "definition": "投降, surrender"
+  },
+  {
+    "id": "cet6_946",
+    "word": "susceptible",
+    "definition": "易受影响的, susceptible"
+  },
+  {
+    "id": "cet6_947",
+    "word": "suspension",
+    "definition": "暂停,悬挂"
+  },
+  {
+    "id": "cet6_948",
+    "word": "suspicious",
+    "definition": "怀疑的, suspicious"
+  },
+  {
+    "id": "cet6_949",
+    "word": "swamp",
+    "definition": "沼泽, swamp"
+  },
+  {
+    "id": "cet6_950",
+    "word": "swap",
+    "definition": "交换, swap"
+  },
+  {
+    "id": "cet6_951",
+    "word": "symmetry",
+    "definition": "对称, symmetry"
+  },
+  {
+    "id": "cet6_952",
+    "word": "symphony",
+    "definition": "交响乐, symphony"
+  },
+  {
+    "id": "cet6_953",
+    "word": "symposium",
+    "definition": "研讨会, symposium"
+  },
+  {
+    "id": "cet6_954",
+    "word": "syndrome",
+    "definition": "综合征, syndrome"
+  },
+  {
+    "id": "cet6_955",
+    "word": "synthesis",
+    "definition": "合成, synthesis"
+  },
+  {
+    "id": "cet6_956",
+    "word": "tablet",
+    "definition": "药片,平板"
+  },
+  {
+    "id": "cet6_957",
+    "word": "tactics",
+    "definition": "战术,策略"
+  },
+  {
+    "id": "cet6_958",
+    "word": "tan",
+    "definition": "晒黑, tan"
+  },
+  {
+    "id": "cet6_959",
+    "word": "tangle",
+    "definition": "纠缠, tangle"
+  },
+  {
+    "id": "cet6_960",
+    "word": "tariff",
+    "definition": "关税, tariff"
+  },
+  {
+    "id": "cet6_961",
+    "word": "tease",
+    "definition": "取笑, tease"
+  },
+  {
+    "id": "cet6_962",
+    "word": "tedious",
+    "definition": "冗长的, tedious"
+  },
+  {
+    "id": "cet6_963",
+    "word": "temperament",
+    "definition": "气质, temperament"
+  },
+  {
+    "id": "cet6_964",
+    "word": "tempo",
+    "definition": "节奏, tempo"
+  },
+  {
+    "id": "cet6_965",
+    "word": "tempt",
+    "definition": "诱惑, tempt"
+  },
+  {
+    "id": "cet6_966",
+    "word": "tenant",
+    "definition": "租户, tenant"
+  },
+  {
+    "id": "cet6_967",
+    "word": "tentative",
+    "definition": "暂定的, tentative"
+  },
+  {
+    "id": "cet6_968",
+    "word": "terminate",
+    "definition": "终止, terminate"
+  },
+  {
+    "id": "cet6_969",
+    "word": "terrace",
+    "definition": "阳台, terrace"
+  },
+  {
+    "id": "cet6_970",
+    "word": "terrain",
+    "definition": "地形, terrain"
+  },
+  {
+    "id": "cet6_971",
+    "word": "terrific",
+    "definition": "极好的, terrific"
+  },
+  {
+    "id": "cet6_972",
+    "word": "terrify",
+    "definition": "使害怕, terrify"
+  },
+  {
+    "id": "cet6_973",
+    "word": "testify",
+    "definition": "作证, testify"
+  },
+  {
+    "id": "cet6_974",
+    "word": "testimony",
+    "definition": "证词, testimony"
+  },
+  {
+    "id": "cet6_975",
+    "word": "texture",
+    "definition": "纹理, texture"
+  },
+  {
+    "id": "cet6_976",
+    "word": "theft",
+    "definition": "偷窃, theft"
+  },
+  {
+    "id": "cet6_977",
+    "word": "thereafter",
+    "definition": "此后, thereafter"
+  },
+  {
+    "id": "cet6_978",
+    "word": "thermal",
+    "definition": "热的, thermal"
+  },
+  {
+    "id": "cet6_979",
+    "word": "thesis",
+    "definition": "论文, thesis"
+  },
+  {
+    "id": "cet6_980",
+    "word": "thorn",
+    "definition": "刺, thorn"
+  },
+  {
+    "id": "cet6_981",
+    "word": "threshold",
+    "definition": "门槛, threshold"
+  },
+  {
+    "id": "cet6_982",
+    "word": "thrill",
+    "definition": "激动, thrill"
+  },
+  {
+    "id": "cet6_983",
+    "word": "throne",
+    "definition": "王座, throne"
+  },
+  {
+    "id": "cet6_984",
+    "word": "tick",
+    "definition": "滴答声, tick"
+  },
+  {
+    "id": "cet6_985",
+    "word": "tile",
+    "definition": "瓷砖, tile"
+  },
+  {
+    "id": "cet6_986",
+    "word": "tilt",
+    "definition": "倾斜, tilt"
+  },
+  {
+    "id": "cet6_987",
+    "word": "timber",
+    "definition": "木材, timber"
+  },
+  {
+    "id": "cet6_988",
+    "word": "timid",
+    "definition": "胆小的, timid"
+  },
+  {
+    "id": "cet6_989",
+    "word": "token",
+    "definition": "象征,代币"
+  },
+  {
+    "id": "cet6_990",
+    "word": "toll",
+    "definition": "通行费, toll"
+  },
+  {
+    "id": "cet6_991",
+    "word": "toss",
+    "definition": "投掷, toss"
+  },
+  {
+    "id": "cet6_992",
+    "word": "tow",
+    "definition": "拖,拉, tow"
+  },
+  {
+    "id": "cet6_993",
+    "word": "toxic",
+    "definition": "有毒的, toxic"
+  },
+  {
+    "id": "cet6_994",
+    "word": "tract",
+    "definition": "大片土地, tract"
+  },
+  {
+    "id": "cet6_995",
+    "word": "tragic",
+    "definition": "悲剧的, tragic"
+  },
+  {
+    "id": "cet6_996",
+    "word": "trait",
+    "definition": "特点, trait"
+  },
+  {
+    "id": "cet6_997",
+    "word": "transaction",
+    "definition": "交易, transaction"
+  },
+  {
+    "id": "cet6_998",
+    "word": "transcend",
+    "definition": "超越, transcend"
+  },
+  {
+    "id": "cet6_999",
+    "word": "transient",
+    "definition": "短暂的, transient"
+  },
+  {
+    "id": "cet6_1000",
+    "word": "transistor",
+    "definition": "晶体管, transistor"
+  },
+  {
+    "id": "cet6_1001",
+    "word": "transit",
+    "definition": "运输, transit"
+  },
+  {
+    "id": "cet6_1002",
+    "word": "transition",
+    "definition": "过渡, transition"
+  },
+  {
+    "id": "cet6_1003",
+    "word": "transmission",
+    "definition": "传输, transmission"
+  },
+  {
+    "id": "cet6_1004",
+    "word": "transplant",
+    "definition": "移植, transplant"
+  },
+  {
+    "id": "cet6_1005",
+    "word": "traverse",
+    "definition": "穿过, traverse"
+  },
+  {
+    "id": "cet6_1006",
+    "word": "treasury",
+    "definition": "财政部, treasury"
+  },
+  {
+    "id": "cet6_1007",
+    "word": "treaty",
+    "definition": "条约, treaty"
+  },
+  {
+    "id": "cet6_1008",
+    "word": "trench",
+    "definition": "沟, trench"
+  },
+  {
+    "id": "cet6_1009",
+    "word": "tribe",
+    "definition": "部落, tribe"
+  },
+  {
+    "id": "cet6_1010",
+    "word": "tribute",
+    "definition": "贡品, tribute"
+  },
+  {
+    "id": "cet6_1011",
+    "word": "trifle",
+    "definition": "琐事, trifle"
+  },
+  {
+    "id": "cet6_1012",
+    "word": "trigger",
+    "definition": "触发, trigger"
+  },
+  {
+    "id": "cet6_1013",
+    "word": "triple",
+    "definition": "三倍的, triple"
+  },
+  {
+    "id": "cet6_1014",
+    "word": "trivial",
+    "definition": "琐碎的, trivial"
+  },
+  {
+    "id": "cet6_1015",
+    "word": "tuck",
+    "definition": "塞, tuck"
+  },
+  {
+    "id": "cet6_1016",
+    "word": "tug",
+    "definition": "用力拉, tug"
+  },
+  {
+    "id": "cet6_1017",
+    "word": "tuition",
+    "definition": "学费, tuition"
+  },
+  {
+    "id": "cet6_1018",
+    "word": "tumble",
+    "definition": "摔倒, tumble"
+  },
+  {
+    "id": "cet6_1019",
+    "word": "turbulent",
+    "definition": "动荡的, turbulent"
+  },
+  {
+    "id": "cet6_1020",
+    "word": "turnover",
+    "definition": "营业额, turnover"
+  },
+  {
+    "id": "cet6_1021",
+    "word": "tutor",
+    "definition": "导师, tutor"
+  },
+  {
+    "id": "cet6_1022",
+    "word": "twinkle",
+    "definition": "闪烁, twinkle"
+  },
+  {
+    "id": "cet6_1023",
+    "word": "ultraviolet",
+    "definition": "紫外线的, ultraviolet"
+  },
+  {
+    "id": "cet6_1024",
+    "word": "unanimous",
+    "definition": "一致同意的, unanimous"
+  },
+  {
+    "id": "cet6_1025",
+    "word": "underestimate",
+    "definition": "低估, underestimate"
+  },
+  {
+    "id": "cet6_1026",
+    "word": "underlying",
+    "definition": "潜在的, underlying"
+  },
+  {
+    "id": "cet6_1027",
+    "word": "undertake",
+    "definition": "承担, undertake"
+  },
+  {
+    "id": "cet6_1028",
+    "word": "unemployment",
+    "definition": "失业, unemployment"
+  },
+  {
+    "id": "cet6_1029",
+    "word": "unfold",
+    "definition": "展开, unfold"
+  },
+  {
+    "id": "cet6_1030",
+    "word": "unify",
+    "definition": "统一, unify"
+  },
+  {
+    "id": "cet6_1031",
+    "word": "update",
+    "definition": "更新, update"
+  },
+  {
+    "id": "cet6_1032",
+    "word": "upgrade",
+    "definition": "升级, upgrade"
+  },
+  {
+    "id": "cet6_1033",
+    "word": "uphold",
+    "definition": "支持, uphold"
+  },
+  {
+    "id": "cet6_1034",
+    "word": "uproar",
+    "definition": "骚动, uproar"
+  },
+  {
+    "id": "cet6_1035",
+    "word": "utility",
+    "definition": "公用事业, utility"
+  },
+  {
+    "id": "cet6_1036",
+    "word": "utilize",
+    "definition": "利用, utilize"
+  },
+  {
+    "id": "cet6_1037",
+    "word": "utmost",
+    "definition": "最大限度的, utmost"
+  },
+  {
+    "id": "cet6_1038",
+    "word": "utter",
+    "definition": "完全的, utter"
+  },
+  {
+    "id": "cet6_1039",
+    "word": "vacant",
+    "definition": "空的, vacant"
+  },
+  {
+    "id": "cet6_1040",
+    "word": "vaccine",
+    "definition": "疫苗, vaccine"
+  },
+  {
+    "id": "cet6_1041",
+    "word": "vague",
+    "definition": "模糊的, vague"
+  },
+  {
+    "id": "cet6_1042",
+    "word": "vain",
+    "definition": "徒劳的, vain"
+  },
+  {
+    "id": "cet6_1043",
+    "word": "validate",
+    "definition": "验证, validate"
+  },
+  {
+    "id": "cet6_1044",
+    "word": "valve",
+    "definition": "阀门, valve"
+  },
+  {
+    "id": "cet6_1045",
+    "word": "van",
+    "definition": "厢式货车, van"
+  },
+  {
+    "id": "cet6_1046",
+    "word": "vanish",
+    "definition": "消失, vanish"
+  },
+  {
+    "id": "cet6_1047",
+    "word": "variable",
+    "definition": "变量, variable"
+  },
+  {
+    "id": "cet6_1048",
+    "word": "veil",
+    "definition": "面纱, veil"
+  },
+  {
+    "id": "cet6_1049",
+    "word": "vein",
+    "definition": "静脉, vein"
+  },
+  {
+    "id": "cet6_1050",
+    "word": "velocity",
+    "definition": "速度, velocity"
+  },
+  {
+    "id": "cet6_1051",
+    "word": "velvet",
+    "definition": "天鹅绒, velvet"
+  },
+  {
+    "id": "cet6_1052",
+    "word": "vent",
+    "definition": "通风口, vent"
+  },
+  {
+    "id": "cet6_1053",
+    "word": "ventilate",
+    "definition": "通风, ventilate"
+  },
+  {
+    "id": "cet6_1054",
+    "word": "venture",
+    "definition": "冒险, venture"
+  },
+  {
+    "id": "cet6_1055",
+    "word": "verbal",
+    "definition": "口头的, verbal"
+  },
+  {
+    "id": "cet6_1056",
+    "word": "verdict",
+    "definition": "裁决, verdict"
+  },
+  {
+    "id": "cet6_1057",
+    "word": "verge",
+    "definition": "边缘, verge"
+  },
+  {
+    "id": "cet6_1058",
+    "word": "verify",
+    "definition": "验证, verify"
+  },
+  {
+    "id": "cet6_1059",
+    "word": "versatile",
+    "definition": "多才多艺的, versatile"
+  },
+  {
+    "id": "cet6_1060",
+    "word": "verse",
+    "definition": "诗句, verse"
+  },
+  {
+    "id": "cet6_1061",
+    "word": "versus",
+    "definition": "对, versus"
+  },
+  {
+    "id": "cet6_1062",
+    "word": "veto",
+    "definition": "否决, veto"
+  },
+  {
+    "id": "cet6_1063",
+    "word": "vibrate",
+    "definition": "振动, vibrate"
+  },
+  {
+    "id": "cet6_1064",
+    "word": "vicious",
+    "definition": "恶毒的, vicious"
+  },
+  {
+    "id": "cet6_1065",
+    "word": "vigorous",
+    "definition": "有力的, vigorous"
+  },
+  {
+    "id": "cet6_1066",
+    "word": "violate",
+    "definition": "违反, violate"
+  },
+  {
+    "id": "cet6_1067",
+    "word": "virgin",
+    "definition": "处女, virgin"
+  },
+  {
+    "id": "cet6_1068",
+    "word": "virtual",
+    "definition": "虚拟的, virtual"
+  },
+  {
+    "id": "cet6_1069",
+    "word": "virus",
+    "definition": "病毒, virus"
+  },
+  {
+    "id": "cet6_1070",
+    "word": "visa",
+    "definition": "签证, visa"
+  },
+  {
+    "id": "cet6_1071",
+    "word": "visualize",
+    "definition": "可视化, visualize"
+  },
+  {
+    "id": "cet6_1072",
+    "word": "vocal",
+    "definition": "声音的, vocal"
+  },
+  {
+    "id": "cet6_1073",
+    "word": "vocational",
+    "definition": "职业的, vocational"
+  },
+  {
+    "id": "cet6_1074",
+    "word": "void",
+    "definition": "空的, void"
+  },
+  {
+    "id": "cet6_1075",
+    "word": "vulgar",
+    "definition": "粗俗的, vulgar"
+  },
+  {
+    "id": "cet6_1076",
+    "word": "vulnerable",
+    "definition": "脆弱的, vulnerable"
+  },
+  {
+    "id": "cet6_1077",
+    "word": "ward",
+    "definition": "病房, ward"
+  },
+  {
+    "id": "cet6_1078",
+    "word": "warehouse",
+    "definition": "仓库, warehouse"
+  },
+  {
+    "id": "cet6_1079",
+    "word": "warfare",
+    "definition": "战争, warfare"
+  },
+  {
+    "id": "cet6_1080",
+    "word": "warrant",
+    "definition": "保证, warrant"
+  },
+  {
+    "id": "cet6_1081",
+    "word": "watertight",
+    "definition": "不透水的, watertight"
+  },
+  {
+    "id": "cet6_1082",
+    "word": "weary",
+    "definition": "疲倦的, weary"
+  },
+  {
+    "id": "cet6_1083",
+    "word": "weave",
+    "definition": "编织, weave"
+  },
+  {
+    "id": "cet6_1084",
+    "word": "web",
+    "definition": "网络, web"
+  },
+  {
+    "id": "cet6_1085",
+    "word": "wedge",
+    "definition": "楔子, wedge"
+  },
+  {
+    "id": "cet6_1086",
+    "word": "weird",
+    "definition": "奇怪的, weird"
+  },
+  {
+    "id": "cet6_1087",
+    "word": "whereby",
+    "definition": "凭借, whereby"
+  },
+  {
+    "id": "cet6_1088",
+    "word": "whirl",
+    "definition": "旋转, whirl"
+  },
+  {
+    "id": "cet6_1089",
+    "word": "withhold",
+    "definition": "扣留, withhold"
+  },
+  {
+    "id": "cet6_1090",
+    "word": "wrench",
+    "definition": "扳手, wrench"
+  },
+  {
+    "id": "cet6_1091",
+    "word": "wretched",
+    "definition": "可怜的, wretched"
+  },
+  {
+    "id": "cet6_1092",
+    "word": "yell",
+    "definition": "大叫, yell"
+  },
+  {
+    "id": "cet6_1093",
+    "word": "youngster",
+    "definition": "年轻人, youngster"
+  }
+]

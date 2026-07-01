@@ -1,0 +1,3632 @@
+[
+  {
+    "id": "cet4_0",
+    "word": "abandon",
+    "definition": "放弃,抛弃"
+  },
+  {
+    "id": "cet4_1",
+    "word": "ability",
+    "definition": "能力,才能"
+  },
+  {
+    "id": "cet4_2",
+    "word": "abroad",
+    "definition": "到国外,在国外"
+  },
+  {
+    "id": "cet4_3",
+    "word": "absence",
+    "definition": "缺席,不在"
+  },
+  {
+    "id": "cet4_4",
+    "word": "absolute",
+    "definition": "绝对的,完全的"
+  },
+  {
+    "id": "cet4_5",
+    "word": "absorb",
+    "definition": "吸收,吸引"
+  },
+  {
+    "id": "cet4_6",
+    "word": "abstract",
+    "definition": "抽象的,摘要"
+  },
+  {
+    "id": "cet4_7",
+    "word": "abundant",
+    "definition": "丰富的,充裕的"
+  },
+  {
+    "id": "cet4_8",
+    "word": "academic",
+    "definition": "学术的,学院的"
+  },
+  {
+    "id": "cet4_9",
+    "word": "accelerate",
+    "definition": "加速,促进"
+  },
+  {
+    "id": "cet4_10",
+    "word": "accept",
+    "definition": "接受,认可"
+  },
+  {
+    "id": "cet4_11",
+    "word": "access",
+    "definition": "进入,通道,访问"
+  },
+  {
+    "id": "cet4_12",
+    "word": "accompany",
+    "definition": "陪伴,伴随"
+  },
+  {
+    "id": "cet4_13",
+    "word": "accomplish",
+    "definition": "完成,实现"
+  },
+  {
+    "id": "cet4_14",
+    "word": "account",
+    "definition": "账户,说明,解释"
+  },
+  {
+    "id": "cet4_15",
+    "word": "accurate",
+    "definition": "准确的,精确的"
+  },
+  {
+    "id": "cet4_16",
+    "word": "achieve",
+    "definition": "达到,取得"
+  },
+  {
+    "id": "cet4_17",
+    "word": "acknowledge",
+    "definition": "承认,确认"
+  },
+  {
+    "id": "cet4_18",
+    "word": "acquire",
+    "definition": "获得,学到"
+  },
+  {
+    "id": "cet4_19",
+    "word": "adapt",
+    "definition": "适应,改编"
+  },
+  {
+    "id": "cet4_20",
+    "word": "adequate",
+    "definition": "足够的,适当的"
+  },
+  {
+    "id": "cet4_21",
+    "word": "adjust",
+    "definition": "调整,适应"
+  },
+  {
+    "id": "cet4_22",
+    "word": "administration",
+    "definition": "管理,行政"
+  },
+  {
+    "id": "cet4_23",
+    "word": "admire",
+    "definition": "钦佩,赞赏"
+  },
+  {
+    "id": "cet4_24",
+    "word": "admit",
+    "definition": "承认,准许进入"
+  },
+  {
+    "id": "cet4_25",
+    "word": "adopt",
+    "definition": "采用,收养"
+  },
+  {
+    "id": "cet4_26",
+    "word": "advance",
+    "definition": "前进,进步"
+  },
+  {
+    "id": "cet4_27",
+    "word": "advantage",
+    "definition": "优势,有利条件"
+  },
+  {
+    "id": "cet4_28",
+    "word": "advertise",
+    "definition": "做广告,宣传"
+  },
+  {
+    "id": "cet4_29",
+    "word": "affair",
+    "definition": "事务,事件"
+  },
+  {
+    "id": "cet4_30",
+    "word": "affect",
+    "definition": "影响,感动"
+  },
+  {
+    "id": "cet4_31",
+    "word": "afford",
+    "definition": "负担得起,提供"
+  },
+  {
+    "id": "cet4_32",
+    "word": "aggressive",
+    "definition": "侵略的,好斗的"
+  },
+  {
+    "id": "cet4_33",
+    "word": "agreement",
+    "definition": "协议,一致"
+  },
+  {
+    "id": "cet4_34",
+    "word": "agriculture",
+    "definition": "农业,农学"
+  },
+  {
+    "id": "cet4_35",
+    "word": "alcohol",
+    "definition": "酒精,酒"
+  },
+  {
+    "id": "cet4_36",
+    "word": "alternative",
+    "definition": "替代的,选择"
+  },
+  {
+    "id": "cet4_37",
+    "word": "amaze",
+    "definition": "使惊奇"
+  },
+  {
+    "id": "cet4_38",
+    "word": "ambition",
+    "definition": "雄心,野心"
+  },
+  {
+    "id": "cet4_39",
+    "word": "amount",
+    "definition": "数量,总额"
+  },
+  {
+    "id": "cet4_40",
+    "word": "analyse",
+    "definition": "分析,解析"
+  },
+  {
+    "id": "cet4_41",
+    "word": "ancestor",
+    "definition": "祖先,祖宗"
+  },
+  {
+    "id": "cet4_42",
+    "word": "anniversary",
+    "definition": "周年纪念日"
+  },
+  {
+    "id": "cet4_43",
+    "word": "annual",
+    "definition": "每年的,年度的"
+  },
+  {
+    "id": "cet4_44",
+    "word": "anxiety",
+    "definition": "焦虑,忧虑"
+  },
+  {
+    "id": "cet4_45",
+    "word": "apartment",
+    "definition": "公寓,房间"
+  },
+  {
+    "id": "cet4_46",
+    "word": "apparent",
+    "definition": "明显的,表面上的"
+  },
+  {
+    "id": "cet4_47",
+    "word": "appeal",
+    "definition": "呼吁,吸引,上诉"
+  },
+  {
+    "id": "cet4_48",
+    "word": "appetite",
+    "definition": "食欲,胃口"
+  },
+  {
+    "id": "cet4_49",
+    "word": "appliance",
+    "definition": "电器,器具"
+  },
+  {
+    "id": "cet4_50",
+    "word": "application",
+    "definition": "申请,应用"
+  },
+  {
+    "id": "cet4_51",
+    "word": "apply",
+    "definition": "申请,应用"
+  },
+  {
+    "id": "cet4_52",
+    "word": "appointment",
+    "definition": "约会,任命"
+  },
+  {
+    "id": "cet4_53",
+    "word": "appreciate",
+    "definition": "欣赏,感激"
+  },
+  {
+    "id": "cet4_54",
+    "word": "approach",
+    "definition": "接近,方法"
+  },
+  {
+    "id": "cet4_55",
+    "word": "appropriate",
+    "definition": "适当的,合适的"
+  },
+  {
+    "id": "cet4_56",
+    "word": "approve",
+    "definition": "批准,赞成"
+  },
+  {
+    "id": "cet4_57",
+    "word": "arise",
+    "definition": "出现,产生"
+  },
+  {
+    "id": "cet4_58",
+    "word": "arrange",
+    "definition": "安排,整理"
+  },
+  {
+    "id": "cet4_59",
+    "word": "arrest",
+    "definition": "逮捕,阻止"
+  },
+  {
+    "id": "cet4_60",
+    "word": "artificial",
+    "definition": "人工的,人造的"
+  },
+  {
+    "id": "cet4_61",
+    "word": "aspect",
+    "definition": "方面,层面"
+  },
+  {
+    "id": "cet4_62",
+    "word": "assemble",
+    "definition": "集合,组装"
+  },
+  {
+    "id": "cet4_63",
+    "word": "assess",
+    "definition": "评估,评定"
+  },
+  {
+    "id": "cet4_64",
+    "word": "assign",
+    "definition": "分配,指派"
+  },
+  {
+    "id": "cet4_65",
+    "word": "assist",
+    "definition": "帮助,协助"
+  },
+  {
+    "id": "cet4_66",
+    "word": "associate",
+    "definition": "关联,联系"
+  },
+  {
+    "id": "cet4_67",
+    "word": "assume",
+    "definition": "假设,承担"
+  },
+  {
+    "id": "cet4_68",
+    "word": "atmosphere",
+    "definition": "气氛,大气层"
+  },
+  {
+    "id": "cet4_69",
+    "word": "attach",
+    "definition": "附上,系上"
+  },
+  {
+    "id": "cet4_70",
+    "word": "attempt",
+    "definition": "尝试,企图"
+  },
+  {
+    "id": "cet4_71",
+    "word": "attend",
+    "definition": "参加,出席"
+  },
+  {
+    "id": "cet4_72",
+    "word": "attitude",
+    "definition": "态度,看法"
+  },
+  {
+    "id": "cet4_73",
+    "word": "attract",
+    "definition": "吸引,引起"
+  },
+  {
+    "id": "cet4_74",
+    "word": "audience",
+    "definition": "观众,听众"
+  },
+  {
+    "id": "cet4_75",
+    "word": "authority",
+    "definition": "权威,当局"
+  },
+  {
+    "id": "cet4_76",
+    "word": "available",
+    "definition": "可用的,有效的"
+  },
+  {
+    "id": "cet4_77",
+    "word": "average",
+    "definition": "平均的,普通的"
+  },
+  {
+    "id": "cet4_78",
+    "word": "avoid",
+    "definition": "避免,回避"
+  },
+  {
+    "id": "cet4_79",
+    "word": "award",
+    "definition": "奖励,奖品"
+  },
+  {
+    "id": "cet4_80",
+    "word": "aware",
+    "definition": "意识到的,知道的"
+  },
+  {
+    "id": "cet4_81",
+    "word": "awful",
+    "definition": "可怕的,糟糕的"
+  },
+  {
+    "id": "cet4_82",
+    "word": "awkward",
+    "definition": "尴尬的,笨拙的"
+  },
+  {
+    "id": "cet4_83",
+    "word": "background",
+    "definition": "背景,出身"
+  },
+  {
+    "id": "cet4_84",
+    "word": "balance",
+    "definition": "平衡,余额"
+  },
+  {
+    "id": "cet4_85",
+    "word": "ban",
+    "definition": "禁止,禁令"
+  },
+  {
+    "id": "cet4_86",
+    "word": "barrier",
+    "definition": "障碍,屏障"
+  },
+  {
+    "id": "cet4_87",
+    "word": "battle",
+    "definition": "战斗,战役"
+  },
+  {
+    "id": "cet4_88",
+    "word": "behalf",
+    "definition": "代表,利益"
+  },
+  {
+    "id": "cet4_89",
+    "word": "behave",
+    "definition": "行为,表现"
+  },
+  {
+    "id": "cet4_90",
+    "word": "beneath",
+    "definition": "在下方"
+  },
+  {
+    "id": "cet4_91",
+    "word": "benefit",
+    "definition": "利益,好处"
+  },
+  {
+    "id": "cet4_92",
+    "word": "bitter",
+    "definition": "苦的,痛苦的"
+  },
+  {
+    "id": "cet4_93",
+    "word": "blame",
+    "definition": "责备,责怪"
+  },
+  {
+    "id": "cet4_94",
+    "word": "blank",
+    "definition": "空白的,空白处"
+  },
+  {
+    "id": "cet4_95",
+    "word": "bloom",
+    "definition": "开花,花朵"
+  },
+  {
+    "id": "cet4_96",
+    "word": "border",
+    "definition": "边界,边境"
+  },
+  {
+    "id": "cet4_97",
+    "word": "bore",
+    "definition": "使厌烦,钻孔"
+  },
+  {
+    "id": "cet4_98",
+    "word": "bound",
+    "definition": "跳跃,界限"
+  },
+  {
+    "id": "cet4_99",
+    "word": "brand",
+    "definition": "品牌,商标"
+  },
+  {
+    "id": "cet4_100",
+    "word": "breath",
+    "definition": "呼吸,气息"
+  },
+  {
+    "id": "cet4_101",
+    "word": "brief",
+    "definition": "简短的,摘要"
+  },
+  {
+    "id": "cet4_102",
+    "word": "brilliant",
+    "definition": "杰出的,明亮的"
+  },
+  {
+    "id": "cet4_103",
+    "word": "broadcast",
+    "definition": "广播,播送"
+  },
+  {
+    "id": "cet4_104",
+    "word": "budget",
+    "definition": "预算,经费"
+  },
+  {
+    "id": "cet4_105",
+    "word": "burden",
+    "definition": "负担,重担"
+  },
+  {
+    "id": "cet4_106",
+    "word": "burst",
+    "definition": "爆裂,突发"
+  },
+  {
+    "id": "cet4_107",
+    "word": "cabinet",
+    "definition": "橱柜,内阁"
+  },
+  {
+    "id": "cet4_108",
+    "word": "campaign",
+    "definition": "运动,战役"
+  },
+  {
+    "id": "cet4_109",
+    "word": "campus",
+    "definition": "校园,校区"
+  },
+  {
+    "id": "cet4_110",
+    "word": "cancel",
+    "definition": "取消,撤销"
+  },
+  {
+    "id": "cet4_111",
+    "word": "candidate",
+    "definition": "候选人,应试者"
+  },
+  {
+    "id": "cet4_112",
+    "word": "capable",
+    "definition": "有能力的"
+  },
+  {
+    "id": "cet4_113",
+    "word": "capacity",
+    "definition": "容量,能力"
+  },
+  {
+    "id": "cet4_114",
+    "word": "capture",
+    "definition": "捕获,俘获"
+  },
+  {
+    "id": "cet4_115",
+    "word": "career",
+    "definition": "职业,生涯"
+  },
+  {
+    "id": "cet4_116",
+    "word": "category",
+    "definition": "类别,种类"
+  },
+  {
+    "id": "cet4_117",
+    "word": "cease",
+    "definition": "停止,终止"
+  },
+  {
+    "id": "cet4_118",
+    "word": "challenge",
+    "definition": "挑战,质疑"
+  },
+  {
+    "id": "cet4_119",
+    "word": "champion",
+    "definition": "冠军,拥护者"
+  },
+  {
+    "id": "cet4_120",
+    "word": "channel",
+    "definition": "频道,渠道,海峡"
+  },
+  {
+    "id": "cet4_121",
+    "word": "chapter",
+    "definition": "章节,篇章"
+  },
+  {
+    "id": "cet4_122",
+    "word": "character",
+    "definition": "性格,角色,字符"
+  },
+  {
+    "id": "cet4_123",
+    "word": "characteristic",
+    "definition": "特征,特点"
+  },
+  {
+    "id": "cet4_124",
+    "word": "charity",
+    "definition": "慈善,慈善机构"
+  },
+  {
+    "id": "cet4_125",
+    "word": "chemical",
+    "definition": "化学的,化学品"
+  },
+  {
+    "id": "cet4_126",
+    "word": "circumstance",
+    "definition": "环境,情况"
+  },
+  {
+    "id": "cet4_127",
+    "word": "citizen",
+    "definition": "公民,市民"
+  },
+  {
+    "id": "cet4_128",
+    "word": "civil",
+    "definition": "公民的,民事的"
+  },
+  {
+    "id": "cet4_129",
+    "word": "claim",
+    "definition": "声称,要求,索赔"
+  },
+  {
+    "id": "cet4_130",
+    "word": "classic",
+    "definition": "经典的,名著"
+  },
+  {
+    "id": "cet4_131",
+    "word": "climate",
+    "definition": "气候,风气"
+  },
+  {
+    "id": "cet4_132",
+    "word": "collapse",
+    "definition": "倒塌,崩溃"
+  },
+  {
+    "id": "cet4_133",
+    "word": "colleague",
+    "definition": "同事,同僚"
+  },
+  {
+    "id": "cet4_134",
+    "word": "collection",
+    "definition": "收集,收藏品"
+  },
+  {
+    "id": "cet4_135",
+    "word": "combine",
+    "definition": "结合,联合"
+  },
+  {
+    "id": "cet4_136",
+    "word": "comfort",
+    "definition": "舒适,安慰"
+  },
+  {
+    "id": "cet4_137",
+    "word": "command",
+    "definition": "命令,指挥"
+  },
+  {
+    "id": "cet4_138",
+    "word": "comment",
+    "definition": "评论,意见"
+  },
+  {
+    "id": "cet4_139",
+    "word": "commerce",
+    "definition": "商业,贸易"
+  },
+  {
+    "id": "cet4_140",
+    "word": "commit",
+    "definition": "犯罪,承诺,提交"
+  },
+  {
+    "id": "cet4_141",
+    "word": "communicate",
+    "definition": "交流,沟通"
+  },
+  {
+    "id": "cet4_142",
+    "word": "community",
+    "definition": "社区,团体"
+  },
+  {
+    "id": "cet4_143",
+    "word": "companion",
+    "definition": "同伴,伙伴"
+  },
+  {
+    "id": "cet4_144",
+    "word": "compare",
+    "definition": "比较,对比"
+  },
+  {
+    "id": "cet4_145",
+    "word": "compete",
+    "definition": "竞争,比赛"
+  },
+  {
+    "id": "cet4_146",
+    "word": "competent",
+    "definition": "有能力的,胜任的"
+  },
+  {
+    "id": "cet4_147",
+    "word": "complain",
+    "definition": "抱怨,投诉"
+  },
+  {
+    "id": "cet4_148",
+    "word": "complex",
+    "definition": "复杂的,综合体"
+  },
+  {
+    "id": "cet4_149",
+    "word": "component",
+    "definition": "组成部分,部件"
+  },
+  {
+    "id": "cet4_150",
+    "word": "concentrate",
+    "definition": "集中,专注"
+  },
+  {
+    "id": "cet4_151",
+    "word": "concept",
+    "definition": "概念,观念"
+  },
+  {
+    "id": "cet4_152",
+    "word": "concern",
+    "definition": "关心,担忧,涉及"
+  },
+  {
+    "id": "cet4_153",
+    "word": "conclude",
+    "definition": "总结,结论"
+  },
+  {
+    "id": "cet4_154",
+    "word": "conduct",
+    "definition": "行为,进行,指挥"
+  },
+  {
+    "id": "cet4_155",
+    "word": "conference",
+    "definition": "会议,讨论会"
+  },
+  {
+    "id": "cet4_156",
+    "word": "confident",
+    "definition": "自信的,确信的"
+  },
+  {
+    "id": "cet4_157",
+    "word": "confirm",
+    "definition": "确认,证实"
+  },
+  {
+    "id": "cet4_158",
+    "word": "conflict",
+    "definition": "冲突,矛盾"
+  },
+  {
+    "id": "cet4_159",
+    "word": "confuse",
+    "definition": "使困惑,混淆"
+  },
+  {
+    "id": "cet4_160",
+    "word": "congress",
+    "definition": "国会,代表大会"
+  },
+  {
+    "id": "cet4_161",
+    "word": "connect",
+    "definition": "连接,联系"
+  },
+  {
+    "id": "cet4_162",
+    "word": "conscious",
+    "definition": "有意识的,清醒的"
+  },
+  {
+    "id": "cet4_163",
+    "word": "consequence",
+    "definition": "结果,后果"
+  },
+  {
+    "id": "cet4_164",
+    "word": "conservative",
+    "definition": "保守的,保守派"
+  },
+  {
+    "id": "cet4_165",
+    "word": "consider",
+    "definition": "考虑,认为"
+  },
+  {
+    "id": "cet4_166",
+    "word": "consistent",
+    "definition": "一致的,始终如一的"
+  },
+  {
+    "id": "cet4_167",
+    "word": "constant",
+    "definition": "持续的,常数"
+  },
+  {
+    "id": "cet4_168",
+    "word": "construct",
+    "definition": "建造,构建"
+  },
+  {
+    "id": "cet4_169",
+    "word": "consult",
+    "definition": "咨询,请教"
+  },
+  {
+    "id": "cet4_170",
+    "word": "consume",
+    "definition": "消费,消耗"
+  },
+  {
+    "id": "cet4_171",
+    "word": "contact",
+    "definition": "接触,联系"
+  },
+  {
+    "id": "cet4_172",
+    "word": "contain",
+    "definition": "包含,容纳"
+  },
+  {
+    "id": "cet4_173",
+    "word": "contemporary",
+    "definition": "当代的,同时代的"
+  },
+  {
+    "id": "cet4_174",
+    "word": "content",
+    "definition": "内容,满意的"
+  },
+  {
+    "id": "cet4_175",
+    "word": "contest",
+    "definition": "竞赛,比赛"
+  },
+  {
+    "id": "cet4_176",
+    "word": "context",
+    "definition": "上下文,背景"
+  },
+  {
+    "id": "cet4_177",
+    "word": "contract",
+    "definition": "合同,收缩"
+  },
+  {
+    "id": "cet4_178",
+    "word": "contribute",
+    "definition": "贡献,捐献"
+  },
+  {
+    "id": "cet4_179",
+    "word": "convenient",
+    "definition": "方便的,便利的"
+  },
+  {
+    "id": "cet4_180",
+    "word": "convince",
+    "definition": "使信服,说服"
+  },
+  {
+    "id": "cet4_181",
+    "word": "cooperate",
+    "definition": "合作,协作"
+  },
+  {
+    "id": "cet4_182",
+    "word": "core",
+    "definition": "核心,中心"
+  },
+  {
+    "id": "cet4_183",
+    "word": "corporate",
+    "definition": "公司的,法人的"
+  },
+  {
+    "id": "cet4_184",
+    "word": "correspond",
+    "definition": "对应,通信"
+  },
+  {
+    "id": "cet4_185",
+    "word": "council",
+    "definition": "委员会,理事会"
+  },
+  {
+    "id": "cet4_186",
+    "word": "county",
+    "definition": "县,郡"
+  },
+  {
+    "id": "cet4_187",
+    "word": "court",
+    "definition": "法庭,球场,庭院"
+  },
+  {
+    "id": "cet4_188",
+    "word": "crash",
+    "definition": "碰撞,坠毁"
+  },
+  {
+    "id": "cet4_189",
+    "word": "create",
+    "definition": "创造,创建"
+  },
+  {
+    "id": "cet4_190",
+    "word": "credit",
+    "definition": "信用,学分,赞扬"
+  },
+  {
+    "id": "cet4_191",
+    "word": "crime",
+    "definition": "罪行,犯罪"
+  },
+  {
+    "id": "cet4_192",
+    "word": "crisis",
+    "definition": "危机,紧要关头"
+  },
+  {
+    "id": "cet4_193",
+    "word": "critical",
+    "definition": "批评的,关键的"
+  },
+  {
+    "id": "cet4_194",
+    "word": "cultivate",
+    "definition": "培养,耕作"
+  },
+  {
+    "id": "cet4_195",
+    "word": "culture",
+    "definition": "文化,修养"
+  },
+  {
+    "id": "cet4_196",
+    "word": "curious",
+    "definition": "好奇的,奇怪的"
+  },
+  {
+    "id": "cet4_197",
+    "word": "current",
+    "definition": "当前的,水流,电流"
+  },
+  {
+    "id": "cet4_198",
+    "word": "custom",
+    "definition": "习俗,习惯,定制的"
+  },
+  {
+    "id": "cet4_199",
+    "word": "decline",
+    "definition": "下降,衰退,谢绝"
+  },
+  {
+    "id": "cet4_200",
+    "word": "decorate",
+    "definition": "装饰,装潢"
+  },
+  {
+    "id": "cet4_201",
+    "word": "decrease",
+    "definition": "减少,降低"
+  },
+  {
+    "id": "cet4_202",
+    "word": "defeat",
+    "definition": "击败,战胜"
+  },
+  {
+    "id": "cet4_203",
+    "word": "defense",
+    "definition": "防御,辩护"
+  },
+  {
+    "id": "cet4_204",
+    "word": "define",
+    "definition": "定义,界定"
+  },
+  {
+    "id": "cet4_205",
+    "word": "definitely",
+    "definition": "肯定地,明确地"
+  },
+  {
+    "id": "cet4_206",
+    "word": "deliver",
+    "definition": "递送,发表,接生"
+  },
+  {
+    "id": "cet4_207",
+    "word": "demand",
+    "definition": "要求,需求"
+  },
+  {
+    "id": "cet4_208",
+    "word": "demonstrate",
+    "definition": "演示,证明,示威"
+  },
+  {
+    "id": "cet4_209",
+    "word": "deny",
+    "definition": "否认,拒绝"
+  },
+  {
+    "id": "cet4_210",
+    "word": "depart",
+    "definition": "离开,出发"
+  },
+  {
+    "id": "cet4_211",
+    "word": "depend",
+    "definition": "依赖,取决于"
+  },
+  {
+    "id": "cet4_212",
+    "word": "deposit",
+    "definition": "存款,押金,沉淀"
+  },
+  {
+    "id": "cet4_213",
+    "word": "depress",
+    "definition": "使沮丧,按下"
+  },
+  {
+    "id": "cet4_214",
+    "word": "derive",
+    "definition": "源自,获得"
+  },
+  {
+    "id": "cet4_215",
+    "word": "describe",
+    "definition": "描述,形容"
+  },
+  {
+    "id": "cet4_216",
+    "word": "deserve",
+    "definition": "值得,应得"
+  },
+  {
+    "id": "cet4_217",
+    "word": "design",
+    "definition": "设计,图案"
+  },
+  {
+    "id": "cet4_218",
+    "word": "desire",
+    "definition": "渴望,欲望"
+  },
+  {
+    "id": "cet4_219",
+    "word": "desperate",
+    "definition": "绝望的,不顾一切的"
+  },
+  {
+    "id": "cet4_220",
+    "word": "despite",
+    "definition": "尽管,不管"
+  },
+  {
+    "id": "cet4_221",
+    "word": "destination",
+    "definition": "目的地,终点"
+  },
+  {
+    "id": "cet4_222",
+    "word": "determine",
+    "definition": "决定,确定"
+  },
+  {
+    "id": "cet4_223",
+    "word": "develop",
+    "definition": "发展,开发,显影"
+  },
+  {
+    "id": "cet4_224",
+    "word": "device",
+    "definition": "设备,装置"
+  },
+  {
+    "id": "cet4_225",
+    "word": "devote",
+    "definition": "致力于,奉献"
+  },
+  {
+    "id": "cet4_226",
+    "word": "diet",
+    "definition": "饮食,节食"
+  },
+  {
+    "id": "cet4_227",
+    "word": "differ",
+    "definition": "不同,相异"
+  },
+  {
+    "id": "cet4_228",
+    "word": "digest",
+    "definition": "消化,摘要"
+  },
+  {
+    "id": "cet4_229",
+    "word": "digital",
+    "definition": "数字的,数码的"
+  },
+  {
+    "id": "cet4_230",
+    "word": "diplomat",
+    "definition": "外交官"
+  },
+  {
+    "id": "cet4_231",
+    "word": "disappear",
+    "definition": "消失,失踪"
+  },
+  {
+    "id": "cet4_232",
+    "word": "discipline",
+    "definition": "纪律,学科,训练"
+  },
+  {
+    "id": "cet4_233",
+    "word": "discount",
+    "definition": "折扣,贴现"
+  },
+  {
+    "id": "cet4_234",
+    "word": "display",
+    "definition": "展示,显示"
+  },
+  {
+    "id": "cet4_235",
+    "word": "dispute",
+    "definition": "争论,纠纷"
+  },
+  {
+    "id": "cet4_236",
+    "word": "dissolve",
+    "definition": "溶解,解散"
+  },
+  {
+    "id": "cet4_237",
+    "word": "distinct",
+    "definition": "明显的,独特的"
+  },
+  {
+    "id": "cet4_238",
+    "word": "distinguish",
+    "definition": "区分,辨别"
+  },
+  {
+    "id": "cet4_239",
+    "word": "distribute",
+    "definition": "分配,分发"
+  },
+  {
+    "id": "cet4_240",
+    "word": "district",
+    "definition": "地区,区域"
+  },
+  {
+    "id": "cet4_241",
+    "word": "document",
+    "definition": "文件,文档"
+  },
+  {
+    "id": "cet4_242",
+    "word": "domestic",
+    "definition": "国内的,家庭的"
+  },
+  {
+    "id": "cet4_243",
+    "word": "dominate",
+    "definition": "支配,主导"
+  },
+  {
+    "id": "cet4_244",
+    "word": "draft",
+    "definition": "草稿,草案"
+  },
+  {
+    "id": "cet4_245",
+    "word": "dramatic",
+    "definition": "戏剧性的,引人注目的"
+  },
+  {
+    "id": "cet4_246",
+    "word": "drift",
+    "definition": "漂流,漂移"
+  },
+  {
+    "id": "cet4_247",
+    "word": "durable",
+    "definition": "耐用的,持久的"
+  },
+  {
+    "id": "cet4_248",
+    "word": "dynamic",
+    "definition": "动态的,有活力的"
+  },
+  {
+    "id": "cet4_249",
+    "word": "earnest",
+    "definition": "认真的,诚挚的"
+  },
+  {
+    "id": "cet4_250",
+    "word": "economic",
+    "definition": "经济的,经济学的"
+  },
+  {
+    "id": "cet4_251",
+    "word": "edition",
+    "definition": "版本,版次"
+  },
+  {
+    "id": "cet4_252",
+    "word": "efficient",
+    "definition": "高效的,有效率的"
+  },
+  {
+    "id": "cet4_253",
+    "word": "elaborate",
+    "definition": "精心制作的,详细阐述"
+  },
+  {
+    "id": "cet4_254",
+    "word": "element",
+    "definition": "元素,要素"
+  },
+  {
+    "id": "cet4_255",
+    "word": "eliminate",
+    "definition": "消除,淘汰"
+  },
+  {
+    "id": "cet4_256",
+    "word": "embrace",
+    "definition": "拥抱,包含"
+  },
+  {
+    "id": "cet4_257",
+    "word": "emerge",
+    "definition": "出现,浮现"
+  },
+  {
+    "id": "cet4_258",
+    "word": "emotion",
+    "definition": "情感,情绪"
+  },
+  {
+    "id": "cet4_259",
+    "word": "emphasis",
+    "definition": "强调,重点"
+  },
+  {
+    "id": "cet4_260",
+    "word": "employ",
+    "definition": "雇用,使用"
+  },
+  {
+    "id": "cet4_261",
+    "word": "enable",
+    "definition": "使能够,启用"
+  },
+  {
+    "id": "cet4_262",
+    "word": "encounter",
+    "definition": "遇到,遭遇"
+  },
+  {
+    "id": "cet4_263",
+    "word": "encourage",
+    "definition": "鼓励,激励"
+  },
+  {
+    "id": "cet4_264",
+    "word": "engage",
+    "definition": "参与,从事,订婚"
+  },
+  {
+    "id": "cet4_265",
+    "word": "engine",
+    "definition": "引擎,发动机"
+  },
+  {
+    "id": "cet4_266",
+    "word": "enormous",
+    "definition": "巨大的,庞大的"
+  },
+  {
+    "id": "cet4_267",
+    "word": "ensure",
+    "definition": "确保,保证"
+  },
+  {
+    "id": "cet4_268",
+    "word": "enterprise",
+    "definition": "企业,事业"
+  },
+  {
+    "id": "cet4_269",
+    "word": "enthusiasm",
+    "definition": "热情,热心"
+  },
+  {
+    "id": "cet4_270",
+    "word": "entire",
+    "definition": "整个的,全部的"
+  },
+  {
+    "id": "cet4_271",
+    "word": "environment",
+    "definition": "环境,周围"
+  },
+  {
+    "id": "cet4_272",
+    "word": "equipment",
+    "definition": "设备,装备"
+  },
+  {
+    "id": "cet4_273",
+    "word": "essential",
+    "definition": "必要的,本质的"
+  },
+  {
+    "id": "cet4_274",
+    "word": "establish",
+    "definition": "建立,设立"
+  },
+  {
+    "id": "cet4_275",
+    "word": "estate",
+    "definition": "房地产,庄园"
+  },
+  {
+    "id": "cet4_276",
+    "word": "estimate",
+    "definition": "估计,估算"
+  },
+  {
+    "id": "cet4_277",
+    "word": "evaluate",
+    "definition": "评估,评价"
+  },
+  {
+    "id": "cet4_278",
+    "word": "evidence",
+    "definition": "证据,迹象"
+  },
+  {
+    "id": "cet4_279",
+    "word": "evolve",
+    "definition": "进化,发展"
+  },
+  {
+    "id": "cet4_280",
+    "word": "exaggerate",
+    "definition": "夸张,夸大"
+  },
+  {
+    "id": "cet4_281",
+    "word": "examine",
+    "definition": "检查,考试"
+  },
+  {
+    "id": "cet4_282",
+    "word": "exception",
+    "definition": "例外,除外"
+  },
+  {
+    "id": "cet4_283",
+    "word": "excess",
+    "definition": "过量,过度"
+  },
+  {
+    "id": "cet4_284",
+    "word": "exchange",
+    "definition": "交换,兑换"
+  },
+  {
+    "id": "cet4_285",
+    "word": "exclude",
+    "definition": "排除,排斥"
+  },
+  {
+    "id": "cet4_286",
+    "word": "execute",
+    "definition": "执行,处决"
+  },
+  {
+    "id": "cet4_287",
+    "word": "exhibit",
+    "definition": "展览,展示"
+  },
+  {
+    "id": "cet4_288",
+    "word": "exist",
+    "definition": "存在,生存"
+  },
+  {
+    "id": "cet4_289",
+    "word": "expand",
+    "definition": "扩大,膨胀"
+  },
+  {
+    "id": "cet4_290",
+    "word": "expect",
+    "definition": "期望,预期"
+  },
+  {
+    "id": "cet4_291",
+    "word": "expense",
+    "definition": "费用,开支"
+  },
+  {
+    "id": "cet4_292",
+    "word": "experiment",
+    "definition": "实验,试验"
+  },
+  {
+    "id": "cet4_293",
+    "word": "expert",
+    "definition": "专家,行家"
+  },
+  {
+    "id": "cet4_294",
+    "word": "explain",
+    "definition": "解释,说明"
+  },
+  {
+    "id": "cet4_295",
+    "word": "explicit",
+    "definition": "明确的,直言的"
+  },
+  {
+    "id": "cet4_296",
+    "word": "exploit",
+    "definition": "开发,利用,剥削"
+  },
+  {
+    "id": "cet4_297",
+    "word": "explore",
+    "definition": "探索,探险"
+  },
+  {
+    "id": "cet4_298",
+    "word": "export",
+    "definition": "出口,输出"
+  },
+  {
+    "id": "cet4_299",
+    "word": "expose",
+    "definition": "暴露,揭露"
+  },
+  {
+    "id": "cet4_300",
+    "word": "extend",
+    "definition": "延伸,扩展"
+  },
+  {
+    "id": "cet4_301",
+    "word": "extensive",
+    "definition": "广泛的,大量的"
+  },
+  {
+    "id": "cet4_302",
+    "word": "extent",
+    "definition": "程度,范围"
+  },
+  {
+    "id": "cet4_303",
+    "word": "external",
+    "definition": "外部的,外面的"
+  },
+  {
+    "id": "cet4_304",
+    "word": "extraordinary",
+    "definition": "非凡的,特别的"
+  },
+  {
+    "id": "cet4_305",
+    "word": "extreme",
+    "definition": "极端的,极度的"
+  },
+  {
+    "id": "cet4_306",
+    "word": "facility",
+    "definition": "设施,设备,便利"
+  },
+  {
+    "id": "cet4_307",
+    "word": "factor",
+    "definition": "因素,要素"
+  },
+  {
+    "id": "cet4_308",
+    "word": "faculty",
+    "definition": "才能,全体教员,学院"
+  },
+  {
+    "id": "cet4_309",
+    "word": "faith",
+    "definition": "信仰,信任"
+  },
+  {
+    "id": "cet4_310",
+    "word": "familiar",
+    "definition": "熟悉的,常见的"
+  },
+  {
+    "id": "cet4_311",
+    "word": "fashion",
+    "definition": "时尚,流行"
+  },
+  {
+    "id": "cet4_312",
+    "word": "fatal",
+    "definition": "致命的,毁灭性的"
+  },
+  {
+    "id": "cet4_313",
+    "word": "favor",
+    "definition": "偏爱,恩惠"
+  },
+  {
+    "id": "cet4_314",
+    "word": "feature",
+    "definition": "特征,特写"
+  },
+  {
+    "id": "cet4_315",
+    "word": "federal",
+    "definition": "联邦的,联邦政府的"
+  },
+  {
+    "id": "cet4_316",
+    "word": "finance",
+    "definition": "财政,金融"
+  },
+  {
+    "id": "cet4_317",
+    "word": "flexible",
+    "definition": "灵活的,柔韧的"
+  },
+  {
+    "id": "cet4_318",
+    "word": "focus",
+    "definition": "焦点,集中"
+  },
+  {
+    "id": "cet4_319",
+    "word": "forbid",
+    "definition": "禁止,不许"
+  },
+  {
+    "id": "cet4_320",
+    "word": "forecast",
+    "definition": "预报,预测"
+  },
+  {
+    "id": "cet4_321",
+    "word": "foreign",
+    "definition": "外国的,陌生的"
+  },
+  {
+    "id": "cet4_322",
+    "word": "formal",
+    "definition": "正式的,形式的"
+  },
+  {
+    "id": "cet4_323",
+    "word": "format",
+    "definition": "格式,版式"
+  },
+  {
+    "id": "cet4_324",
+    "word": "former",
+    "definition": "从前的,前者"
+  },
+  {
+    "id": "cet4_325",
+    "word": "formula",
+    "definition": "公式,配方"
+  },
+  {
+    "id": "cet4_326",
+    "word": "fortune",
+    "definition": "财富,运气"
+  },
+  {
+    "id": "cet4_327",
+    "word": "foundation",
+    "definition": "基础,基金会"
+  },
+  {
+    "id": "cet4_328",
+    "word": "fragment",
+    "definition": "碎片,片段"
+  },
+  {
+    "id": "cet4_329",
+    "word": "framework",
+    "definition": "框架,结构"
+  },
+  {
+    "id": "cet4_330",
+    "word": "frequency",
+    "definition": "频率,频繁"
+  },
+  {
+    "id": "cet4_331",
+    "word": "frontier",
+    "definition": "边境,前沿"
+  },
+  {
+    "id": "cet4_332",
+    "word": "fulfill",
+    "definition": "完成,实现,满足"
+  },
+  {
+    "id": "cet4_333",
+    "word": "function",
+    "definition": "功能,函数,运行"
+  },
+  {
+    "id": "cet4_334",
+    "word": "fund",
+    "definition": "基金,资金"
+  },
+  {
+    "id": "cet4_335",
+    "word": "fundamental",
+    "definition": "基本的,根本的"
+  },
+  {
+    "id": "cet4_336",
+    "word": "furthermore",
+    "definition": "此外,而且"
+  },
+  {
+    "id": "cet4_337",
+    "word": "generate",
+    "definition": "产生,生成"
+  },
+  {
+    "id": "cet4_338",
+    "word": "generous",
+    "definition": "慷慨的,大方的"
+  },
+  {
+    "id": "cet4_339",
+    "word": "genius",
+    "definition": "天才,天赋"
+  },
+  {
+    "id": "cet4_340",
+    "word": "genuine",
+    "definition": "真正的,真诚的"
+  },
+  {
+    "id": "cet4_341",
+    "word": "global",
+    "definition": "全球的,全体的"
+  },
+  {
+    "id": "cet4_342",
+    "word": "govern",
+    "definition": "统治,管理"
+  },
+  {
+    "id": "cet4_343",
+    "word": "grace",
+    "definition": "优雅,恩典"
+  },
+  {
+    "id": "cet4_344",
+    "word": "grant",
+    "definition": "授予,拨款"
+  },
+  {
+    "id": "cet4_345",
+    "word": "guarantee",
+    "definition": "保证,担保"
+  },
+  {
+    "id": "cet4_346",
+    "word": "guidance",
+    "definition": "指导,引导"
+  },
+  {
+    "id": "cet4_347",
+    "word": "handle",
+    "definition": "处理,手柄"
+  },
+  {
+    "id": "cet4_348",
+    "word": "harsh",
+    "definition": "严厉的,粗糙的"
+  },
+  {
+    "id": "cet4_349",
+    "word": "hesitate",
+    "definition": "犹豫,迟疑"
+  },
+  {
+    "id": "cet4_350",
+    "word": "highlight",
+    "definition": "强调,突出"
+  },
+  {
+    "id": "cet4_351",
+    "word": "horizon",
+    "definition": "地平线,眼界"
+  },
+  {
+    "id": "cet4_352",
+    "word": "hostile",
+    "definition": "敌对的,敌意的"
+  },
+  {
+    "id": "cet4_353",
+    "word": "household",
+    "definition": "家庭的,家喻户晓的"
+  },
+  {
+    "id": "cet4_354",
+    "word": "humble",
+    "definition": "谦虚的,卑微的"
+  },
+  {
+    "id": "cet4_355",
+    "word": "identical",
+    "definition": "相同的,同一的"
+  },
+  {
+    "id": "cet4_356",
+    "word": "identify",
+    "definition": "识别,确认"
+  },
+  {
+    "id": "cet4_357",
+    "word": "ignorance",
+    "definition": "无知,愚昧"
+  },
+  {
+    "id": "cet4_358",
+    "word": "illustrate",
+    "definition": "说明,阐明"
+  },
+  {
+    "id": "cet4_359",
+    "word": "image",
+    "definition": "形象,图像"
+  },
+  {
+    "id": "cet4_360",
+    "word": "imagination",
+    "definition": "想象力,想象"
+  },
+  {
+    "id": "cet4_361",
+    "word": "immediate",
+    "definition": "立即的,直接的"
+  },
+  {
+    "id": "cet4_362",
+    "word": "impact",
+    "definition": "影响,冲击"
+  },
+  {
+    "id": "cet4_363",
+    "word": "implement",
+    "definition": "实施,执行"
+  },
+  {
+    "id": "cet4_364",
+    "word": "imply",
+    "definition": "暗示,意味"
+  },
+  {
+    "id": "cet4_365",
+    "word": "import",
+    "definition": "进口,输入"
+  },
+  {
+    "id": "cet4_366",
+    "word": "impose",
+    "definition": "强加,征收"
+  },
+  {
+    "id": "cet4_367",
+    "word": "impress",
+    "definition": "留下印象"
+  },
+  {
+    "id": "cet4_368",
+    "word": "incident",
+    "definition": "事件,事变"
+  },
+  {
+    "id": "cet4_369",
+    "word": "income",
+    "definition": "收入,所得"
+  },
+  {
+    "id": "cet4_370",
+    "word": "independence",
+    "definition": "独立,自主"
+  },
+  {
+    "id": "cet4_371",
+    "word": "indicate",
+    "definition": "表明,指示"
+  },
+  {
+    "id": "cet4_372",
+    "word": "individual",
+    "definition": "个人的,个体"
+  },
+  {
+    "id": "cet4_373",
+    "word": "industry",
+    "definition": "工业,产业,勤奋"
+  },
+  {
+    "id": "cet4_374",
+    "word": "influence",
+    "definition": "影响,势力"
+  },
+  {
+    "id": "cet4_375",
+    "word": "inform",
+    "definition": "通知,告知"
+  },
+  {
+    "id": "cet4_376",
+    "word": "initial",
+    "definition": "最初的,首字母"
+  },
+  {
+    "id": "cet4_377",
+    "word": "initiative",
+    "definition": "主动性,倡议"
+  },
+  {
+    "id": "cet4_378",
+    "word": "innocent",
+    "definition": "无辜的,天真的"
+  },
+  {
+    "id": "cet4_379",
+    "word": "innovation",
+    "definition": "创新,革新"
+  },
+  {
+    "id": "cet4_380",
+    "word": "inquire",
+    "definition": "询问,调查"
+  },
+  {
+    "id": "cet4_381",
+    "word": "insert",
+    "definition": "插入,嵌入"
+  },
+  {
+    "id": "cet4_382",
+    "word": "inspect",
+    "definition": "检查,视察"
+  },
+  {
+    "id": "cet4_383",
+    "word": "install",
+    "definition": "安装,设置"
+  },
+  {
+    "id": "cet4_384",
+    "word": "instance",
+    "definition": "例子,实例"
+  },
+  {
+    "id": "cet4_385",
+    "word": "institute",
+    "definition": "学院,机构,建立"
+  },
+  {
+    "id": "cet4_386",
+    "word": "instrument",
+    "definition": "工具,仪器,乐器"
+  },
+  {
+    "id": "cet4_387",
+    "word": "insurance",
+    "definition": "保险,保险费"
+  },
+  {
+    "id": "cet4_388",
+    "word": "intellectual",
+    "definition": "智力的,知识分子"
+  },
+  {
+    "id": "cet4_389",
+    "word": "intelligence",
+    "definition": "智力,情报"
+  },
+  {
+    "id": "cet4_390",
+    "word": "intense",
+    "definition": "强烈的,紧张的"
+  },
+  {
+    "id": "cet4_391",
+    "word": "intention",
+    "definition": "意图,目的"
+  },
+  {
+    "id": "cet4_392",
+    "word": "interact",
+    "definition": "互动,相互作用"
+  },
+  {
+    "id": "cet4_393",
+    "word": "interest",
+    "definition": "兴趣,利息,利益"
+  },
+  {
+    "id": "cet4_394",
+    "word": "internal",
+    "definition": "内部的,国内的"
+  },
+  {
+    "id": "cet4_395",
+    "word": "interpret",
+    "definition": "解释,口译"
+  },
+  {
+    "id": "cet4_396",
+    "word": "interval",
+    "definition": "间隔,间歇"
+  },
+  {
+    "id": "cet4_397",
+    "word": "invest",
+    "definition": "投资,投入"
+  },
+  {
+    "id": "cet4_398",
+    "word": "investigate",
+    "definition": "调查,研究"
+  },
+  {
+    "id": "cet4_399",
+    "word": "involve",
+    "definition": "涉及,包含,卷入"
+  },
+  {
+    "id": "cet4_400",
+    "word": "isolate",
+    "definition": "孤立,隔离"
+  },
+  {
+    "id": "cet4_401",
+    "word": "issue",
+    "definition": "问题,议题,发行"
+  },
+  {
+    "id": "cet4_402",
+    "word": "journal",
+    "definition": "杂志,期刊,日记"
+  },
+  {
+    "id": "cet4_403",
+    "word": "judgment",
+    "definition": "判断,判决"
+  },
+  {
+    "id": "cet4_404",
+    "word": "justice",
+    "definition": "正义,公正,司法"
+  },
+  {
+    "id": "cet4_405",
+    "word": "justify",
+    "definition": "证明正当"
+  },
+  {
+    "id": "cet4_406",
+    "word": "keen",
+    "definition": "热切的,敏锐的"
+  },
+  {
+    "id": "cet4_407",
+    "word": "kindergarten",
+    "definition": "幼儿园"
+  },
+  {
+    "id": "cet4_408",
+    "word": "label",
+    "definition": "标签,标注"
+  },
+  {
+    "id": "cet4_409",
+    "word": "landscape",
+    "definition": "风景,景观"
+  },
+  {
+    "id": "cet4_410",
+    "word": "launch",
+    "definition": "发射,发起,推出"
+  },
+  {
+    "id": "cet4_411",
+    "word": "leading",
+    "definition": "领导的,主要的"
+  },
+  {
+    "id": "cet4_412",
+    "word": "leak",
+    "definition": "泄漏,泄露"
+  },
+  {
+    "id": "cet4_413",
+    "word": "legal",
+    "definition": "法律的,合法的"
+  },
+  {
+    "id": "cet4_414",
+    "word": "leisure",
+    "definition": "休闲,空闲"
+  },
+  {
+    "id": "cet4_415",
+    "word": "liberal",
+    "definition": "自由的,开明的"
+  },
+  {
+    "id": "cet4_416",
+    "word": "license",
+    "definition": "执照,许可"
+  },
+  {
+    "id": "cet4_417",
+    "word": "likely",
+    "definition": "可能的,很可能"
+  },
+  {
+    "id": "cet4_418",
+    "word": "link",
+    "definition": "链接,联系"
+  },
+  {
+    "id": "cet4_419",
+    "word": "literature",
+    "definition": "文学,文献"
+  },
+  {
+    "id": "cet4_420",
+    "word": "loan",
+    "definition": "贷款,借出"
+  },
+  {
+    "id": "cet4_421",
+    "word": "locate",
+    "definition": "定位,位于"
+  },
+  {
+    "id": "cet4_422",
+    "word": "logic",
+    "definition": "逻辑,推理"
+  },
+  {
+    "id": "cet4_423",
+    "word": "loyal",
+    "definition": "忠诚的,忠心的"
+  },
+  {
+    "id": "cet4_424",
+    "word": "magnificent",
+    "definition": "壮丽的,宏伟的"
+  },
+  {
+    "id": "cet4_425",
+    "word": "maintain",
+    "definition": "维持,保养,主张"
+  },
+  {
+    "id": "cet4_426",
+    "word": "manage",
+    "definition": "管理,设法"
+  },
+  {
+    "id": "cet4_427",
+    "word": "manufacture",
+    "definition": "制造,生产"
+  },
+  {
+    "id": "cet4_428",
+    "word": "mature",
+    "definition": "成熟的,成年人的"
+  },
+  {
+    "id": "cet4_429",
+    "word": "maximum",
+    "definition": "最大量,最大的"
+  },
+  {
+    "id": "cet4_430",
+    "word": "mechanism",
+    "definition": "机制,机械装置"
+  },
+  {
+    "id": "cet4_431",
+    "word": "medium",
+    "definition": "中等的,媒介"
+  },
+  {
+    "id": "cet4_432",
+    "word": "mental",
+    "definition": "精神的,心理的"
+  },
+  {
+    "id": "cet4_433",
+    "word": "mention",
+    "definition": "提到,提及"
+  },
+  {
+    "id": "cet4_434",
+    "word": "merchant",
+    "definition": "商人,商户"
+  },
+  {
+    "id": "cet4_435",
+    "word": "mild",
+    "definition": "温和的,轻微的"
+  },
+  {
+    "id": "cet4_436",
+    "word": "military",
+    "definition": "军事的,军队"
+  },
+  {
+    "id": "cet4_437",
+    "word": "minimum",
+    "definition": "最小量,最小的"
+  },
+  {
+    "id": "cet4_438",
+    "word": "ministry",
+    "definition": "部,政府部门"
+  },
+  {
+    "id": "cet4_439",
+    "word": "minor",
+    "definition": "较小的,次要的"
+  },
+  {
+    "id": "cet4_440",
+    "word": "minority",
+    "definition": "少数,少数民族"
+  },
+  {
+    "id": "cet4_441",
+    "word": "mission",
+    "definition": "使命,任务"
+  },
+  {
+    "id": "cet4_442",
+    "word": "mobile",
+    "definition": "移动的,手机"
+  },
+  {
+    "id": "cet4_443",
+    "word": "moderate",
+    "definition": "适度的,温和的"
+  },
+  {
+    "id": "cet4_444",
+    "word": "modest",
+    "definition": "谦虚的,适度的"
+  },
+  {
+    "id": "cet4_445",
+    "word": "monitor",
+    "definition": "监视,班长,显示器"
+  },
+  {
+    "id": "cet4_446",
+    "word": "moral",
+    "definition": "道德的,寓意"
+  },
+  {
+    "id": "cet4_447",
+    "word": "motion",
+    "definition": "运动,动作,动议"
+  },
+  {
+    "id": "cet4_448",
+    "word": "motivate",
+    "definition": "激励,激发"
+  },
+  {
+    "id": "cet4_449",
+    "word": "mutual",
+    "definition": "相互的,共同的"
+  },
+  {
+    "id": "cet4_450",
+    "word": "nationality",
+    "definition": "国籍,民族"
+  },
+  {
+    "id": "cet4_451",
+    "word": "negative",
+    "definition": "消极的,否定的,负数"
+  },
+  {
+    "id": "cet4_452",
+    "word": "neglect",
+    "definition": "忽视,疏忽"
+  },
+  {
+    "id": "cet4_453",
+    "word": "negotiate",
+    "definition": "谈判,协商"
+  },
+  {
+    "id": "cet4_454",
+    "word": "network",
+    "definition": "网络,关系网"
+  },
+  {
+    "id": "cet4_455",
+    "word": "neutral",
+    "definition": "中立的,中性的"
+  },
+  {
+    "id": "cet4_456",
+    "word": "nevertheless",
+    "definition": "然而,不过"
+  },
+  {
+    "id": "cet4_457",
+    "word": "normal",
+    "definition": "正常的,标准的"
+  },
+  {
+    "id": "cet4_458",
+    "word": "notice",
+    "definition": "注意,通知"
+  },
+  {
+    "id": "cet4_459",
+    "word": "notion",
+    "definition": "概念,观念"
+  },
+  {
+    "id": "cet4_460",
+    "word": "numerous",
+    "definition": "许多的,大量的"
+  },
+  {
+    "id": "cet4_461",
+    "word": "object",
+    "definition": "物体,目标,反对"
+  },
+  {
+    "id": "cet4_462",
+    "word": "objective",
+    "definition": "客观的,目标"
+  },
+  {
+    "id": "cet4_463",
+    "word": "obligation",
+    "definition": "义务,责任"
+  },
+  {
+    "id": "cet4_464",
+    "word": "observe",
+    "definition": "观察,遵守,庆祝"
+  },
+  {
+    "id": "cet4_465",
+    "word": "obstacle",
+    "definition": "障碍,妨碍"
+  },
+  {
+    "id": "cet4_466",
+    "word": "obtain",
+    "definition": "获得,得到"
+  },
+  {
+    "id": "cet4_467",
+    "word": "obvious",
+    "definition": "明显的,显然的"
+  },
+  {
+    "id": "cet4_468",
+    "word": "occasion",
+    "definition": "场合,时机"
+  },
+  {
+    "id": "cet4_469",
+    "word": "occupy",
+    "definition": "占据,占领"
+  },
+  {
+    "id": "cet4_470",
+    "word": "occur",
+    "definition": "发生,出现"
+  },
+  {
+    "id": "cet4_471",
+    "word": "offend",
+    "definition": "冒犯,得罪"
+  },
+  {
+    "id": "cet4_472",
+    "word": "operate",
+    "definition": "操作,经营,手术"
+  },
+  {
+    "id": "cet4_473",
+    "word": "opponent",
+    "definition": "对手,反对者"
+  },
+  {
+    "id": "cet4_474",
+    "word": "opportunity",
+    "definition": "机会,时机"
+  },
+  {
+    "id": "cet4_475",
+    "word": "oppose",
+    "definition": "反对,对抗"
+  },
+  {
+    "id": "cet4_476",
+    "word": "option",
+    "definition": "选择,选项"
+  },
+  {
+    "id": "cet4_477",
+    "word": "orbit",
+    "definition": "轨道,绕轨道运行"
+  },
+  {
+    "id": "cet4_478",
+    "word": "organ",
+    "definition": "器官,机构,风琴"
+  },
+  {
+    "id": "cet4_479",
+    "word": "organization",
+    "definition": "组织,机构"
+  },
+  {
+    "id": "cet4_480",
+    "word": "origin",
+    "definition": "起源,出身"
+  },
+  {
+    "id": "cet4_481",
+    "word": "otherwise",
+    "definition": "否则,不然"
+  },
+  {
+    "id": "cet4_482",
+    "word": "outcome",
+    "definition": "结果,后果"
+  },
+  {
+    "id": "cet4_483",
+    "word": "outline",
+    "definition": "轮廓,大纲"
+  },
+  {
+    "id": "cet4_484",
+    "word": "output",
+    "definition": "输出,产量"
+  },
+  {
+    "id": "cet4_485",
+    "word": "outstanding",
+    "definition": "杰出的,突出的"
+  },
+  {
+    "id": "cet4_486",
+    "word": "overall",
+    "definition": "总体的,全面的"
+  },
+  {
+    "id": "cet4_487",
+    "word": "overcome",
+    "definition": "克服,战胜"
+  },
+  {
+    "id": "cet4_488",
+    "word": "overseas",
+    "definition": "海外的,在海外"
+  },
+  {
+    "id": "cet4_489",
+    "word": "owe",
+    "definition": "欠,归功于"
+  },
+  {
+    "id": "cet4_490",
+    "word": "pace",
+    "definition": "步伐,速度"
+  },
+  {
+    "id": "cet4_491",
+    "word": "package",
+    "definition": "包裹,包装"
+  },
+  {
+    "id": "cet4_492",
+    "word": "panel",
+    "definition": "面板,专门小组"
+  },
+  {
+    "id": "cet4_493",
+    "word": "participate",
+    "definition": "参与,参加"
+  },
+  {
+    "id": "cet4_494",
+    "word": "particular",
+    "definition": "特别的,特定的"
+  },
+  {
+    "id": "cet4_495",
+    "word": "passion",
+    "definition": "热情,激情"
+  },
+  {
+    "id": "cet4_496",
+    "word": "passive",
+    "definition": "被动的,消极的"
+  },
+  {
+    "id": "cet4_497",
+    "word": "patent",
+    "definition": "专利,专利权"
+  },
+  {
+    "id": "cet4_498",
+    "word": "patience",
+    "definition": "耐心,忍耐"
+  },
+  {
+    "id": "cet4_499",
+    "word": "peculiar",
+    "definition": "奇特的,特有的"
+  },
+  {
+    "id": "cet4_500",
+    "word": "penalty",
+    "definition": "处罚,惩罚"
+  },
+  {
+    "id": "cet4_501",
+    "word": "pension",
+    "definition": "养老金,退休金"
+  },
+  {
+    "id": "cet4_502",
+    "word": "perceive",
+    "definition": "感知,察觉"
+  },
+  {
+    "id": "cet4_503",
+    "word": "performance",
+    "definition": "表现,性能,演出"
+  },
+  {
+    "id": "cet4_504",
+    "word": "permanent",
+    "definition": "永久的,长期的"
+  },
+  {
+    "id": "cet4_505",
+    "word": "permit",
+    "definition": "允许,许可"
+  },
+  {
+    "id": "cet4_506",
+    "word": "persist",
+    "definition": "坚持,持续"
+  },
+  {
+    "id": "cet4_507",
+    "word": "personality",
+    "definition": "个性,人格"
+  },
+  {
+    "id": "cet4_508",
+    "word": "perspective",
+    "definition": "视角,观点,透视"
+  },
+  {
+    "id": "cet4_509",
+    "word": "phenomenon",
+    "definition": "现象,奇迹"
+  },
+  {
+    "id": "cet4_510",
+    "word": "philosophy",
+    "definition": "哲学,人生哲学"
+  },
+  {
+    "id": "cet4_511",
+    "word": "physical",
+    "definition": "物理的,身体的"
+  },
+  {
+    "id": "cet4_512",
+    "word": "platform",
+    "definition": "平台,站台"
+  },
+  {
+    "id": "cet4_513",
+    "word": "plunge",
+    "definition": "投入,骤降"
+  },
+  {
+    "id": "cet4_514",
+    "word": "policy",
+    "definition": "政策,方针"
+  },
+  {
+    "id": "cet4_515",
+    "word": "pollution",
+    "definition": "污染,玷污"
+  },
+  {
+    "id": "cet4_516",
+    "word": "portion",
+    "definition": "部分,一份"
+  },
+  {
+    "id": "cet4_517",
+    "word": "portrait",
+    "definition": "肖像,描写"
+  },
+  {
+    "id": "cet4_518",
+    "word": "pose",
+    "definition": "姿势,造成,提出"
+  },
+  {
+    "id": "cet4_519",
+    "word": "positive",
+    "definition": "积极的,肯定的,正数"
+  },
+  {
+    "id": "cet4_520",
+    "word": "possess",
+    "definition": "拥有,具有"
+  },
+  {
+    "id": "cet4_521",
+    "word": "potential",
+    "definition": "潜在的,潜力"
+  },
+  {
+    "id": "cet4_522",
+    "word": "poverty",
+    "definition": "贫穷,贫困"
+  },
+  {
+    "id": "cet4_523",
+    "word": "practical",
+    "definition": "实际的,实用的"
+  },
+  {
+    "id": "cet4_524",
+    "word": "precious",
+    "definition": "珍贵的,宝贵的"
+  },
+  {
+    "id": "cet4_525",
+    "word": "precise",
+    "definition": "精确的,准确的"
+  },
+  {
+    "id": "cet4_526",
+    "word": "predict",
+    "definition": "预测,预言"
+  },
+  {
+    "id": "cet4_527",
+    "word": "prefer",
+    "definition": "更喜欢,偏好"
+  },
+  {
+    "id": "cet4_528",
+    "word": "pregnant",
+    "definition": "怀孕的,充满的"
+  },
+  {
+    "id": "cet4_529",
+    "word": "prejudice",
+    "definition": "偏见,歧视"
+  },
+  {
+    "id": "cet4_530",
+    "word": "preserve",
+    "definition": "保存,保护"
+  },
+  {
+    "id": "cet4_531",
+    "word": "pressure",
+    "definition": "压力,压迫"
+  },
+  {
+    "id": "cet4_532",
+    "word": "previous",
+    "definition": "以前的,先前的"
+  },
+  {
+    "id": "cet4_533",
+    "word": "primary",
+    "definition": "主要的,初级的"
+  },
+  {
+    "id": "cet4_534",
+    "word": "principle",
+    "definition": "原则,原理"
+  },
+  {
+    "id": "cet4_535",
+    "word": "priority",
+    "definition": "优先,优先权"
+  },
+  {
+    "id": "cet4_536",
+    "word": "private",
+    "definition": "私人的,私密的"
+  },
+  {
+    "id": "cet4_537",
+    "word": "procedure",
+    "definition": "程序,步骤"
+  },
+  {
+    "id": "cet4_538",
+    "word": "proceed",
+    "definition": "继续,进行"
+  },
+  {
+    "id": "cet4_539",
+    "word": "process",
+    "definition": "过程,处理,加工"
+  },
+  {
+    "id": "cet4_540",
+    "word": "profession",
+    "definition": "职业,专业"
+  },
+  {
+    "id": "cet4_541",
+    "word": "profit",
+    "definition": "利润,利益"
+  },
+  {
+    "id": "cet4_542",
+    "word": "progress",
+    "definition": "进步,进展"
+  },
+  {
+    "id": "cet4_543",
+    "word": "prohibit",
+    "definition": "禁止,阻止"
+  },
+  {
+    "id": "cet4_544",
+    "word": "project",
+    "definition": "项目,投射,投影"
+  },
+  {
+    "id": "cet4_545",
+    "word": "promote",
+    "definition": "促进,提升,推广"
+  },
+  {
+    "id": "cet4_546",
+    "word": "proof",
+    "definition": "证据,证明"
+  },
+  {
+    "id": "cet4_547",
+    "word": "property",
+    "definition": "财产,性质"
+  },
+  {
+    "id": "cet4_548",
+    "word": "proportion",
+    "definition": "比例,部分"
+  },
+  {
+    "id": "cet4_549",
+    "word": "propose",
+    "definition": "提议,建议,求婚"
+  },
+  {
+    "id": "cet4_550",
+    "word": "prospect",
+    "definition": "前景,展望"
+  },
+  {
+    "id": "cet4_551",
+    "word": "protest",
+    "definition": "抗议,反对"
+  },
+  {
+    "id": "cet4_552",
+    "word": "provided",
+    "definition": "假如,倘若"
+  },
+  {
+    "id": "cet4_553",
+    "word": "psychology",
+    "definition": "心理学,心理"
+  },
+  {
+    "id": "cet4_554",
+    "word": "publish",
+    "definition": "出版,发表"
+  },
+  {
+    "id": "cet4_555",
+    "word": "purchase",
+    "definition": "购买,采购"
+  },
+  {
+    "id": "cet4_556",
+    "word": "pursue",
+    "definition": "追求,追赶"
+  },
+  {
+    "id": "cet4_557",
+    "word": "quality",
+    "definition": "质量,品质"
+  },
+  {
+    "id": "cet4_558",
+    "word": "quantity",
+    "definition": "数量,大量"
+  },
+  {
+    "id": "cet4_559",
+    "word": "range",
+    "definition": "范围,幅度,山脉"
+  },
+  {
+    "id": "cet4_560",
+    "word": "rank",
+    "definition": "等级,排名"
+  },
+  {
+    "id": "cet4_561",
+    "word": "rapid",
+    "definition": "迅速的,快的"
+  },
+  {
+    "id": "cet4_562",
+    "word": "rate",
+    "definition": "比率,费率,速率"
+  },
+  {
+    "id": "cet4_563",
+    "word": "react",
+    "definition": "反应,回应"
+  },
+  {
+    "id": "cet4_564",
+    "word": "reasonable",
+    "definition": "合理的,适度的"
+  },
+  {
+    "id": "cet4_565",
+    "word": "recognize",
+    "definition": "认出,承认"
+  },
+  {
+    "id": "cet4_566",
+    "word": "recommend",
+    "definition": "推荐,建议"
+  },
+  {
+    "id": "cet4_567",
+    "word": "recover",
+    "definition": "恢复,康复"
+  },
+  {
+    "id": "cet4_568",
+    "word": "reduce",
+    "definition": "减少,降低"
+  },
+  {
+    "id": "cet4_569",
+    "word": "refer",
+    "definition": "参考,提到,涉及"
+  },
+  {
+    "id": "cet4_570",
+    "word": "reflect",
+    "definition": "反映,反射,反思"
+  },
+  {
+    "id": "cet4_571",
+    "word": "reform",
+    "definition": "改革,改造"
+  },
+  {
+    "id": "cet4_572",
+    "word": "regard",
+    "definition": "看待,认为,关于"
+  },
+  {
+    "id": "cet4_573",
+    "word": "region",
+    "definition": "地区,区域"
+  },
+  {
+    "id": "cet4_574",
+    "word": "register",
+    "definition": "登记,注册"
+  },
+  {
+    "id": "cet4_575",
+    "word": "regulate",
+    "definition": "调节,管理"
+  },
+  {
+    "id": "cet4_576",
+    "word": "reject",
+    "definition": "拒绝,排斥"
+  },
+  {
+    "id": "cet4_577",
+    "word": "relate",
+    "definition": "联系,关联,叙述"
+  },
+  {
+    "id": "cet4_578",
+    "word": "release",
+    "definition": "释放,发布,发行"
+  },
+  {
+    "id": "cet4_579",
+    "word": "relevant",
+    "definition": "相关的,切题的"
+  },
+  {
+    "id": "cet4_580",
+    "word": "relief",
+    "definition": "减轻,救济,宽慰"
+  },
+  {
+    "id": "cet4_581",
+    "word": "religion",
+    "definition": "宗教,信仰"
+  },
+  {
+    "id": "cet4_582",
+    "word": "rely",
+    "definition": "依赖,依靠"
+  },
+  {
+    "id": "cet4_583",
+    "word": "remain",
+    "definition": "保持,剩余"
+  },
+  {
+    "id": "cet4_584",
+    "word": "remark",
+    "definition": "评论,注意"
+  },
+  {
+    "id": "cet4_585",
+    "word": "remedy",
+    "definition": "补救,治疗"
+  },
+  {
+    "id": "cet4_586",
+    "word": "remote",
+    "definition": "遥远的,偏远的"
+  },
+  {
+    "id": "cet4_587",
+    "word": "remove",
+    "definition": "移除,消除"
+  },
+  {
+    "id": "cet4_588",
+    "word": "replace",
+    "definition": "替代,更换"
+  },
+  {
+    "id": "cet4_589",
+    "word": "represent",
+    "definition": "代表,表示"
+  },
+  {
+    "id": "cet4_590",
+    "word": "reputation",
+    "definition": "名声,声誉"
+  },
+  {
+    "id": "cet4_591",
+    "word": "request",
+    "definition": "请求,要求"
+  },
+  {
+    "id": "cet4_592",
+    "word": "require",
+    "definition": "需要,要求"
+  },
+  {
+    "id": "cet4_593",
+    "word": "reserve",
+    "definition": "保留,预订"
+  },
+  {
+    "id": "cet4_594",
+    "word": "resign",
+    "definition": "辞职,放弃"
+  },
+  {
+    "id": "cet4_595",
+    "word": "resist",
+    "definition": "抵抗,抵制"
+  },
+  {
+    "id": "cet4_596",
+    "word": "resolution",
+    "definition": "决议,决心,分辨率"
+  },
+  {
+    "id": "cet4_597",
+    "word": "resolve",
+    "definition": "解决,决心"
+  },
+  {
+    "id": "cet4_598",
+    "word": "resource",
+    "definition": "资源,财力"
+  },
+  {
+    "id": "cet4_599",
+    "word": "respond",
+    "definition": "回应,响应"
+  },
+  {
+    "id": "cet4_600",
+    "word": "responsible",
+    "definition": "负责的,有责任的"
+  },
+  {
+    "id": "cet4_601",
+    "word": "restore",
+    "definition": "恢复,修复"
+  },
+  {
+    "id": "cet4_602",
+    "word": "restrict",
+    "definition": "限制,约束"
+  },
+  {
+    "id": "cet4_603",
+    "word": "reveal",
+    "definition": "揭示,透露"
+  },
+  {
+    "id": "cet4_604",
+    "word": "revenue",
+    "definition": "收入,税收"
+  },
+  {
+    "id": "cet4_605",
+    "word": "reverse",
+    "definition": "相反的,反转,倒退"
+  },
+  {
+    "id": "cet4_606",
+    "word": "review",
+    "definition": "复习,审查,评论"
+  },
+  {
+    "id": "cet4_607",
+    "word": "revolution",
+    "definition": "革命,变革"
+  },
+  {
+    "id": "cet4_608",
+    "word": "reward",
+    "definition": "奖励,报酬"
+  },
+  {
+    "id": "cet4_609",
+    "word": "risk",
+    "definition": "风险,危险"
+  },
+  {
+    "id": "cet4_610",
+    "word": "rival",
+    "definition": "对手,竞争者"
+  },
+  {
+    "id": "cet4_611",
+    "word": "routine",
+    "definition": "常规,例行公事"
+  },
+  {
+    "id": "cet4_612",
+    "word": "rural",
+    "definition": "农村的,乡下的"
+  },
+  {
+    "id": "cet4_613",
+    "word": "sacrifice",
+    "definition": "牺牲,献祭"
+  },
+  {
+    "id": "cet4_614",
+    "word": "satisfaction",
+    "definition": "满意,满足"
+  },
+  {
+    "id": "cet4_615",
+    "word": "scale",
+    "definition": "规模,比例,刻度"
+  },
+  {
+    "id": "cet4_616",
+    "word": "schedule",
+    "definition": "时间表,计划"
+  },
+  {
+    "id": "cet4_617",
+    "word": "scheme",
+    "definition": "方案,计划,阴谋"
+  },
+  {
+    "id": "cet4_618",
+    "word": "scholar",
+    "definition": "学者,奖学金获得者"
+  },
+  {
+    "id": "cet4_619",
+    "word": "security",
+    "definition": "安全,保障,证券"
+  },
+  {
+    "id": "cet4_620",
+    "word": "senior",
+    "definition": "年长的,高级的"
+  },
+  {
+    "id": "cet4_621",
+    "word": "sensitive",
+    "definition": "敏感的,灵敏的"
+  },
+  {
+    "id": "cet4_622",
+    "word": "separate",
+    "definition": "分离,分开"
+  },
+  {
+    "id": "cet4_623",
+    "word": "sequence",
+    "definition": "序列,顺序"
+  },
+  {
+    "id": "cet4_624",
+    "word": "severe",
+    "definition": "严重的,严厉的"
+  },
+  {
+    "id": "cet4_625",
+    "word": "shelter",
+    "definition": "庇护所,遮蔽"
+  },
+  {
+    "id": "cet4_626",
+    "word": "shift",
+    "definition": "转移,轮班"
+  },
+  {
+    "id": "cet4_627",
+    "word": "signal",
+    "definition": "信号,暗号"
+  },
+  {
+    "id": "cet4_628",
+    "word": "significance",
+    "definition": "意义,重要性"
+  },
+  {
+    "id": "cet4_629",
+    "word": "similar",
+    "definition": "相似的,类似的"
+  },
+  {
+    "id": "cet4_630",
+    "word": "site",
+    "definition": "地点,场所,网站"
+  },
+  {
+    "id": "cet4_631",
+    "word": "sketch",
+    "definition": "素描,草图,概述"
+  },
+  {
+    "id": "cet4_632",
+    "word": "solution",
+    "definition": "解决方案,溶液"
+  },
+  {
+    "id": "cet4_633",
+    "word": "somewhat",
+    "definition": "有点,稍微"
+  },
+  {
+    "id": "cet4_634",
+    "word": "source",
+    "definition": "来源,源头"
+  },
+  {
+    "id": "cet4_635",
+    "word": "specific",
+    "definition": "具体的,特定的"
+  },
+  {
+    "id": "cet4_636",
+    "word": "sphere",
+    "definition": "领域,范围,球体"
+  },
+  {
+    "id": "cet4_637",
+    "word": "sponsor",
+    "definition": "赞助,赞助商"
+  },
+  {
+    "id": "cet4_638",
+    "word": "stable",
+    "definition": "稳定的,牢固的"
+  },
+  {
+    "id": "cet4_639",
+    "word": "standard",
+    "definition": "标准,规范"
+  },
+  {
+    "id": "cet4_640",
+    "word": "status",
+    "definition": "地位,状态"
+  },
+  {
+    "id": "cet4_641",
+    "word": "steady",
+    "definition": "稳定的,稳步的"
+  },
+  {
+    "id": "cet4_642",
+    "word": "stimulate",
+    "definition": "刺激,激励"
+  },
+  {
+    "id": "cet4_643",
+    "word": "stock",
+    "definition": "库存,股票"
+  },
+  {
+    "id": "cet4_644",
+    "word": "strategy",
+    "definition": "策略,战略"
+  },
+  {
+    "id": "cet4_645",
+    "word": "stress",
+    "definition": "压力,强调"
+  },
+  {
+    "id": "cet4_646",
+    "word": "structure",
+    "definition": "结构,构造"
+  },
+  {
+    "id": "cet4_647",
+    "word": "struggle",
+    "definition": "挣扎,奋斗"
+  },
+  {
+    "id": "cet4_648",
+    "word": "submit",
+    "definition": "提交,屈从"
+  },
+  {
+    "id": "cet4_649",
+    "word": "subsequent",
+    "definition": "随后的,后来的"
+  },
+  {
+    "id": "cet4_650",
+    "word": "substance",
+    "definition": "物质,实质"
+  },
+  {
+    "id": "cet4_651",
+    "word": "substitute",
+    "definition": "替代,替代品"
+  },
+  {
+    "id": "cet4_652",
+    "word": "sufficient",
+    "definition": "足够的,充分的"
+  },
+  {
+    "id": "cet4_653",
+    "word": "suggest",
+    "definition": "建议,暗示"
+  },
+  {
+    "id": "cet4_654",
+    "word": "summary",
+    "definition": "总结,摘要"
+  },
+  {
+    "id": "cet4_655",
+    "word": "superior",
+    "definition": "优越的,上级的"
+  },
+  {
+    "id": "cet4_656",
+    "word": "supply",
+    "definition": "供应,供给"
+  },
+  {
+    "id": "cet4_657",
+    "word": "support",
+    "definition": "支持,支撑"
+  },
+  {
+    "id": "cet4_658",
+    "word": "suppose",
+    "definition": "假设,认为"
+  },
+  {
+    "id": "cet4_659",
+    "word": "supreme",
+    "definition": "最高的,极度的"
+  },
+  {
+    "id": "cet4_660",
+    "word": "surface",
+    "definition": "表面,表层"
+  },
+  {
+    "id": "cet4_661",
+    "word": "surround",
+    "definition": "包围,环绕"
+  },
+  {
+    "id": "cet4_662",
+    "word": "survey",
+    "definition": "调查,测量,概览"
+  },
+  {
+    "id": "cet4_663",
+    "word": "survive",
+    "definition": "幸存,存活"
+  },
+  {
+    "id": "cet4_664",
+    "word": "suspect",
+    "definition": "怀疑,嫌疑犯"
+  },
+  {
+    "id": "cet4_665",
+    "word": "suspend",
+    "definition": "暂停,悬挂"
+  },
+  {
+    "id": "cet4_666",
+    "word": "sustain",
+    "definition": "维持,支撑"
+  },
+  {
+    "id": "cet4_667",
+    "word": "symbol",
+    "definition": "符号,象征"
+  },
+  {
+    "id": "cet4_668",
+    "word": "sympathy",
+    "definition": "同情,赞同"
+  },
+  {
+    "id": "cet4_669",
+    "word": "system",
+    "definition": "系统,制度"
+  },
+  {
+    "id": "cet4_670",
+    "word": "tackle",
+    "definition": "处理,解决"
+  },
+  {
+    "id": "cet4_671",
+    "word": "target",
+    "definition": "目标,对象"
+  },
+  {
+    "id": "cet4_672",
+    "word": "technique",
+    "definition": "技巧,技术"
+  },
+  {
+    "id": "cet4_673",
+    "word": "technology",
+    "definition": "科技,技术"
+  },
+  {
+    "id": "cet4_674",
+    "word": "temporary",
+    "definition": "临时的,暂时的"
+  },
+  {
+    "id": "cet4_675",
+    "word": "tend",
+    "definition": "倾向于,照料"
+  },
+  {
+    "id": "cet4_676",
+    "word": "terminal",
+    "definition": "终端,终点站"
+  },
+  {
+    "id": "cet4_677",
+    "word": "territory",
+    "definition": "领土,领域"
+  },
+  {
+    "id": "cet4_678",
+    "word": "theme",
+    "definition": "主题,题目"
+  },
+  {
+    "id": "cet4_679",
+    "word": "theory",
+    "definition": "理论,学说"
+  },
+  {
+    "id": "cet4_680",
+    "word": "thorough",
+    "definition": "彻底的,全面的"
+  },
+  {
+    "id": "cet4_681",
+    "word": "threat",
+    "definition": "威胁,恐吓"
+  },
+  {
+    "id": "cet4_682",
+    "word": "thrive",
+    "definition": "繁荣,兴旺"
+  },
+  {
+    "id": "cet4_683",
+    "word": "tolerate",
+    "definition": "容忍,忍受"
+  },
+  {
+    "id": "cet4_684",
+    "word": "tone",
+    "definition": "语气,音调"
+  },
+  {
+    "id": "cet4_685",
+    "word": "topic",
+    "definition": "话题,主题"
+  },
+  {
+    "id": "cet4_686",
+    "word": "tough",
+    "definition": "艰难的,坚强的"
+  },
+  {
+    "id": "cet4_687",
+    "word": "trace",
+    "definition": "追踪,痕迹"
+  },
+  {
+    "id": "cet4_688",
+    "word": "tradition",
+    "definition": "传统,惯例"
+  },
+  {
+    "id": "cet4_689",
+    "word": "transfer",
+    "definition": "转移,转让,转学"
+  },
+  {
+    "id": "cet4_690",
+    "word": "transform",
+    "definition": "转变,改造"
+  },
+  {
+    "id": "cet4_691",
+    "word": "treat",
+    "definition": "对待,治疗,款待"
+  },
+  {
+    "id": "cet4_692",
+    "word": "tremendous",
+    "definition": "巨大的,惊人的"
+  },
+  {
+    "id": "cet4_693",
+    "word": "trend",
+    "definition": "趋势,潮流"
+  },
+  {
+    "id": "cet4_694",
+    "word": "trial",
+    "definition": "试验,审判"
+  },
+  {
+    "id": "cet4_695",
+    "word": "triumph",
+    "definition": "胜利,凯旋"
+  },
+  {
+    "id": "cet4_696",
+    "word": "typical",
+    "definition": "典型的,特有的"
+  },
+  {
+    "id": "cet4_697",
+    "word": "ultimate",
+    "definition": "最终的,根本的"
+  },
+  {
+    "id": "cet4_698",
+    "word": "undergo",
+    "definition": "经历,承受"
+  },
+  {
+    "id": "cet4_699",
+    "word": "undermine",
+    "definition": "破坏,削弱"
+  },
+  {
+    "id": "cet4_700",
+    "word": "unique",
+    "definition": "独特的,唯一的"
+  },
+  {
+    "id": "cet4_701",
+    "word": "universal",
+    "definition": "普遍的,全体的"
+  },
+  {
+    "id": "cet4_702",
+    "word": "urban",
+    "definition": "城市的,都市的"
+  },
+  {
+    "id": "cet4_703",
+    "word": "urge",
+    "definition": "催促,强烈要求"
+  },
+  {
+    "id": "cet4_704",
+    "word": "valid",
+    "definition": "有效的,合理的"
+  },
+  {
+    "id": "cet4_705",
+    "word": "value",
+    "definition": "价值,重视"
+  },
+  {
+    "id": "cet4_706",
+    "word": "variety",
+    "definition": "多样性,种类"
+  },
+  {
+    "id": "cet4_707",
+    "word": "version",
+    "definition": "版本,说法"
+  },
+  {
+    "id": "cet4_708",
+    "word": "victim",
+    "definition": "受害者,牺牲品"
+  },
+  {
+    "id": "cet4_709",
+    "word": "violence",
+    "definition": "暴力,猛烈"
+  },
+  {
+    "id": "cet4_710",
+    "word": "virtue",
+    "definition": "美德,优点"
+  },
+  {
+    "id": "cet4_711",
+    "word": "visible",
+    "definition": "可见的,明显的"
+  },
+  {
+    "id": "cet4_712",
+    "word": "vision",
+    "definition": "视野,视力,愿景"
+  },
+  {
+    "id": "cet4_713",
+    "word": "vital",
+    "definition": "至关重要的,生命的"
+  },
+  {
+    "id": "cet4_714",
+    "word": "volume",
+    "definition": "音量,体积,卷"
+  },
+  {
+    "id": "cet4_715",
+    "word": "voluntary",
+    "definition": "自愿的,志愿的"
+  },
+  {
+    "id": "cet4_716",
+    "word": "wage",
+    "definition": "工资,进行"
+  },
+  {
+    "id": "cet4_717",
+    "word": "wealth",
+    "definition": "财富,丰富"
+  },
+  {
+    "id": "cet4_718",
+    "word": "welfare",
+    "definition": "福利,幸福"
+  },
+  {
+    "id": "cet4_719",
+    "word": "widespread",
+    "definition": "广泛的,普遍的"
+  },
+  {
+    "id": "cet4_720",
+    "word": "willing",
+    "definition": "愿意的,乐意的"
+  },
+  {
+    "id": "cet4_721",
+    "word": "wisdom",
+    "definition": "智慧,明智"
+  },
+  {
+    "id": "cet4_722",
+    "word": "witness",
+    "definition": "目击者,见证"
+  },
+  {
+    "id": "cet4_723",
+    "word": "worthwhile",
+    "definition": "值得的,有意义的"
+  },
+  {
+    "id": "cet4_724",
+    "word": "yield",
+    "definition": "产出,屈服,让路"
+  },
+  {
+    "id": "cet4_725",
+    "word": "zone",
+    "definition": "区域,地带"
+  }
+]

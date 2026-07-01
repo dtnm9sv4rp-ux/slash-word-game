@@ -47,11 +47,33 @@
           GameLoop.stopGame();
         }
       }
-      // 刷新商店/词库界面数据
+      // 刷新各界面数据
+      if (screen === 'menu') refreshMenuProgress();
       if (screen === 'shop') refreshShopScreen();
       if (screen === 'words') refreshWordList();
       if (screen === 'settings') refreshSettingsScreen();
     });
+
+    // 词库切换
+    var bankSelect = document.getElementById('menu-bank-select');
+    if (bankSelect) {
+      bankSelect.addEventListener('change', function() {
+        WordManager.setActiveBank(this.value);
+        refreshMenuProgress();
+      });
+    }
+
+    // 每日目标切换
+    var targetSelect = document.getElementById('menu-daily-target');
+    if (targetSelect) {
+      targetSelect.addEventListener('change', function() {
+        var bank = WordManager.getActiveBank();
+        var stats = Storage.getDailyStats(bank);
+        stats.target = parseInt(this.value);
+        Storage.saveDailyStats(stats);
+        refreshMenuProgress();
+      });
+    }
 
     // 显示菜单
     UIManager.showScreen('menu');
@@ -486,6 +508,25 @@
         GameLoop.startGame();
       });
     }
+  }
+
+  function refreshMenuProgress() {
+    var bank = WordManager.getActiveBank();
+    var stats = Storage.getDailyStats(bank);
+    var target = stats.target || 20;
+    var learned = stats.learned || 0;
+    var pct = target > 0 ? Math.min(100, Math.round(learned / target * 100)) : 0;
+
+    var textEl = document.getElementById('menu-progress-text');
+    var barEl = document.getElementById('menu-progress-bar');
+    if (textEl) textEl.textContent = learned + '/' + target;
+    if (barEl) barEl.style.width = pct + '%';
+
+    // 更新下拉框
+    var bankSel = document.getElementById('menu-bank-select');
+    var targetSel = document.getElementById('menu-daily-target');
+    if (bankSel) bankSel.value = bank;
+    if (targetSel) targetSel.value = String(target);
   }
 
   function wirePauseOverlay() {

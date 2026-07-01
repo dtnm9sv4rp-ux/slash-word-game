@@ -34,8 +34,32 @@
       <p class="game-subtitle">Bamboo Slash Word</p>
       <div class="brush-divider"></div>
 
+        <!-- 词库 + 每日目标 -->
+        <div style="display:flex;gap:10px;align-items:center;margin-bottom:6px;flex-wrap:wrap;justify-content:center;">
+          <select id="menu-bank-select" style="color:#e8e4dc;border-color:#88847c;background:rgba(0,0,0,0.2);">
+            <option value="custom">基础词库</option>
+            <option value="cet4" selected>英语四级</option>
+            <option value="cet6">英语六级</option>
+          </select>
+          <span style="font-size:13px;color:#99958d;">每日</span>
+          <select id="menu-daily-target" style="color:#e8e4dc;border-color:#88847c;background:rgba(0,0,0,0.2);">
+            <option value="10">10词</option>
+            <option value="20" selected>20词</option>
+            <option value="30">30词</option>
+            <option value="50">50词</option>
+          </select>
+        </div>
+        <!-- 今日进度条 -->
+        <div style="width:100%;max-width:320px;text-align:center;margin-bottom:6px;">
+          <div style="display:flex;justify-content:space-between;font-size:12px;color:#99958d;">
+            <span>今日进度</span><span id="menu-progress-text">0/20</span>
+          </div>
+          <div style="width:100%;height:5px;background:rgba(255,255,255,0.08);border-radius:3px;overflow:hidden;">
+            <div id="menu-progress-bar" style="height:100%;width:0%;background:#88847c;border-radius:3px;transition:width 0.3s;"></div>
+          </div>
+        </div>
       <div class="menu-buttons">
-        <button class="btn btn-large" data-screen="game">开始游戏</button>
+        <button class="btn btn-large" data-screen="game">开始今日学习</button>
         <button class="btn" data-screen="tutorial">教程</button>
         <button class="btn" data-screen="shop">商店</button>
         <button class="btn" data-screen="words">词库管理</button>

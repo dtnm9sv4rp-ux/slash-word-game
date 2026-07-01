@@ -28,12 +28,53 @@ var GameLoop = (function() {
   function startGame() {
     if (state === 'playing') return;
     resetGameState();
-    WordManager.prepareSession(CONFIG.WORDS_PER_ROUND);
-    state = 'playing';
-    lastTime = performance.now();
-    gs.roundStartTime = performance.now();
-    if (!animFrameId) animFrameId = requestAnimationFrame(loop);
-    startNextWord();
+    var bank = WordManager.getActiveBank();
+
+    if (bank === 'custom') {
+      // 使用自定义词库
+      WordManager.prepareSession(CONFIG.WORDS_PER_ROUND);
+      state = 'playing';
+      lastTime = performance.now();
+      gs.roundStartTime = performance.now();
+      if (!animFrameId) animFrameId = requestAnimationFrame(loop);
+      startNextWord();
+    } else {
+      // 加载CET词库
+      WordManager.loadCETBank(bank, function(wordBank) {
+        if (!wordBank || wordBank.length === 0) {
+          alert('词库加载失败，请刷新重试');
+          return;
+        }
+        // 获取今日待学单词
+        var dueIds = Storage.getDueWords(bank, wordBank);
+        if (dueIds.length === 0) {
+          alert('今日目标已完成！明天再来吧。');
+          UIManager.showScreen('menu');
+          return;
+        }
+        // 建立id→word映射
+        var wordMap = {};
+        wordBank.forEach(function(w) { wordMap[w.id] = w; });
+        // 取前N个待学单词作为本轮
+        var roundWords = dueIds.slice(0, CONFIG.WORDS_PER_ROUND).map(function(id) {
+          return wordMap[id];
+        }).filter(Boolean);
+
+        // 存储本轮单词ID用于进度追踪
+        gs.bank = bank;
+        gs.roundWordIds = roundWords.map(function(w) { return w.id; });
+
+        // 替换WordManager的session为CET单词
+        WordManager.importWords(roundWords);
+        WordManager.prepareSession(roundWords.length);
+
+        state = 'playing';
+        lastTime = performance.now();
+        gs.roundStartTime = performance.now();
+        if (!animFrameId) animFrameId = requestAnimationFrame(loop);
+        startNextWord();
+      });
+    }
   }
 
   function stopGame() {
@@ -327,6 +368,19 @@ var GameLoop = (function() {
     gs.sessionWordsCleared++;
     gs.coinsEarned += coins;
     gs.wordCompleteTimer = true;
+
+    // 记录CET词库进度
+    if (gs.bank && gs.roundWordIds) {
+      var idx = gs.sessionWordsCleared - 1;
+      if (idx < gs.roundWordIds.length) {
+        var allCorrect = (gs.errorsThisWord === 0);
+        Storage.updateWordProgress(gs.bank, gs.roundWordIds[idx], allCorrect);
+      }
+      // 更新每日统计
+      var stats = Storage.getDailyStats(gs.bank);
+      stats.learned = (stats.learned || 0) + 1;
+      Storage.saveDailyStats(stats);
+    }
 
     var nextWord = WordManager.getNextWord();
     if (nextWord) {

@@ -1,11 +1,14 @@
 /**
  * word-manager.js — 词库管理系统
  *
- * 管理内置词库和用户词库，提供单词选取、进度追踪等功能。
- * 内置 40 个常用英文单词作为试玩词库。
+ * 管理内置词库、CET-4/6词库。支持每日计划、进度追踪。
  */
 var WordManager = (function() {
   'use strict';
+
+  var activeBank = 'custom';  // 'custom' | 'cet4' | 'cet6'
+  var cet4Bank = null;        // 从data/cet4.json加载
+  var cet6Bank = null;        // 从data/cet6.json加载
 
   /** 内置默认词库 */
   var DEFAULT_WORDS = [
@@ -57,6 +60,37 @@ var WordManager = (function() {
   var sessionWords = [];       // 本轮要背诵的单词 (打乱后的)
   var sessionWordIndex = 0;    // 当前在第几个单词
   var errorWords = [];         // 本轮出错的单词
+
+  /**
+   * 加载CET词库 (从JSON文件fetch)
+   */
+  function loadCETBank(type, callback) {
+    if (type === 'cet4' && cet4Bank) { callback(cet4Bank); return; }
+    if (type === 'cet6' && cet6Bank) { callback(cet6Bank); return; }
+
+    fetch('data/' + type + '.json')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        if (type === 'cet4') cet4Bank = data;
+        if (type === 'cet6') cet6Bank = data;
+        callback(data);
+      })
+      .catch(function(e) {
+        console.warn('Failed to load ' + type + ': ' + e.message);
+        callback(null);
+      });
+  }
+
+  /**
+   * 切换当前词库
+   */
+  function setActiveBank(bank) {
+    activeBank = bank;
+  }
+
+  function getActiveBank() {
+    return activeBank;
+  }
 
   /**
    * 初始化词库 (从 localStorage 加载或使用默认)
@@ -311,6 +345,9 @@ var WordManager = (function() {
     getRemainingWordCount: getRemainingWordCount,
     getTotalSessionWords: getTotalSessionWords,
     getCurrentLetterIndex: getCurrentLetterIndex,
-    exportWords: exportWords
+    exportWords: exportWords,
+    loadCETBank: loadCETBank,
+    setActiveBank: setActiveBank,
+    getActiveBank: getActiveBank
   };
 })();
