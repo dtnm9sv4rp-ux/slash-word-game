@@ -505,7 +505,7 @@
     var reviewBtn = document.getElementById('btn-review-errors');
     if (reviewBtn) {
       reviewBtn.addEventListener('click', function() {
-        GameLoop.startGame();
+        UIManager.showScreen('game');  // 切到游戏界面，触发screenChanged→startGame
       });
     }
   }
