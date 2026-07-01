@@ -201,10 +201,11 @@ var WordManager = (function() {
    */
   function prepareSession(count) {
     count = count || CONFIG.WORDS_PER_ROUND;
-    // 从词库中随机选取
     var shuffled = Utils.shuffle(wordBank);
     sessionWords = shuffled.slice(0, Math.min(count, wordBank.length));
     sessionWordIndex = 0;
+    currentWord = null;
+    currentLetterIndex = 0;
     errorWords = [];
   }
 
@@ -349,10 +350,13 @@ var WordManager = (function() {
     loadCETBank: loadCETBank,
     setActiveBank: setActiveBank,
     getActiveBank: getActiveBank,
-    /** 直接设置本轮单词(不修改永久词库) */
+    /** 直接设置本轮单词(不修改永久词库，完全重置) */
     setSessionWords: function(words) {
       sessionWords = words.slice();
       sessionWordIndex = 0;
+      currentWord = null;
+      currentLetterIndex = 0;
+      errorWords = [];
     }
   };
 })();
